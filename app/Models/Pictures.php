@@ -11,11 +11,11 @@ class Pictures extends Model
 
     public function teams () 
     {
-        return $this->belongsToMany(Team::class);
+        return $this->belongsTo(Team::class);
     }
 
     public function leagues()
     {
-        return $this->belongsToMany(League::class);
+        return $this->belongsTo(League::class);
     }
 }
