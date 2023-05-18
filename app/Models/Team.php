@@ -8,9 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Team extends Model
 {
     use HasFactory;
+    
+    protected $guarded = ['id', 'created_at', 'updated_at'];
 
     public function leagues()
     {
-        return $this->belongsToMany(Team::class);
+        return $this->belongsToMany(League::class);
+    }
+
+    public function pictures()
+    {
+        return $this->hasMany('pictures');
     }
 }

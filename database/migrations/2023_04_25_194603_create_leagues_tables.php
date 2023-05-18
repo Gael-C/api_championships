@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLeaguesTable extends Migration
+class CreateLeaguesTables extends Migration
 {
     /**
      * Run the migrations.
@@ -17,8 +17,8 @@ class CreateLeaguesTable extends Migration
             $table->id();
             $table->string('name');
             $table->date('creation');
-            $table->string('last_champion')->nullable();
-            $table->string('most_successfull')->nullable();
+            $table->foreignId('last_champion')->references('id')->on('teams')->nullable();
+            $table->foreignId('most_successfull')->references('id')->on('teams')->nullable();
             $table->text('description');
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ class CreateLeaguesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('leagues');
+        Schema::dropIfExists('leagues_tables');
     }
 }

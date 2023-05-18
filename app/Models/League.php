@@ -11,6 +11,11 @@ class League extends Model
 
     public function teams()
     {
-        return $this->belongsToMany(League::class);
+        return $this->belongsToMany(Team::class);
+    }
+
+    public function pictures()
+    {
+        return $this->hasMany('pictures');
     }
 }
