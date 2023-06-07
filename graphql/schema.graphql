@@ -9,7 +9,7 @@ type Query {
 
     leagues: [League!]! @all
 
-    teamsLeagues : [TeamsLeagues!]! @all
+    # teamsLeagues : [TeamsLeagues!]! @all
 }
 
 "Account of a person who utilizes this application."
@@ -36,11 +36,10 @@ type League {
   last_champion: ID!
   most_successfull: ID!
   description: String
-  teams: [Team!]! @belongsToMany
+  teams: TeamsLeaguesPivot
 }
 
-type TeamsLeagues {
+type TeamsLeaguesPivot {
   id: ID
-  team_id: Int!
-  league_id: Int!
+  league: League! @belongsTo
 }

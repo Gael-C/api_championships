@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class League extends Model
 {
@@ -18,4 +19,5 @@ class League extends Model
     {
         return $this->hasMany('pictures');
     }
+
 }
