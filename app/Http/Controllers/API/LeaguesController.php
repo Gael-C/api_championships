@@ -33,8 +33,6 @@ class LeaguesController extends Controller
             'most_successfull' => 'nullable|integer|exists:team,id',
             'description' => 'nullable|text'
         ]);
-
-        $league = 
     }
 
     /**
