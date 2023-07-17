@@ -14,7 +14,7 @@ CREATE TABLE `leagues` (
   `creation` varchar(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_champion` bigint unsigned DEFAULT NULL,
   `most_successfull` bigint unsigned DEFAULT NULL,
-  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -63,7 +63,7 @@ CREATE TABLE `teams` (
   `twitter` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `instagram` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `youtube` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -126,8 +126,8 @@ INSERT INTO `teams` (`id`, `created_at`, `updated_at`, `name`, `nickname`, `foun
 (56,	NULL,	NULL,	' Rugby',	'UlsterMan',	'1872',	'Ravenhill Stadium',	'18200',	'http://www.ulsterrugby.com/',	'https://www.facebook.com/ulsterrugby/?utm_source=web&utm_medium=footer&utm_campaign=social-links',	'https://twitter.com/UlsterRugby?utm_source=web&utm_medium=footer&utm_campaign=social-links',	'https://www.instagram.com/officialulsterrugby',	'https://www.youtube.com/user/UlsterRugbyTV?sub_confirmation=1',	NULL),
 (57,	NULL,	NULL,	'Zèbres Parma',	'Zèbra',	'1973',	'Stadio XXV Aprile',	'5000',	'https://www.zebreparma.it/',	'https://www.zebreparma.it/it-it/facebook.aspx',	'https://www.zebreparma.it/it-it/twitter.aspx',	'https://www.zebreparma.it/it-it/instagram.aspx',	'https://www.zebreparma.it/it-it/youtube.aspx',	NULL);
 
-DROP TABLE IF EXISTS `teams_leagues`;
-CREATE TABLE `teams_leagues` (
+DROP TABLE IF EXISTS `league_team`;
+CREATE TABLE `league_team` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `team_id` bigint unsigned NOT NULL,
   `league_id` bigint unsigned NOT NULL,
@@ -140,7 +140,7 @@ CREATE TABLE `teams_leagues` (
   CONSTRAINT `teams_leagues_ibfk_2` FOREIGN KEY (`league_id`) REFERENCES `leagues` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `teams_leagues` (`id`, `team_id`, `league_id`, `created_at`, `updated_at`) VALUES
+INSERT INTO `league_team` (`id`, `team_id`, `league_id`, `created_at`, `updated_at`) VALUES
 (1,	1,	1,	NULL,	NULL),
 (2,	1,	6,	NULL,	NULL),
 (3,	2,	1,	NULL,	NULL),

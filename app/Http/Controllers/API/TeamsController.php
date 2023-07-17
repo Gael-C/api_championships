@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Pictures;
 use App\Models\Team;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class TeamsController extends Controller
@@ -15,7 +17,7 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        return Team::with('leagues')->get();
+        return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200);
     }
 
     /**
@@ -26,6 +28,7 @@ class TeamsController extends Controller
      */
     public function store(Request $request)
     {
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'nickname' => 'required|string|max:5',
@@ -40,9 +43,24 @@ class TeamsController extends Controller
             'description' => 'nullable|string',
         ]);
 
+        
         $team = Team::create($validated);
         
-        return ($team);
+        if (!isset($request->league)) {
+           return new JsonResponse("Merci de renseigner un championnat", 403);
+        }
+        
+        $team->leagues()->attach($request->league);
+        
+        if ($request->location !== null) {
+            $pic = $request->location;
+            $picture = Pictures::create([
+                'location' => $pic,
+                'team_id' => $team->id
+            ]);
+        }
+        
+        return new JsonResponse($team->load('leagues')->load('pictures'), 201);
     }
 
     /**
@@ -53,7 +71,7 @@ class TeamsController extends Controller
      */
     public function show(Team $team)
     {
-        return $team->load('leagues');
+        return new JsonResponse($team->load('leagues')->load('pictures'), 200);
     }
 
     /**
@@ -65,6 +83,7 @@ class TeamsController extends Controller
      */
     public function update(Request $request, Team $team)
     {
+
         $validated = $request->validate([
             'name' => 'nullable|string|max:255',
             'nickname' => 'nullable|string|max:5',
@@ -78,10 +97,21 @@ class TeamsController extends Controller
             'youtube' => 'nullable||string',
             'description' => 'nullable|string',
         ]);
-
         $team->update($validated);
 
-        return $team;
+        if ($request->league !== null) {
+            $team->leagues()->attach($request->league);
+        }
+
+        if($request->location !== null){
+            $pic = $request->location;
+            $team->pictures()->update([
+                'location' => $pic,
+                'team_id' => $team->id
+            ]);
+
+        }
+        return new JsonResponse($team->load('leagues')->load('pictures'), 200);
     }
 
     /**
@@ -92,6 +122,6 @@ class TeamsController extends Controller
      */
     public function destroy(Team $team)
     {
-        return $team->delete();
+        return new JsonResponse($team->delete(), 200);
     }
 }

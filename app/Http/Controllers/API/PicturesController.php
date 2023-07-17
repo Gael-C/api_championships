@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\Pictures;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class PicturesController extends Controller
@@ -15,7 +16,7 @@ class PicturesController extends Controller
      */
     public function index()
     {
-        //
+        return new JsonResponse(Pictures::all(), 200);
     }
 
     /**
@@ -32,11 +33,12 @@ class PicturesController extends Controller
             'league_id' => 'nullable|int'
         ]);
 
-        $fileName = time() . '.' . $request->image->extension();
+        if (!isset($request->team_id) || !isset($request->league_id)) {
+            return new JsonResponse("Merci de renseigner l'id du championnat ou de l'équipe.", 201);
+        }
+        $picture = Pictures::create($validate);
 
-        $path = public_path(). '/pictures';
-
-        $va
+        return new JsonResponse($picture, 201);
     }
 
     /**
@@ -47,7 +49,7 @@ class PicturesController extends Controller
      */
     public function show(Pictures $pictures)
     {
-        //
+        return new JsonResponse($pictures, 200);
     }
 
     /**
@@ -59,7 +61,18 @@ class PicturesController extends Controller
      */
     public function update(Request $request, Pictures $pictures)
     {
-        //
+        $validate = $request->validate([
+            'location' => 'required|string|max:255',
+            'team_id' => 'nullable|int',
+            'league_id' => 'nullable|int'
+        ]);
+
+        if (!isset($request->team_id) || !isset($request->league_id)) {
+            return new JsonResponse("Merci de renseigner l'id du championnat ou de l'équipe.", 201);
+        }
+        $pictures->update($validate);
+
+        return new JsonResponse($pictures, 200);
     }
 
     /**

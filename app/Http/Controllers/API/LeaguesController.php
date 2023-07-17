@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\League;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class LeaguesController extends Controller
@@ -33,6 +34,10 @@ class LeaguesController extends Controller
             'most_successfull' => 'nullable|integer|exists:team,id',
             'description' => 'nullable|text'
         ]);
+
+        $league = League::create($validated);
+
+        return new JsonResponse($league, 201);
     }
 
     /**
@@ -55,7 +60,17 @@ class LeaguesController extends Controller
      */
     public function update(Request $request, League $league)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'nullable|string|max:75',
+            'creation' => 'nullable|string|max:4',
+            'last_champion' => 'nullable|integer|exists:team,id',
+            'most_successfull' => 'nullable|integer|exists:team,id',
+            'description' => 'nullable|text'
+        ]);
+
+        $league->update($validated);
+
+        return new JsonResponse($league, 200);
     }
 
     /**
@@ -66,6 +81,6 @@ class LeaguesController extends Controller
      */
     public function destroy(League $league)
     {
-        //
+        return new JsonResponse($league->delete(), 200);
     }
 }

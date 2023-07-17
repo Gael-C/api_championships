@@ -19,7 +19,7 @@ class CreateLeaguesTables extends Migration
             $table->date('creation');
             $table->foreignId('last_champion')->references('id')->on('teams')->nullable();
             $table->foreignId('most_successfull')->references('id')->on('teams')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

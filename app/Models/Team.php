@@ -18,6 +18,16 @@ class Team extends Model
 
     public function pictures()
     {
-        return $this->hasMany('pictures');
+        return $this->hasMany(Pictures::class);
+    }
+
+    public function mostSuccesfull() 
+    {
+        return $this->hasOne(League::class,);
+    }
+
+    public function lastChampion() 
+    {
+        return $this->hasOne(League::class,);
     }
 }

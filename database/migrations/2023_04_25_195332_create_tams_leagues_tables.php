@@ -13,7 +13,7 @@ class CreateTamsLeaguesTables extends Migration
      */
     public function up()
     {
-        Schema::create('teams_leagues', function (Blueprint $table) {
+        Schema::create('league_team', function (Blueprint $table) {
             $table->id();
             $table->foreignId('team_id')->constrained()->cascadeOnDelete();
             $table->foreignId('league_id')->constrained()->cascadeOnDelete();
