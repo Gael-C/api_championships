@@ -32,7 +32,7 @@ class LeaguesController extends Controller
             'creation' => 'required|string|max:4',
             'last_champion' => 'nullable|integer|exists:team,id',
             'most_successfull' => 'nullable|integer|exists:team,id',
-            'description' => 'nullable|text'
+            'logo' => 'required|string'
         ]);
 
         $league = League::create($validated);
@@ -48,7 +48,7 @@ class LeaguesController extends Controller
      */
     public function show(League $league)
     {
-        return $league::with('teams')->get();
+        return new JsonResponse($league->load(['teams', 'pictures']), 200);
     }
 
     /**
@@ -63,9 +63,9 @@ class LeaguesController extends Controller
         $validated = $request->validate([
             'name' => 'nullable|string|max:75',
             'creation' => 'nullable|string|max:4',
-            'last_champion' => 'nullable|integer|exists:team,id',
-            'most_successfull' => 'nullable|integer|exists:team,id',
-            'description' => 'nullable|text'
+            'last_champion' => 'nullable|integer|exists:teams,id',
+            'most_successfull' => 'nullable|integer|exists:teams,id',
+            'logo' => 'nullable|string'
         ]);
 
         $league->update($validated);

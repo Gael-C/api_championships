@@ -37,10 +37,10 @@ class TeamsController extends Controller
             'capacity' =>'required|string',
             'website' => 'required|string',
             'facebook' => 'nullable|string',
-            'twitter' => 'nullable|tring',
+            'twitter' => 'nullable|string',
             'instagram' => 'nullable|string',
             'youtube' => 'nullable||string',
-            'description' => 'nullable|string',
+            'logo' => 'required|string'
         ]);
 
         
@@ -71,7 +71,7 @@ class TeamsController extends Controller
      */
     public function show(Team $team)
     {
-        return new JsonResponse($team->load('leagues')->load('pictures'), 200);
+        return new JsonResponse($team->load(['leagues','pictures']), 200);
     }
 
     /**
@@ -92,10 +92,11 @@ class TeamsController extends Controller
             'capacity' =>'nullable|string',
             'website' => 'nullable|string',
             'facebook' => 'nullable|string',
-            'twitter' => 'nullable|tring',
+            'twitter' => 'nullable|string',
             'instagram' => 'nullable|string',
             'youtube' => 'nullable||string',
             'description' => 'nullable|string',
+            'logo' => 'nullable|string'
         ]);
         $team->update($validated);
 
