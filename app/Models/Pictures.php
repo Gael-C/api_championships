@@ -7,15 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pictures extends Model
 {
+    protected $guarded = ['id', 'created_at', 'updated_at'];
+
     use HasFactory;
 
     public function teams () 
     {
-        return $this->belongsToMany(Team::class);
+        return $this->belongsTo(Team::class);
     }
 
     public function leagues()
     {
-        return $this->belongsToMany(League::class);
+        return $this->belongsTo(League::class);
     }
 }
