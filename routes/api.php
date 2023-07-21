@@ -36,7 +36,7 @@ Route::get('/leagues/{league}', [LeaguesController::class, 'show']);
 Route::get('/pictures', [PicturesController::class, 'index']);
 Route::get('/pictures/{picture}', [PicturesController::class, 'show']);
 
-Route::post('/register', [AuthController::class, 'register']);
+Route::post('/register', [AuthController::class, 'register'])->middleware('auth:sanctum');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 
 
