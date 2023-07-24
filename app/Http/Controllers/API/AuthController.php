@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+    /**
+     * Fonction qui permet de créer un nouveau user et de génerer un Token
+     *
+     * @param Request $request
+     * @return void
+     * @authenticated
+     */
     public function register(Request $request) {
 
        $validated = $request->validate([
@@ -40,7 +47,7 @@ class AuthController extends Controller
 
         $user = User::where('email', $request['email'])->firstOrFail();
 
-        $token = $user->createToken('myToken')->plainTextToken;
+        $token = $user->createToken('c')->plainTextToken;
        
         return new JsonResponse([
             'access_token' => $token,

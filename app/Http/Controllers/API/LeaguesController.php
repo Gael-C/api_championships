@@ -24,6 +24,7 @@ class LeaguesController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(Request $request)
     {
@@ -57,6 +58,7 @@ class LeaguesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\League  $league
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(Request $request, League $league)
     {
@@ -78,6 +80,7 @@ class LeaguesController extends Controller
      *
      * @param  \App\Models\League  $league
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(League $league)
     {

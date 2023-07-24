@@ -25,6 +25,7 @@ class TeamsController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(Request $request)
     {
@@ -80,6 +81,7 @@ class TeamsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(Request $request, Team $team)
     {
@@ -120,6 +122,7 @@ class TeamsController extends Controller
      *
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(Team $team)
     {
