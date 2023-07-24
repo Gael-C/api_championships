@@ -27,7 +27,7 @@
             </style>
 
     <script>
-        var tryItOutBaseUrl = "http://gael-c-server.eddi.cloud:9080";
+        var tryItOutBaseUrl = "http://localhost";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -134,7 +134,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 23, 2023</li>
+        <li>Last updated: July 24, 2023</li>
     </ul>
 </div>
 
@@ -220,7 +220,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -240,17 +240,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/avironrugbypro/&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/1b/Logo_Aviron_Bayonnais_Rugby_-_2022.svg/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 1,
                     &quot;league_id&quot;: 1
@@ -260,11 +259,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 1,
                     &quot;league_id&quot;: 6
@@ -288,17 +287,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/ubbrugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC0ofHgdtPGcNd21eVuBSWBQ&quot;,
         &quot;logo&quot;: &quot;https://www.ubbrugby.com/application/uploads/files/logo_UBB%20transparent.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 2,
                     &quot;league_id&quot;: 1
@@ -308,11 +306,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 2,
                     &quot;league_id&quot;: 5
@@ -336,17 +334,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/cabriverugbyofficiel/&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/56/Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg/800px-Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 3,
                     &quot;league_id&quot;: 2
@@ -370,17 +367,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/castresrugby/&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/94/Castres_Olympique.svg/999px-Castres_Olympique.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 4,
                     &quot;league_id&quot;: 1
@@ -390,11 +386,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 4,
                     &quot;league_id&quot;: 6
@@ -418,17 +414,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a8/Logo_ASM_Clermont_Auvergne_2019.svg/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 5,
                     &quot;league_id&quot;: 1
@@ -438,11 +433,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 5,
                     &quot;league_id&quot;: 6
@@ -466,17 +461,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/lourugby1896/?hl=fr&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCAwMdlmJy1PmeeXwdZuTjXw&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/2/25/Lyon_olympique_universitaire.svg/1200px-Lyon_olympique_universitaire.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 6,
                     &quot;league_id&quot;: 1
@@ -486,11 +480,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 6,
                     &quot;league_id&quot;: 5
@@ -514,17 +508,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/mhr_officiel&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/montpellierrugby?feature=results_main&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 7,
                     &quot;league_id&quot;: 1
@@ -534,11 +527,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 7,
                     &quot;league_id&quot;: 6
@@ -562,17 +555,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;http://instagram.com/sectionpaloisebearnpyrenees&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/91/Section_Paloise_logo.svg/1200px-Section_Paloise_logo.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 8,
                     &quot;league_id&quot;: 1
@@ -582,11 +574,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 8,
                     &quot;league_id&quot;: 6
@@ -610,17 +602,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/rctofficiel/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/c/RCTRugbyClubToulonnais&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/5a/Logo_Rugby_club_toulonnais.svg/1200px-Logo_Rugby_club_toulonnais.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 9,
                     &quot;league_id&quot;: 1
@@ -630,11 +621,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 9,
                     &quot;league_id&quot;: 6
@@ -658,17 +649,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/stade_francais_paris/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC9HI0fd8SE_IfSaFkVKfPLA&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/0f/Logo_Stade_fran%C3%A7ais_PR_2018.svg/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 10,
                     &quot;league_id&quot;: 1
@@ -678,11 +668,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 10,
                     &quot;league_id&quot;: 6
@@ -706,17 +696,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/staderochelais&quot;,
         &quot;youtube&quot;: &quot;https://www.dailymotion.com/staderochelais&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/44/Logo_Stade_rochelais_2016.svg/1594px-Logo_Stade_rochelais_2016.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 11,
                     &quot;league_id&quot;: 1
@@ -726,11 +715,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 11,
                     &quot;league_id&quot;: 5
@@ -754,17 +743,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;http://instagram.com/stadetoulousainrugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/stadetoulousain&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/0/01/Logo_Stade_Toulousain_Rugby.svg&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 12,
                     &quot;league_id&quot;: 1
@@ -774,11 +762,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 12,
                     &quot;league_id&quot;: 5
@@ -802,17 +790,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/usapofficiel/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCUZuZFU1VeHD9ZJJ3t3wnsQ&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/77/Logo_USA_Perpignan_2017.svg/1200px-Logo_USA_Perpignan_2017.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 13,
                     &quot;league_id&quot;: 1
@@ -822,11 +809,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 13,
                     &quot;league_id&quot;: 6
@@ -850,17 +837,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/Racing92/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Racing_92_2015.svg/640px-Logo_Racing_92_2015.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 14,
                     &quot;league_id&quot;: 1
@@ -870,11 +856,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 14,
                     &quot;league_id&quot;: 5
@@ -898,17 +884,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/provencerugbyofficiel/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC6j-ShG-12kluScwHKoEhew&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/48/Logo_Provence_Rugby_-_2021.svg/1200px-Logo_Provence_Rugby_-_2021.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 15,
                     &quot;league_id&quot;: 2
@@ -932,17 +917,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/sarugbyofficiel/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCouXlRCs_l6lnTG1pTSQKaQ&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c2/Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg/800px-Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 16,
                     &quot;league_id&quot;: 2
@@ -966,17 +950,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/agen_rugby/&quot;,
         &quot;youtube&quot;: &quot;http://www.dailymotion.com/agenrugby&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/51/Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg/674px-Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 17,
                     &quot;league_id&quot;: 2
@@ -1000,17 +983,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/saxv_charente_rugby&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a5/Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg/1200px-Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 18,
                     &quot;league_id&quot;: 2
@@ -1034,17 +1016,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/asbhofficiel/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/c/ASB%C3%A9ziersH%C3%A9raultRugby&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/14/Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg/1200px-Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 19,
                     &quot;league_id&quot;: 2
@@ -1068,17 +1049,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/bopb_officiel/?hl=fr&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg/1200px-Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 20,
                     &quot;league_id&quot;: 2
@@ -1102,17 +1082,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/uscarcassonnexv&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/UsCarcassonne1&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/ca/Logo_Union_sportive_carcassonnaise_XV_2010.svg/1200px-Logo_Union_sportive_carcassonnaise_XV_2010.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 21,
                     &quot;league_id&quot;: 2
@@ -1136,17 +1115,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/colomiersrugby&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/e/e9/Logo_Colomiers_Rugby_2008.svg&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 22,
                     &quot;league_id&quot;: 2
@@ -1170,17 +1148,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/fcgrugby/&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/4/46/Logo_FC_Grenoble_Rugby.svg&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 23,
                     &quot;league_id&quot;: 2
@@ -1204,17 +1181,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/usm_sapiac/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCBOhWG8te6jvgqnx-2JPwWA&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/92/Logo_US_Montalbanaise_-_2017.svg/1200px-Logo_US_Montalbanaise_-_2017.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 24,
                     &quot;league_id&quot;: 2
@@ -1238,17 +1214,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/stademontoisrugby/?hl=fr&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Stade_Montois_Rugby_Pro.svg/1200px-Stade_Montois_Rugby_Pro.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 25,
                     &quot;league_id&quot;: 2
@@ -1272,17 +1247,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/rcme_officiel/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCTYBfKIfruJbj8QRfL0PZ1w&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/0a/Logo_Rugby_Club_Massy_Essonne_-_2020.svg/800px-Logo_Rugby_Club_Massy_Essonne_-_2020.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 26,
                     &quot;league_id&quot;: 2
@@ -1306,17 +1280,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/usonneversrugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/UsonRugbyPlus&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/4a/Logo_USON_Nevers_2016.svg/782px-Logo_USON_Nevers_2016.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 27,
                     &quot;league_id&quot;: 2
@@ -1340,17 +1313,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/oyonnaxrugby/?hl=fr&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCf7BLip3jg_Vod8RRJa7T6Q&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Logo_Oyonnax_rugby_2018.svg/1200px-Logo_Oyonnax_rugby_2018.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Top 14&quot;,
                 &quot;creation&quot;: &quot;1892&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 12,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 28,
                     &quot;league_id&quot;: 1
@@ -1360,11 +1332,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 28,
                     &quot;league_id&quot;: 6
@@ -1388,17 +1360,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/rouen_normandie_rugby/&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Logo_Rouen_Normandie_Rugby_-_2019.svg/1200px-Logo_Rouen_Normandie_Rugby_-_2019.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 29,
                     &quot;league_id&quot;: 2
@@ -1422,17 +1393,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/rugbyclubvannes/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCcmJvevXM_U1OWchJwOJxbQ&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/74/Logo_RC_Vannes_-_2022.svg/1200px-Logo_RC_Vannes_-_2022.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 30,
                     &quot;league_id&quot;: 2
@@ -1456,17 +1426,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/bathrugby/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/BathRugbyTV&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c3/Logo_Bath_Rugby_2014.svg/1200px-Logo_Bath_Rugby_2014.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 31,
                     &quot;league_id&quot;: 3
@@ -1476,11 +1445,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 31,
                     &quot;league_id&quot;: 6
@@ -1504,17 +1473,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/bristolbearsrfc/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/c/Bristolbearstv&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/5a/Logo_Bristol_Bears_2018.svg/1200px-Logo_Bristol_Bears_2018.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 32,
                     &quot;league_id&quot;: 3
@@ -1524,11 +1492,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 32,
                     &quot;league_id&quot;: 6
@@ -1552,17 +1520,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/officialexeterchiefs/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/officialexeterchiefs&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/e/e7/Logo_Exeter_Chiefs_2022.svg&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 33,
                     &quot;league_id&quot;: 3
@@ -1572,11 +1539,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 33,
                     &quot;league_id&quot;: 5
@@ -1600,17 +1567,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/officialGloucesterRugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/GloucesterRugbyTV&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/72/Logo_Gloucester_Rugby_2018.svg/1200px-Logo_Gloucester_Rugby_2018.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 34,
                     &quot;league_id&quot;: 3
@@ -1620,11 +1586,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 34,
                     &quot;league_id&quot;: 5
@@ -1648,17 +1614,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/harlequins&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Logo_Harlequin_Football_Club_2011.svg/1200px-Logo_Harlequin_Football_Club_2011.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 35,
                     &quot;league_id&quot;: 3
@@ -1668,11 +1633,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 35,
                     &quot;league_id&quot;: 5
@@ -1696,17 +1661,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/leicestertigers/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/LeicesterTigersLTTV&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Logo_Harlequin_Football_Club_2011.svg/1200px-Logo_Harlequin_Football_Club_2011.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 36,
                     &quot;league_id&quot;: 3
@@ -1716,11 +1680,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 36,
                     &quot;league_id&quot;: 5
@@ -1744,17 +1708,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/londonirish1898/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCQYMvGMgRj8Yjbdv72hOgXA&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/90/Logo_London_Irish_2019.svg/1200px-Logo_London_Irish_2019.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 37,
                     &quot;league_id&quot;: 3
@@ -1764,11 +1727,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 37,
                     &quot;league_id&quot;: 5
@@ -1792,17 +1755,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/NewcastleFalcons1&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/d7/Logo_Newcastle_Falcons.svg/1200px-Logo_Newcastle_Falcons.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 38,
                     &quot;league_id&quot;: 3
@@ -1812,11 +1774,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 38,
                     &quot;league_id&quot;: 6
@@ -1840,17 +1802,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://instagram.com/northamptonsaints&quot;,
         &quot;youtube&quot;: &quot;https://youtube.com/user/TheSaintsTV&quot;,
         &quot;logo&quot;: &quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNmxktUnK8vEBaJUhNjtafLRLw7s7PqlxiDBWzkCo&amp;s&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 39,
                     &quot;league_id&quot;: 3
@@ -1860,11 +1821,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 39,
                     &quot;league_id&quot;: 5
@@ -1888,17 +1849,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/salesharks/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC_k3xuhlC_jBgfpJdMqAKxw&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Sale_Sharks_%28logo%29.svg/1200px-Sale_Sharks_%28logo%29.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 40,
                     &quot;league_id&quot;: 3
@@ -1908,11 +1868,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 40,
                     &quot;league_id&quot;: 5
@@ -1936,17 +1896,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/saracensofficial&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCHZjhtppDSbFEXWA80d5WBw&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/Logo_Saracens_2021.svg/1200px-Logo_Saracens_2021.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 3,
                 &quot;name&quot;: &quot;Premiership Rugby&quot;,
                 &quot;creation&quot;: &quot;1987&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 41,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
                 &quot;most_successfull&quot;: 36,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 41,
                     &quot;league_id&quot;: 3
@@ -1956,11 +1915,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 41,
                     &quot;league_id&quot;: 5
@@ -1984,17 +1943,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/blue_bulls_official/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/VodacomBulls/feed&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/5/55/Bulls-logo.jpg&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 42,
                     &quot;league_id&quot;: 4
@@ -2004,11 +1962,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 42,
                     &quot;league_id&quot;: 5
@@ -2032,17 +1990,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/cardiff.rugby/&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 43,
                     &quot;league_id&quot;: 4
@@ -2052,11 +2009,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 43,
                     &quot;league_id&quot;: 6
@@ -2080,17 +2037,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/connachtrugby/&quot;,
         &quot;youtube&quot;: &quot;&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 44,
                     &quot;league_id&quot;: 4
@@ -2100,11 +2056,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 44,
                     &quot;league_id&quot;: 6
@@ -2128,17 +2084,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/edinburghrugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/EdinburghRugbyTV&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 45,
                     &quot;league_id&quot;: 4
@@ -2148,11 +2103,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 45,
                     &quot;league_id&quot;: 5
@@ -2176,17 +2131,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/glasgowwarriors&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/glasgowwarriors&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/75/Logo_Glasgow_Warriors_2019.svg/1200px-Logo_Glasgow_Warriors_2019.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 46,
                     &quot;league_id&quot;: 4
@@ -2196,11 +2150,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 46,
                     &quot;league_id&quot;: 6
@@ -2224,17 +2178,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/leinsterrugby/?hl=en&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/LeinsterrugbyTV&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/2/2c/Logo_Leinster_Rugby.svg/1200px-Logo_Leinster_Rugby.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 47,
                     &quot;league_id&quot;: 4
@@ -2244,11 +2197,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 47,
                     &quot;league_id&quot;: 5
@@ -2272,17 +2225,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://twitter.com/LionsRugbyCo&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCdddB27Aoxea_QS0EyPJoRQ&quot;,
         &quot;logo&quot;: &quot;https://assets.stickpng.com/images/5ae2e50233b73fa43b1a8986.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 48,
                     &quot;league_id&quot;: 4
@@ -2292,11 +2244,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 48,
                     &quot;league_id&quot;: 6
@@ -2320,17 +2272,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/scarlets_rugby/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCSpQ51CzUYp_ambKRD7fDCg&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/03/Logo_Scarlets_2008.svg/1200px-Logo_Scarlets_2008.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 49,
                     &quot;league_id&quot;: 4
@@ -2340,11 +2291,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 49,
                     &quot;league_id&quot;: 5
@@ -2368,17 +2319,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://twitter.com/MunsterRugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/MunsterView&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/94/Munster_Rugby_%28logo%29.svg/1200px-Munster_Rugby_%28logo%29.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 50,
                     &quot;league_id&quot;: 4
@@ -2388,11 +2338,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 50,
                     &quot;league_id&quot;: 5
@@ -2416,17 +2366,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://twitter.com/dragonsrugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCdB_8F9Yqur14jXdSzxyQeA&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/d/d1/Logo_Dragons_RFC_2022.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 51,
                     &quot;league_id&quot;: 4
@@ -2436,11 +2385,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 51,
                     &quot;league_id&quot;: 6
@@ -2464,17 +2413,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/ospreys_official/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/OspreysHighlights&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7f/Logo_Ospreys.svg/1200px-Logo_Ospreys.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 52,
                     &quot;league_id&quot;: 4
@@ -2484,11 +2432,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 52,
                     &quot;league_id&quot;: 5
@@ -2512,17 +2460,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/sharksrugby/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/TheSharksZA&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7b/CellCSharksRugbylogo.svg/1200px-CellCSharksRugbylogo.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 53,
                     &quot;league_id&quot;: 4
@@ -2532,11 +2479,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 53,
                     &quot;league_id&quot;: 5
@@ -2560,17 +2507,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/dhlstormers/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/StormersTV&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/18/Logo_Stormers_Rugby.svg/1200px-Logo_Stormers_Rugby.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 54,
                     &quot;league_id&quot;: 4
@@ -2580,11 +2526,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 54,
                     &quot;league_id&quot;: 5
@@ -2608,17 +2554,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/benettonrugby/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/BenettonRugby&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a3/Logo_Benetton_Rugby.svg/1200px-Logo_Benetton_Rugby.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 55,
                     &quot;league_id&quot;: 4
@@ -2628,11 +2573,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 55,
                     &quot;league_id&quot;: 6
@@ -2656,17 +2601,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/officialulsterrugby&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/user/UlsterRugbyTV?sub_confirmation=1&quot;,
         &quot;logo&quot;: &quot;https://i.bleacherreport.net/images/team_logos/328x328/ulster_rugby.png?canvas=492,328&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 56,
                     &quot;league_id&quot;: 4
@@ -2676,11 +2620,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 5,
                 &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
                 &quot;creation&quot;: &quot;1995&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 11,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
                 &quot;most_successfull&quot;: 12,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 56,
                     &quot;league_id&quot;: 5
@@ -2704,17 +2648,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.zebreparma.it/it-it/instagram.aspx&quot;,
         &quot;youtube&quot;: &quot;https://www.zebreparma.it/it-it/youtube.aspx&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/b7/Logo_Zebre_Rugby_Club_2017.svg/1024px-Logo_Zebre_Rugby_Club_2017.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;United Rugby Championship&quot;,
                 &quot;creation&quot;: &quot;2001&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 50,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
                 &quot;most_successfull&quot;: 54,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 57,
                     &quot;league_id&quot;: 4
@@ -2724,11 +2667,11 @@ access-control-allow-origin: *
                 &quot;id&quot;: 6,
                 &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
                 &quot;creation&quot;: &quot;1996&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 9,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
                 &quot;most_successfull&quot;: 5,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 57,
                     &quot;league_id&quot;: 6
@@ -2739,8 +2682,8 @@ access-control-allow-origin: *
     },
     {
         &quot;id&quot;: 58,
-        &quot;created_at&quot;: &quot;2023-07-20T12:24:44.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:58:44.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2023-07-20T10:24:44.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:58:44.000000Z&quot;,
         &quot;name&quot;: &quot;Union Sportive Dacquoise&quot;,
         &quot;nickname&quot;: &quot;USD&quot;,
         &quot;foundation&quot;: &quot;1904&quot;,
@@ -2752,14 +2695,13 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/usdaxrugby/&quot;,
         &quot;youtube&quot;: null,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7d/Logo_US_Dax_Rugby_Landes_-_2018.svg/langfr-130px-Logo_US_Dax_Rugby_Landes_-_2018.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [],
         &quot;pictures&quot;: []
     },
     {
         &quot;id&quot;: 59,
-        &quot;created_at&quot;: &quot;2023-07-20T12:30:58.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:59:55.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2023-07-20T10:30:58.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:59:55.000000Z&quot;,
         &quot;name&quot;: &quot;Valence Romans Dr&ocirc;me Rugby&quot;,
         &quot;nickname&quot;: &quot;VRDR&quot;,
         &quot;foundation&quot;: &quot;2016&quot;,
@@ -2771,17 +2713,16 @@ access-control-allow-origin: *
         &quot;instagram&quot;: &quot;https://www.instagram.com/vrdrrugby/&quot;,
         &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCZUNaco8URaVgTHs0U961lw&quot;,
         &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7c/Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg/langfr-130px-Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg.png&quot;,
-        &quot;description&quot;: null,
         &quot;leagues&quot;: [
             {
                 &quot;id&quot;: 2,
                 &quot;name&quot;: &quot;Pro D2&quot;,
                 &quot;creation&quot;: &quot;2000&quot;,
-                &quot;created_at&quot;: null,
                 &quot;last_champion&quot;: 28,
-                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
                 &quot;most_successfull&quot;: 6,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+                &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
                 &quot;pivot&quot;: {
                     &quot;team_id&quot;: 59,
                     &quot;league_id&quot;: 2
@@ -2883,17 +2824,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"lroorihrokvkhq\",
-    \"nickname\": \"woj\",
-    \"foundation\": \"f\",
-    \"stade\": \"quo\",
-    \"capacity\": \"distinctio\",
-    \"website\": \"magnam\",
-    \"facebook\": \"quidem\",
-    \"twitter\": \"est\",
-    \"instagram\": \"voluptatem\",
-    \"youtube\": \"recusandae\",
-    \"logo\": \"omnis\"
+    \"name\": \"nmerltaejcadd\",
+    \"nickname\": \"gpubc\",
+    \"foundation\": \"hobl\",
+    \"stade\": \"facilis\",
+    \"capacity\": \"ea\",
+    \"website\": \"itaque\",
+    \"facebook\": \"iusto\",
+    \"twitter\": \"quia\",
+    \"instagram\": \"sed\",
+    \"youtube\": \"dolorem\",
+    \"logo\": \"eum\"
 }"
 </code></pre></div>
 
@@ -2910,17 +2851,17 @@ const headers = {
 };
 
 let body = {
-    "name": "lroorihrokvkhq",
-    "nickname": "woj",
-    "foundation": "f",
-    "stade": "quo",
-    "capacity": "distinctio",
-    "website": "magnam",
-    "facebook": "quidem",
-    "twitter": "est",
-    "instagram": "voluptatem",
-    "youtube": "recusandae",
-    "logo": "omnis"
+    "name": "nmerltaejcadd",
+    "nickname": "gpubc",
+    "foundation": "hobl",
+    "stade": "facilis",
+    "capacity": "ea",
+    "website": "itaque",
+    "facebook": "iusto",
+    "twitter": "quia",
+    "instagram": "sed",
+    "youtube": "dolorem",
+    "logo": "eum"
 };
 
 fetch(url, {
@@ -2941,17 +2882,17 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'lroorihrokvkhq',
-            'nickname' =&gt; 'woj',
-            'foundation' =&gt; 'f',
-            'stade' =&gt; 'quo',
-            'capacity' =&gt; 'distinctio',
-            'website' =&gt; 'magnam',
-            'facebook' =&gt; 'quidem',
-            'twitter' =&gt; 'est',
-            'instagram' =&gt; 'voluptatem',
-            'youtube' =&gt; 'recusandae',
-            'logo' =&gt; 'omnis',
+            'name' =&gt; 'nmerltaejcadd',
+            'nickname' =&gt; 'gpubc',
+            'foundation' =&gt; 'hobl',
+            'stade' =&gt; 'facilis',
+            'capacity' =&gt; 'ea',
+            'website' =&gt; 'itaque',
+            'facebook' =&gt; 'iusto',
+            'twitter' =&gt; 'quia',
+            'instagram' =&gt; 'sed',
+            'youtube' =&gt; 'dolorem',
+            'logo' =&gt; 'eum',
         ],
     ]
 );
@@ -3049,10 +2990,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-teams"
-               value="lroorihrokvkhq"
+               value="nmerltaejcadd"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>lroorihrokvkhq</code></p>
+<p>Must not be greater than 255 characters. Example: <code>nmerltaejcadd</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nickname</code></b>&nbsp;&nbsp;
@@ -3060,10 +3001,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nickname"                data-endpoint="POSTapi-teams"
-               value="woj"
+               value="gpubc"
                data-component="body">
     <br>
-<p>Must not be greater than 5 characters. Example: <code>woj</code></p>
+<p>Must not be greater than 5 characters. Example: <code>gpubc</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>foundation</code></b>&nbsp;&nbsp;
@@ -3071,10 +3012,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="foundation"                data-endpoint="POSTapi-teams"
-               value="f"
+               value="hobl"
                data-component="body">
     <br>
-<p>Must not be greater than 4 characters. Example: <code>f</code></p>
+<p>Must not be greater than 4 characters. Example: <code>hobl</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>stade</code></b>&nbsp;&nbsp;
@@ -3082,10 +3023,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="stade"                data-endpoint="POSTapi-teams"
-               value="quo"
+               value="facilis"
                data-component="body">
     <br>
-<p>Example: <code>quo</code></p>
+<p>Example: <code>facilis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>capacity</code></b>&nbsp;&nbsp;
@@ -3093,10 +3034,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="capacity"                data-endpoint="POSTapi-teams"
-               value="distinctio"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>distinctio</code></p>
+<p>Example: <code>ea</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>website</code></b>&nbsp;&nbsp;
@@ -3104,10 +3045,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="website"                data-endpoint="POSTapi-teams"
-               value="magnam"
+               value="itaque"
                data-component="body">
     <br>
-<p>Example: <code>magnam</code></p>
+<p>Example: <code>itaque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>facebook</code></b>&nbsp;&nbsp;
@@ -3115,10 +3056,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="facebook"                data-endpoint="POSTapi-teams"
-               value="quidem"
+               value="iusto"
                data-component="body">
     <br>
-<p>Example: <code>quidem</code></p>
+<p>Example: <code>iusto</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>twitter</code></b>&nbsp;&nbsp;
@@ -3126,10 +3067,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="twitter"                data-endpoint="POSTapi-teams"
-               value="est"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>instagram</code></b>&nbsp;&nbsp;
@@ -3137,10 +3078,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="instagram"                data-endpoint="POSTapi-teams"
-               value="voluptatem"
+               value="sed"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>sed</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>youtube</code></b>&nbsp;&nbsp;
@@ -3148,10 +3089,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="youtube"                data-endpoint="POSTapi-teams"
-               value="recusandae"
+               value="dolorem"
                data-component="body">
     <br>
-<p>Example: <code>recusandae</code></p>
+<p>Example: <code>dolorem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>logo</code></b>&nbsp;&nbsp;
@@ -3159,10 +3100,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="logo"                data-endpoint="POSTapi-teams"
-               value="omnis"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>omnis</code></p>
+<p>Example: <code>eum</code></p>
         </div>
         </form>
 
@@ -3227,7 +3168,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3246,17 +3187,16 @@ access-control-allow-origin: *
     &quot;instagram&quot;: &quot;https://www.instagram.com/avironrugbypro/&quot;,
     &quot;youtube&quot;: &quot;&quot;,
     &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/1b/Logo_Aviron_Bayonnais_Rugby_-_2022.svg/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png&quot;,
-    &quot;description&quot;: null,
     &quot;leagues&quot;: [
         {
             &quot;id&quot;: 1,
             &quot;name&quot;: &quot;Top 14&quot;,
             &quot;creation&quot;: &quot;1892&quot;,
-            &quot;created_at&quot;: null,
             &quot;last_champion&quot;: 12,
-            &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
             &quot;most_successfull&quot;: 12,
-            &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+            &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
             &quot;pivot&quot;: {
                 &quot;team_id&quot;: 1,
                 &quot;league_id&quot;: 1
@@ -3266,11 +3206,11 @@ access-control-allow-origin: *
             &quot;id&quot;: 6,
             &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
             &quot;creation&quot;: &quot;1996&quot;,
-            &quot;created_at&quot;: null,
             &quot;last_champion&quot;: 9,
-            &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
             &quot;most_successfull&quot;: 5,
-            &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+            &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
             &quot;pivot&quot;: {
                 &quot;team_id&quot;: 1,
                 &quot;league_id&quot;: 6
@@ -3383,18 +3323,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"aaaxxfrxpungncofj\",
-    \"nickname\": \"o\",
-    \"foundation\": \"n\",
-    \"stade\": \"sint\",
-    \"capacity\": \"fuga\",
-    \"website\": \"numquam\",
-    \"facebook\": \"vel\",
-    \"twitter\": \"fuga\",
-    \"instagram\": \"perspiciatis\",
-    \"youtube\": \"non\",
-    \"description\": \"Repudiandae qui provident ut dolor vel dolores maiores.\",
-    \"logo\": \"autem\"
+    \"name\": \"mom\",
+    \"nickname\": \"uo\",
+    \"foundation\": \"np\",
+    \"stade\": \"non\",
+    \"capacity\": \"omnis\",
+    \"website\": \"ea\",
+    \"facebook\": \"voluptas\",
+    \"twitter\": \"eum\",
+    \"instagram\": \"maxime\",
+    \"youtube\": \"voluptatem\",
+    \"description\": \"Ducimus excepturi ab optio illo qui repellat quae.\",
+    \"logo\": \"et\"
 }"
 </code></pre></div>
 
@@ -3411,18 +3351,18 @@ const headers = {
 };
 
 let body = {
-    "name": "aaaxxfrxpungncofj",
-    "nickname": "o",
-    "foundation": "n",
-    "stade": "sint",
-    "capacity": "fuga",
-    "website": "numquam",
-    "facebook": "vel",
-    "twitter": "fuga",
-    "instagram": "perspiciatis",
-    "youtube": "non",
-    "description": "Repudiandae qui provident ut dolor vel dolores maiores.",
-    "logo": "autem"
+    "name": "mom",
+    "nickname": "uo",
+    "foundation": "np",
+    "stade": "non",
+    "capacity": "omnis",
+    "website": "ea",
+    "facebook": "voluptas",
+    "twitter": "eum",
+    "instagram": "maxime",
+    "youtube": "voluptatem",
+    "description": "Ducimus excepturi ab optio illo qui repellat quae.",
+    "logo": "et"
 };
 
 fetch(url, {
@@ -3443,18 +3383,18 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'aaaxxfrxpungncofj',
-            'nickname' =&gt; 'o',
-            'foundation' =&gt; 'n',
-            'stade' =&gt; 'sint',
-            'capacity' =&gt; 'fuga',
-            'website' =&gt; 'numquam',
-            'facebook' =&gt; 'vel',
-            'twitter' =&gt; 'fuga',
-            'instagram' =&gt; 'perspiciatis',
-            'youtube' =&gt; 'non',
-            'description' =&gt; 'Repudiandae qui provident ut dolor vel dolores maiores.',
-            'logo' =&gt; 'autem',
+            'name' =&gt; 'mom',
+            'nickname' =&gt; 'uo',
+            'foundation' =&gt; 'np',
+            'stade' =&gt; 'non',
+            'capacity' =&gt; 'omnis',
+            'website' =&gt; 'ea',
+            'facebook' =&gt; 'voluptas',
+            'twitter' =&gt; 'eum',
+            'instagram' =&gt; 'maxime',
+            'youtube' =&gt; 'voluptatem',
+            'description' =&gt; 'Ducimus excepturi ab optio illo qui repellat quae.',
+            'logo' =&gt; 'et',
         ],
     ]
 );
@@ -3568,10 +3508,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-teams--id-"
-               value="aaaxxfrxpungncofj"
+               value="mom"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>aaaxxfrxpungncofj</code></p>
+<p>Must not be greater than 255 characters. Example: <code>mom</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nickname</code></b>&nbsp;&nbsp;
@@ -3579,10 +3519,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="nickname"                data-endpoint="PUTapi-teams--id-"
-               value="o"
+               value="uo"
                data-component="body">
     <br>
-<p>Must not be greater than 5 characters. Example: <code>o</code></p>
+<p>Must not be greater than 5 characters. Example: <code>uo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>foundation</code></b>&nbsp;&nbsp;
@@ -3590,10 +3530,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="foundation"                data-endpoint="PUTapi-teams--id-"
-               value="n"
+               value="np"
                data-component="body">
     <br>
-<p>Must not be greater than 4 characters. Example: <code>n</code></p>
+<p>Must not be greater than 4 characters. Example: <code>np</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>stade</code></b>&nbsp;&nbsp;
@@ -3601,10 +3541,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="stade"                data-endpoint="PUTapi-teams--id-"
-               value="sint"
+               value="non"
                data-component="body">
     <br>
-<p>Example: <code>sint</code></p>
+<p>Example: <code>non</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>capacity</code></b>&nbsp;&nbsp;
@@ -3612,10 +3552,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="capacity"                data-endpoint="PUTapi-teams--id-"
-               value="fuga"
+               value="omnis"
                data-component="body">
     <br>
-<p>Example: <code>fuga</code></p>
+<p>Example: <code>omnis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>website</code></b>&nbsp;&nbsp;
@@ -3623,10 +3563,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="website"                data-endpoint="PUTapi-teams--id-"
-               value="numquam"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>numquam</code></p>
+<p>Example: <code>ea</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>facebook</code></b>&nbsp;&nbsp;
@@ -3634,10 +3574,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="facebook"                data-endpoint="PUTapi-teams--id-"
-               value="vel"
+               value="voluptas"
                data-component="body">
     <br>
-<p>Example: <code>vel</code></p>
+<p>Example: <code>voluptas</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>twitter</code></b>&nbsp;&nbsp;
@@ -3645,10 +3585,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="twitter"                data-endpoint="PUTapi-teams--id-"
-               value="fuga"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>fuga</code></p>
+<p>Example: <code>eum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>instagram</code></b>&nbsp;&nbsp;
@@ -3656,10 +3596,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="instagram"                data-endpoint="PUTapi-teams--id-"
-               value="perspiciatis"
+               value="maxime"
                data-component="body">
     <br>
-<p>Example: <code>perspiciatis</code></p>
+<p>Example: <code>maxime</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>youtube</code></b>&nbsp;&nbsp;
@@ -3667,10 +3607,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="youtube"                data-endpoint="PUTapi-teams--id-"
-               value="non"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -3678,10 +3618,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-teams--id-"
-               value="Repudiandae qui provident ut dolor vel dolores maiores."
+               value="Ducimus excepturi ab optio illo qui repellat quae."
                data-component="body">
     <br>
-<p>Example: <code>Repudiandae qui provident ut dolor vel dolores maiores.</code></p>
+<p>Example: <code>Ducimus excepturi ab optio illo qui repellat quae.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>logo</code></b>&nbsp;&nbsp;
@@ -3689,10 +3629,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="logo"                data-endpoint="PUTapi-teams--id-"
-               value="autem"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>autem</code></p>
+<p>Example: <code>et</code></p>
         </div>
         </form>
 
@@ -3907,7 +3847,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3916,11 +3856,11 @@ access-control-allow-origin: *
         &quot;id&quot;: 1,
         &quot;name&quot;: &quot;Top 14&quot;,
         &quot;creation&quot;: &quot;1892&quot;,
-        &quot;created_at&quot;: null,
         &quot;last_champion&quot;: 12,
-        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
         &quot;most_successfull&quot;: 12,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
         &quot;teams&quot;: [
             {
                 &quot;id&quot;: 1,
@@ -3937,7 +3877,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/avironrugbypro/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/1b/Logo_Aviron_Bayonnais_Rugby_-_2022.svg/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 1
@@ -3958,7 +3897,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/ubbrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC0ofHgdtPGcNd21eVuBSWBQ&quot;,
                 &quot;logo&quot;: &quot;https://www.ubbrugby.com/application/uploads/files/logo_UBB%20transparent.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 2
@@ -3979,7 +3917,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/castresrugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/94/Castres_Olympique.svg/999px-Castres_Olympique.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 4
@@ -4000,7 +3937,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a8/Logo_ASM_Clermont_Auvergne_2019.svg/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 5
@@ -4021,7 +3957,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/lourugby1896/?hl=fr&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCAwMdlmJy1PmeeXwdZuTjXw&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/2/25/Lyon_olympique_universitaire.svg/1200px-Lyon_olympique_universitaire.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 6
@@ -4042,7 +3977,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/mhr_officiel&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/montpellierrugby?feature=results_main&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 7
@@ -4063,7 +3997,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;http://instagram.com/sectionpaloisebearnpyrenees&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/91/Section_Paloise_logo.svg/1200px-Section_Paloise_logo.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 8
@@ -4084,7 +4017,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/rctofficiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/c/RCTRugbyClubToulonnais&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/5a/Logo_Rugby_club_toulonnais.svg/1200px-Logo_Rugby_club_toulonnais.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 9
@@ -4105,7 +4037,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/stade_francais_paris/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC9HI0fd8SE_IfSaFkVKfPLA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/0f/Logo_Stade_fran%C3%A7ais_PR_2018.svg/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 10
@@ -4126,7 +4057,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/staderochelais&quot;,
                 &quot;youtube&quot;: &quot;https://www.dailymotion.com/staderochelais&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/44/Logo_Stade_rochelais_2016.svg/1594px-Logo_Stade_rochelais_2016.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 11
@@ -4147,7 +4077,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;http://instagram.com/stadetoulousainrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/stadetoulousain&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/0/01/Logo_Stade_Toulousain_Rugby.svg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 12
@@ -4168,7 +4097,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/usapofficiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCUZuZFU1VeHD9ZJJ3t3wnsQ&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/77/Logo_USA_Perpignan_2017.svg/1200px-Logo_USA_Perpignan_2017.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 13
@@ -4189,7 +4117,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/Racing92/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Racing_92_2015.svg/640px-Logo_Racing_92_2015.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 14
@@ -4210,7 +4137,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/oyonnaxrugby/?hl=fr&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCf7BLip3jg_Vod8RRJa7T6Q&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Logo_Oyonnax_rugby_2018.svg/1200px-Logo_Oyonnax_rugby_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 1,
                     &quot;team_id&quot;: 28
@@ -4222,11 +4148,11 @@ access-control-allow-origin: *
         &quot;id&quot;: 2,
         &quot;name&quot;: &quot;Pro D2&quot;,
         &quot;creation&quot;: &quot;2000&quot;,
-        &quot;created_at&quot;: null,
         &quot;last_champion&quot;: 28,
-        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
         &quot;most_successfull&quot;: 6,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:45:45.000000Z&quot;,
+        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/ProD2_logo_2012.svg/langfr-150px-ProD2_logo_2012.svg.png&quot;,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:45:45.000000Z&quot;,
         &quot;teams&quot;: [
             {
                 &quot;id&quot;: 3,
@@ -4243,7 +4169,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/cabriverugbyofficiel/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/56/Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg/800px-Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 3
@@ -4264,7 +4189,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/provencerugbyofficiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC6j-ShG-12kluScwHKoEhew&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/48/Logo_Provence_Rugby_-_2021.svg/1200px-Logo_Provence_Rugby_-_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 15
@@ -4285,7 +4209,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/sarugbyofficiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCouXlRCs_l6lnTG1pTSQKaQ&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c2/Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg/800px-Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 16
@@ -4306,7 +4229,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/agen_rugby/&quot;,
                 &quot;youtube&quot;: &quot;http://www.dailymotion.com/agenrugby&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/51/Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg/674px-Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 17
@@ -4327,7 +4249,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/saxv_charente_rugby&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a5/Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg/1200px-Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 18
@@ -4348,7 +4269,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/asbhofficiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/c/ASB%C3%A9ziersH%C3%A9raultRugby&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/14/Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg/1200px-Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 19
@@ -4369,7 +4289,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/bopb_officiel/?hl=fr&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg/1200px-Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 20
@@ -4390,7 +4309,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/uscarcassonnexv&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/UsCarcassonne1&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/ca/Logo_Union_sportive_carcassonnaise_XV_2010.svg/1200px-Logo_Union_sportive_carcassonnaise_XV_2010.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 21
@@ -4411,7 +4329,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/colomiersrugby&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/e/e9/Logo_Colomiers_Rugby_2008.svg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 22
@@ -4432,7 +4349,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/fcgrugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/4/46/Logo_FC_Grenoble_Rugby.svg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 23
@@ -4453,7 +4369,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/usm_sapiac/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCBOhWG8te6jvgqnx-2JPwWA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/92/Logo_US_Montalbanaise_-_2017.svg/1200px-Logo_US_Montalbanaise_-_2017.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 24
@@ -4474,7 +4389,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/stademontoisrugby/?hl=fr&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Stade_Montois_Rugby_Pro.svg/1200px-Stade_Montois_Rugby_Pro.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 25
@@ -4495,7 +4409,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/rcme_officiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCTYBfKIfruJbj8QRfL0PZ1w&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/0a/Logo_Rugby_Club_Massy_Essonne_-_2020.svg/800px-Logo_Rugby_Club_Massy_Essonne_-_2020.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 26
@@ -4516,7 +4429,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/usonneversrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/UsonRugbyPlus&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/4a/Logo_USON_Nevers_2016.svg/782px-Logo_USON_Nevers_2016.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 27
@@ -4537,7 +4449,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/rouen_normandie_rugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Logo_Rouen_Normandie_Rugby_-_2019.svg/1200px-Logo_Rouen_Normandie_Rugby_-_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 29
@@ -4558,7 +4469,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/rugbyclubvannes/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCcmJvevXM_U1OWchJwOJxbQ&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/74/Logo_RC_Vannes_-_2022.svg/1200px-Logo_RC_Vannes_-_2022.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 30
@@ -4566,8 +4476,8 @@ access-control-allow-origin: *
             },
             {
                 &quot;id&quot;: 59,
-                &quot;created_at&quot;: &quot;2023-07-20T12:30:58.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-20T12:59:55.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-07-20T10:30:58.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-20T10:59:55.000000Z&quot;,
                 &quot;name&quot;: &quot;Valence Romans Dr&ocirc;me Rugby&quot;,
                 &quot;nickname&quot;: &quot;VRDR&quot;,
                 &quot;foundation&quot;: &quot;2016&quot;,
@@ -4579,7 +4489,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/vrdrrugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCZUNaco8URaVgTHs0U961lw&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7c/Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg/langfr-130px-Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 2,
                     &quot;team_id&quot;: 59
@@ -4591,11 +4500,11 @@ access-control-allow-origin: *
         &quot;id&quot;: 3,
         &quot;name&quot;: &quot;Premiership Rugby&quot;,
         &quot;creation&quot;: &quot;1987&quot;,
-        &quot;created_at&quot;: null,
         &quot;last_champion&quot;: 41,
-        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
         &quot;most_successfull&quot;: 36,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:46:18.000000Z&quot;,
+        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/bd/Logo_Premiership_Rugby_2018.svg/langfr-180px-Logo_Premiership_Rugby_2018.svg.png&quot;,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:46:18.000000Z&quot;,
         &quot;teams&quot;: [
             {
                 &quot;id&quot;: 31,
@@ -4612,7 +4521,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/bathrugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/BathRugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c3/Logo_Bath_Rugby_2014.svg/1200px-Logo_Bath_Rugby_2014.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 31
@@ -4633,7 +4541,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/bristolbearsrfc/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/c/Bristolbearstv&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/5a/Logo_Bristol_Bears_2018.svg/1200px-Logo_Bristol_Bears_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 32
@@ -4654,7 +4561,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/officialexeterchiefs/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/officialexeterchiefs&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/e/e7/Logo_Exeter_Chiefs_2022.svg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 33
@@ -4675,7 +4581,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/officialGloucesterRugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/GloucesterRugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/72/Logo_Gloucester_Rugby_2018.svg/1200px-Logo_Gloucester_Rugby_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 34
@@ -4696,7 +4601,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/harlequins&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Logo_Harlequin_Football_Club_2011.svg/1200px-Logo_Harlequin_Football_Club_2011.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 35
@@ -4717,7 +4621,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/leicestertigers/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/LeicesterTigersLTTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Logo_Harlequin_Football_Club_2011.svg/1200px-Logo_Harlequin_Football_Club_2011.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 36
@@ -4738,7 +4641,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/londonirish1898/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCQYMvGMgRj8Yjbdv72hOgXA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/90/Logo_London_Irish_2019.svg/1200px-Logo_London_Irish_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 37
@@ -4759,7 +4661,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/NewcastleFalcons1&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/d7/Logo_Newcastle_Falcons.svg/1200px-Logo_Newcastle_Falcons.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 38
@@ -4780,7 +4681,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/northamptonsaints&quot;,
                 &quot;youtube&quot;: &quot;https://youtube.com/user/TheSaintsTV&quot;,
                 &quot;logo&quot;: &quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNmxktUnK8vEBaJUhNjtafLRLw7s7PqlxiDBWzkCo&amp;s&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 39
@@ -4801,7 +4701,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/salesharks/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC_k3xuhlC_jBgfpJdMqAKxw&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Sale_Sharks_%28logo%29.svg/1200px-Sale_Sharks_%28logo%29.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 40
@@ -4822,7 +4721,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/saracensofficial&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCHZjhtppDSbFEXWA80d5WBw&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/Logo_Saracens_2021.svg/1200px-Logo_Saracens_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 3,
                     &quot;team_id&quot;: 41
@@ -4834,11 +4732,11 @@ access-control-allow-origin: *
         &quot;id&quot;: 4,
         &quot;name&quot;: &quot;United Rugby Championship&quot;,
         &quot;creation&quot;: &quot;2001&quot;,
-        &quot;created_at&quot;: null,
         &quot;last_champion&quot;: 50,
-        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
         &quot;most_successfull&quot;: 54,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:46:41.000000Z&quot;,
+        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/db/Logo_United_Rugby_Championship_2021.png/180px-Logo_United_Rugby_Championship_2021.png&quot;,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:46:41.000000Z&quot;,
         &quot;teams&quot;: [
             {
                 &quot;id&quot;: 42,
@@ -4855,7 +4753,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/blue_bulls_official/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/VodacomBulls/feed&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/5/55/Bulls-logo.jpg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 42
@@ -4876,7 +4773,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/cardiff.rugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 43
@@ -4897,7 +4793,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/connachtrugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 44
@@ -4918,7 +4813,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/edinburghrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/EdinburghRugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 45
@@ -4939,7 +4833,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/glasgowwarriors&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/glasgowwarriors&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/75/Logo_Glasgow_Warriors_2019.svg/1200px-Logo_Glasgow_Warriors_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 46
@@ -4960,7 +4853,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/leinsterrugby/?hl=en&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/LeinsterrugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/2/2c/Logo_Leinster_Rugby.svg/1200px-Logo_Leinster_Rugby.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 47
@@ -4981,7 +4873,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://twitter.com/LionsRugbyCo&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCdddB27Aoxea_QS0EyPJoRQ&quot;,
                 &quot;logo&quot;: &quot;https://assets.stickpng.com/images/5ae2e50233b73fa43b1a8986.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 48
@@ -5002,7 +4893,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/scarlets_rugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCSpQ51CzUYp_ambKRD7fDCg&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/03/Logo_Scarlets_2008.svg/1200px-Logo_Scarlets_2008.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 49
@@ -5023,7 +4913,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://twitter.com/MunsterRugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/MunsterView&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/94/Munster_Rugby_%28logo%29.svg/1200px-Munster_Rugby_%28logo%29.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 50
@@ -5044,7 +4933,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://twitter.com/dragonsrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCdB_8F9Yqur14jXdSzxyQeA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/d/d1/Logo_Dragons_RFC_2022.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 51
@@ -5065,7 +4953,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/ospreys_official/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/OspreysHighlights&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7f/Logo_Ospreys.svg/1200px-Logo_Ospreys.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 52
@@ -5086,7 +4973,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/sharksrugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/TheSharksZA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7b/CellCSharksRugbylogo.svg/1200px-CellCSharksRugbylogo.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 53
@@ -5107,7 +4993,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/dhlstormers/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/StormersTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/18/Logo_Stormers_Rugby.svg/1200px-Logo_Stormers_Rugby.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 54
@@ -5128,7 +5013,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/benettonrugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/BenettonRugby&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a3/Logo_Benetton_Rugby.svg/1200px-Logo_Benetton_Rugby.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 55
@@ -5149,7 +5033,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/officialulsterrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/UlsterRugbyTV?sub_confirmation=1&quot;,
                 &quot;logo&quot;: &quot;https://i.bleacherreport.net/images/team_logos/328x328/ulster_rugby.png?canvas=492,328&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 56
@@ -5170,7 +5053,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.zebreparma.it/it-it/instagram.aspx&quot;,
                 &quot;youtube&quot;: &quot;https://www.zebreparma.it/it-it/youtube.aspx&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/b7/Logo_Zebre_Rugby_Club_2017.svg/1024px-Logo_Zebre_Rugby_Club_2017.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 4,
                     &quot;team_id&quot;: 57
@@ -5182,11 +5064,11 @@ access-control-allow-origin: *
         &quot;id&quot;: 5,
         &quot;name&quot;: &quot;Champion&#039;s Cup&quot;,
         &quot;creation&quot;: &quot;1995&quot;,
-        &quot;created_at&quot;: null,
         &quot;last_champion&quot;: 11,
-        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
         &quot;most_successfull&quot;: 12,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:47:23.000000Z&quot;,
+        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Logo_Champions_Cup_2018.png/180px-Logo_Champions_Cup_2018.png&quot;,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:47:23.000000Z&quot;,
         &quot;teams&quot;: [
             {
                 &quot;id&quot;: 2,
@@ -5203,7 +5085,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/ubbrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC0ofHgdtPGcNd21eVuBSWBQ&quot;,
                 &quot;logo&quot;: &quot;https://www.ubbrugby.com/application/uploads/files/logo_UBB%20transparent.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 2
@@ -5224,7 +5105,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/lourugby1896/?hl=fr&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCAwMdlmJy1PmeeXwdZuTjXw&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/2/25/Lyon_olympique_universitaire.svg/1200px-Lyon_olympique_universitaire.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 6
@@ -5245,7 +5125,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/staderochelais&quot;,
                 &quot;youtube&quot;: &quot;https://www.dailymotion.com/staderochelais&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/44/Logo_Stade_rochelais_2016.svg/1594px-Logo_Stade_rochelais_2016.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 11
@@ -5266,7 +5145,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;http://instagram.com/stadetoulousainrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/stadetoulousain&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/0/01/Logo_Stade_Toulousain_Rugby.svg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 12
@@ -5287,7 +5165,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/Racing92/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Racing_92_2015.svg/640px-Logo_Racing_92_2015.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 14
@@ -5308,7 +5185,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/officialexeterchiefs/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/officialexeterchiefs&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/e/e7/Logo_Exeter_Chiefs_2022.svg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 33
@@ -5329,7 +5205,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/officialGloucesterRugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/GloucesterRugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/72/Logo_Gloucester_Rugby_2018.svg/1200px-Logo_Gloucester_Rugby_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 34
@@ -5350,7 +5225,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/harlequins&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Logo_Harlequin_Football_Club_2011.svg/1200px-Logo_Harlequin_Football_Club_2011.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 35
@@ -5371,7 +5245,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/leicestertigers/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/LeicesterTigersLTTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Logo_Harlequin_Football_Club_2011.svg/1200px-Logo_Harlequin_Football_Club_2011.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 36
@@ -5392,7 +5265,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/londonirish1898/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCQYMvGMgRj8Yjbdv72hOgXA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/90/Logo_London_Irish_2019.svg/1200px-Logo_London_Irish_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 37
@@ -5413,7 +5285,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/northamptonsaints&quot;,
                 &quot;youtube&quot;: &quot;https://youtube.com/user/TheSaintsTV&quot;,
                 &quot;logo&quot;: &quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNmxktUnK8vEBaJUhNjtafLRLw7s7PqlxiDBWzkCo&amp;s&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 39
@@ -5434,7 +5305,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/salesharks/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC_k3xuhlC_jBgfpJdMqAKxw&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/34/Sale_Sharks_%28logo%29.svg/1200px-Sale_Sharks_%28logo%29.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 40
@@ -5455,7 +5325,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/saracensofficial&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCHZjhtppDSbFEXWA80d5WBw&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/Logo_Saracens_2021.svg/1200px-Logo_Saracens_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 41
@@ -5476,7 +5345,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/blue_bulls_official/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/VodacomBulls/feed&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/5/55/Bulls-logo.jpg&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 42
@@ -5497,7 +5365,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/edinburghrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/EdinburghRugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 45
@@ -5518,7 +5385,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/leinsterrugby/?hl=en&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/LeinsterrugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/2/2c/Logo_Leinster_Rugby.svg/1200px-Logo_Leinster_Rugby.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 47
@@ -5539,7 +5405,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/scarlets_rugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCSpQ51CzUYp_ambKRD7fDCg&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/03/Logo_Scarlets_2008.svg/1200px-Logo_Scarlets_2008.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 49
@@ -5560,7 +5425,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://twitter.com/MunsterRugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/MunsterView&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/94/Munster_Rugby_%28logo%29.svg/1200px-Munster_Rugby_%28logo%29.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 50
@@ -5581,7 +5445,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/ospreys_official/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/OspreysHighlights&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7f/Logo_Ospreys.svg/1200px-Logo_Ospreys.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 52
@@ -5602,7 +5465,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/sharksrugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/TheSharksZA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/7b/CellCSharksRugbylogo.svg/1200px-CellCSharksRugbylogo.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 53
@@ -5623,7 +5485,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/dhlstormers/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/StormersTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/18/Logo_Stormers_Rugby.svg/1200px-Logo_Stormers_Rugby.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 54
@@ -5644,7 +5505,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/officialulsterrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/UlsterRugbyTV?sub_confirmation=1&quot;,
                 &quot;logo&quot;: &quot;https://i.bleacherreport.net/images/team_logos/328x328/ulster_rugby.png?canvas=492,328&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 5,
                     &quot;team_id&quot;: 56
@@ -5656,11 +5516,11 @@ access-control-allow-origin: *
         &quot;id&quot;: 6,
         &quot;name&quot;: &quot;EPCR Challenge Cup&quot;,
         &quot;creation&quot;: &quot;1996&quot;,
-        &quot;created_at&quot;: null,
         &quot;last_champion&quot;: 9,
-        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
         &quot;most_successfull&quot;: 5,
-        &quot;updated_at&quot;: &quot;2023-07-20T12:48:06.000000Z&quot;,
+        &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_Challenge_Cup_2021.png/180px-Logo_Challenge_Cup_2021.png&quot;,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: &quot;2023-07-20T10:48:06.000000Z&quot;,
         &quot;teams&quot;: [
             {
                 &quot;id&quot;: 1,
@@ -5677,7 +5537,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/avironrugbypro/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/1b/Logo_Aviron_Bayonnais_Rugby_-_2022.svg/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 1
@@ -5698,7 +5557,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/castresrugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/94/Castres_Olympique.svg/999px-Castres_Olympique.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 4
@@ -5719,7 +5577,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a8/Logo_ASM_Clermont_Auvergne_2019.svg/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 5
@@ -5740,7 +5597,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/mhr_officiel&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/montpellierrugby?feature=results_main&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 7
@@ -5761,7 +5617,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;http://instagram.com/sectionpaloisebearnpyrenees&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/91/Section_Paloise_logo.svg/1200px-Section_Paloise_logo.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 8
@@ -5782,7 +5637,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/rctofficiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/c/RCTRugbyClubToulonnais&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/5a/Logo_Rugby_club_toulonnais.svg/1200px-Logo_Rugby_club_toulonnais.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 9
@@ -5803,7 +5657,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/stade_francais_paris/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC9HI0fd8SE_IfSaFkVKfPLA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/0f/Logo_Stade_fran%C3%A7ais_PR_2018.svg/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 10
@@ -5824,7 +5677,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/usapofficiel/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCUZuZFU1VeHD9ZJJ3t3wnsQ&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/77/Logo_USA_Perpignan_2017.svg/1200px-Logo_USA_Perpignan_2017.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 13
@@ -5845,7 +5697,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/oyonnaxrugby/?hl=fr&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCf7BLip3jg_Vod8RRJa7T6Q&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Logo_Oyonnax_rugby_2018.svg/1200px-Logo_Oyonnax_rugby_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 28
@@ -5866,7 +5717,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/bathrugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/BathRugbyTV&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c3/Logo_Bath_Rugby_2014.svg/1200px-Logo_Bath_Rugby_2014.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 31
@@ -5887,7 +5737,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://instagram.com/bristolbearsrfc/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/c/Bristolbearstv&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/5a/Logo_Bristol_Bears_2018.svg/1200px-Logo_Bristol_Bears_2018.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 32
@@ -5908,7 +5757,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/NewcastleFalcons1&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/d7/Logo_Newcastle_Falcons.svg/1200px-Logo_Newcastle_Falcons.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 38
@@ -5929,7 +5777,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/cardiff.rugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 43
@@ -5950,7 +5797,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/connachtrugby/&quot;,
                 &quot;youtube&quot;: &quot;&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/8/85/Logo_Cardiff_Rugby_2021.svg/1200px-Logo_Cardiff_Rugby_2021.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 44
@@ -5971,7 +5817,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/glasgowwarriors&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/glasgowwarriors&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/75/Logo_Glasgow_Warriors_2019.svg/1200px-Logo_Glasgow_Warriors_2019.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 46
@@ -5992,7 +5837,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://twitter.com/LionsRugbyCo&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCdddB27Aoxea_QS0EyPJoRQ&quot;,
                 &quot;logo&quot;: &quot;https://assets.stickpng.com/images/5ae2e50233b73fa43b1a8986.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 48
@@ -6013,7 +5857,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://twitter.com/dragonsrugby&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCdB_8F9Yqur14jXdSzxyQeA&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/d/d1/Logo_Dragons_RFC_2022.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 51
@@ -6034,7 +5877,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.instagram.com/benettonrugby/&quot;,
                 &quot;youtube&quot;: &quot;https://www.youtube.com/user/BenettonRugby&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a3/Logo_Benetton_Rugby.svg/1200px-Logo_Benetton_Rugby.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 55
@@ -6055,7 +5897,6 @@ access-control-allow-origin: *
                 &quot;instagram&quot;: &quot;https://www.zebreparma.it/it-it/instagram.aspx&quot;,
                 &quot;youtube&quot;: &quot;https://www.zebreparma.it/it-it/youtube.aspx&quot;,
                 &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/b/b7/Logo_Zebre_Rugby_Club_2017.svg/1024px-Logo_Zebre_Rugby_Club_2017.svg.png&quot;,
-                &quot;description&quot;: null,
                 &quot;pivot&quot;: {
                     &quot;league_id&quot;: 6,
                     &quot;team_id&quot;: 57
@@ -6156,11 +5997,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"irjyoaldbpqjtzcg\",
-    \"creation\": \"xp\",
-    \"last_champion\": 1,
-    \"most_successfull\": 20,
-    \"logo\": \"qui\"
+    \"name\": \"jzezkzigjbrdbnjsupsdfvgc\",
+    \"creation\": \"bgmq\",
+    \"last_champion\": 6,
+    \"most_successfull\": 12,
+    \"logo\": \"nesciunt\"
 }"
 </code></pre></div>
 
@@ -6177,11 +6018,11 @@ const headers = {
 };
 
 let body = {
-    "name": "irjyoaldbpqjtzcg",
-    "creation": "xp",
-    "last_champion": 1,
-    "most_successfull": 20,
-    "logo": "qui"
+    "name": "jzezkzigjbrdbnjsupsdfvgc",
+    "creation": "bgmq",
+    "last_champion": 6,
+    "most_successfull": 12,
+    "logo": "nesciunt"
 };
 
 fetch(url, {
@@ -6202,11 +6043,11 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'irjyoaldbpqjtzcg',
-            'creation' =&gt; 'xp',
-            'last_champion' =&gt; 1,
-            'most_successfull' =&gt; 20,
-            'logo' =&gt; 'qui',
+            'name' =&gt; 'jzezkzigjbrdbnjsupsdfvgc',
+            'creation' =&gt; 'bgmq',
+            'last_champion' =&gt; 6,
+            'most_successfull' =&gt; 12,
+            'logo' =&gt; 'nesciunt',
         ],
     ]
 );
@@ -6304,10 +6145,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-leagues"
-               value="irjyoaldbpqjtzcg"
+               value="jzezkzigjbrdbnjsupsdfvgc"
                data-component="body">
     <br>
-<p>Must not be greater than 75 characters. Example: <code>irjyoaldbpqjtzcg</code></p>
+<p>Must not be greater than 75 characters. Example: <code>jzezkzigjbrdbnjsupsdfvgc</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>creation</code></b>&nbsp;&nbsp;
@@ -6315,10 +6156,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="creation"                data-endpoint="POSTapi-leagues"
-               value="xp"
+               value="bgmq"
                data-component="body">
     <br>
-<p>Must not be greater than 4 characters. Example: <code>xp</code></p>
+<p>Must not be greater than 4 characters. Example: <code>bgmq</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_champion</code></b>&nbsp;&nbsp;
@@ -6326,10 +6167,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="last_champion"                data-endpoint="POSTapi-leagues"
-               value="1"
+               value="6"
                data-component="body">
     <br>
-<p>Example: <code>1</code></p>
+<p>Example: <code>6</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>most_successfull</code></b>&nbsp;&nbsp;
@@ -6337,10 +6178,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="most_successfull"                data-endpoint="POSTapi-leagues"
-               value="20"
+               value="12"
                data-component="body">
     <br>
-<p>Example: <code>20</code></p>
+<p>Example: <code>12</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>logo</code></b>&nbsp;&nbsp;
@@ -6348,10 +6189,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="logo"                data-endpoint="POSTapi-leagues"
-               value="qui"
+               value="nesciunt"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>nesciunt</code></p>
         </div>
         </form>
 
@@ -6416,7 +6257,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -6424,11 +6265,11 @@ access-control-allow-origin: *
     &quot;id&quot;: 1,
     &quot;name&quot;: &quot;Top 14&quot;,
     &quot;creation&quot;: &quot;1892&quot;,
-    &quot;created_at&quot;: null,
     &quot;last_champion&quot;: 12,
-    &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
     &quot;most_successfull&quot;: 12,
-    &quot;updated_at&quot;: &quot;2023-07-20T12:45:08.000000Z&quot;,
+    &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/3/3a/Top_14.svg/langfr-180px-Top_14.svg.png&quot;,
+    &quot;created_at&quot;: null,
+    &quot;updated_at&quot;: &quot;2023-07-20T10:45:08.000000Z&quot;,
     &quot;teams&quot;: [
         {
             &quot;id&quot;: 1,
@@ -6445,7 +6286,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/avironrugbypro/&quot;,
             &quot;youtube&quot;: &quot;&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/1/1b/Logo_Aviron_Bayonnais_Rugby_-_2022.svg/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 1
@@ -6466,7 +6306,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/ubbrugby&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC0ofHgdtPGcNd21eVuBSWBQ&quot;,
             &quot;logo&quot;: &quot;https://www.ubbrugby.com/application/uploads/files/logo_UBB%20transparent.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 2
@@ -6487,7 +6326,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/castresrugby/&quot;,
             &quot;youtube&quot;: &quot;&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/94/Castres_Olympique.svg/999px-Castres_Olympique.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 4
@@ -6508,7 +6346,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;&quot;,
             &quot;youtube&quot;: &quot;&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/a/a8/Logo_ASM_Clermont_Auvergne_2019.svg/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 5
@@ -6529,7 +6366,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/lourugby1896/?hl=fr&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCAwMdlmJy1PmeeXwdZuTjXw&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/2/25/Lyon_olympique_universitaire.svg/1200px-Lyon_olympique_universitaire.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 6
@@ -6550,7 +6386,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/mhr_officiel&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/user/montpellierrugby?feature=results_main&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 7
@@ -6571,7 +6406,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;http://instagram.com/sectionpaloisebearnpyrenees&quot;,
             &quot;youtube&quot;: &quot;&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/91/Section_Paloise_logo.svg/1200px-Section_Paloise_logo.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 8
@@ -6592,7 +6426,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://instagram.com/rctofficiel/&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/c/RCTRugbyClubToulonnais&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/5/5a/Logo_Rugby_club_toulonnais.svg/1200px-Logo_Rugby_club_toulonnais.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 9
@@ -6613,7 +6446,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/stade_francais_paris/&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC9HI0fd8SE_IfSaFkVKfPLA&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/0/0f/Logo_Stade_fran%C3%A7ais_PR_2018.svg/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 10
@@ -6634,7 +6466,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/staderochelais&quot;,
             &quot;youtube&quot;: &quot;https://www.dailymotion.com/staderochelais&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/4/44/Logo_Stade_rochelais_2016.svg/1594px-Logo_Stade_rochelais_2016.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 11
@@ -6655,7 +6486,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;http://instagram.com/stadetoulousainrugby&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/stadetoulousain&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/0/01/Logo_Stade_Toulousain_Rugby.svg&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 12
@@ -6676,7 +6506,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/usapofficiel/&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCUZuZFU1VeHD9ZJJ3t3wnsQ&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/7/77/Logo_USA_Perpignan_2017.svg/1200px-Logo_USA_Perpignan_2017.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 13
@@ -6697,7 +6526,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/Racing92/&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Racing_92_2015.svg/640px-Logo_Racing_92_2015.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 14
@@ -6718,7 +6546,6 @@ access-control-allow-origin: *
             &quot;instagram&quot;: &quot;https://www.instagram.com/oyonnaxrugby/?hl=fr&quot;,
             &quot;youtube&quot;: &quot;https://www.youtube.com/channel/UCf7BLip3jg_Vod8RRJa7T6Q&quot;,
             &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Logo_Oyonnax_rugby_2018.svg/1200px-Logo_Oyonnax_rugby_2018.svg.png&quot;,
-            &quot;description&quot;: null,
             &quot;pivot&quot;: {
                 &quot;league_id&quot;: 1,
                 &quot;team_id&quot;: 28
@@ -6831,11 +6658,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"gqeipovlrzyodq\",
-    \"creation\": \"z\",
-    \"last_champion\": 12,
-    \"most_successfull\": 2,
-    \"logo\": \"fugiat\"
+    \"name\": \"vdqfdup\",
+    \"creation\": \"a\",
+    \"last_champion\": 19,
+    \"most_successfull\": 4,
+    \"logo\": \"explicabo\"
 }"
 </code></pre></div>
 
@@ -6852,11 +6679,11 @@ const headers = {
 };
 
 let body = {
-    "name": "gqeipovlrzyodq",
-    "creation": "z",
-    "last_champion": 12,
-    "most_successfull": 2,
-    "logo": "fugiat"
+    "name": "vdqfdup",
+    "creation": "a",
+    "last_champion": 19,
+    "most_successfull": 4,
+    "logo": "explicabo"
 };
 
 fetch(url, {
@@ -6877,11 +6704,11 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'gqeipovlrzyodq',
-            'creation' =&gt; 'z',
-            'last_champion' =&gt; 12,
-            'most_successfull' =&gt; 2,
-            'logo' =&gt; 'fugiat',
+            'name' =&gt; 'vdqfdup',
+            'creation' =&gt; 'a',
+            'last_champion' =&gt; 19,
+            'most_successfull' =&gt; 4,
+            'logo' =&gt; 'explicabo',
         ],
     ]
 );
@@ -6995,10 +6822,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-leagues--id-"
-               value="gqeipovlrzyodq"
+               value="vdqfdup"
                data-component="body">
     <br>
-<p>Must not be greater than 75 characters. Example: <code>gqeipovlrzyodq</code></p>
+<p>Must not be greater than 75 characters. Example: <code>vdqfdup</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>creation</code></b>&nbsp;&nbsp;
@@ -7006,10 +6833,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="creation"                data-endpoint="PUTapi-leagues--id-"
-               value="z"
+               value="a"
                data-component="body">
     <br>
-<p>Must not be greater than 4 characters. Example: <code>z</code></p>
+<p>Must not be greater than 4 characters. Example: <code>a</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_champion</code></b>&nbsp;&nbsp;
@@ -7017,10 +6844,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="last_champion"                data-endpoint="PUTapi-leagues--id-"
-               value="12"
+               value="19"
                data-component="body">
     <br>
-<p>Example: <code>12</code></p>
+<p>Example: <code>19</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>most_successfull</code></b>&nbsp;&nbsp;
@@ -7028,10 +6855,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="most_successfull"                data-endpoint="PUTapi-leagues--id-"
-               value="2"
+               value="4"
                data-component="body">
     <br>
-<p>Example: <code>2</code></p>
+<p>Example: <code>4</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>logo</code></b>&nbsp;&nbsp;
@@ -7039,10 +6866,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="logo"                data-endpoint="PUTapi-leagues--id-"
-               value="fugiat"
+               value="explicabo"
                data-component="body">
     <br>
-<p>Example: <code>fugiat</code></p>
+<p>Example: <code>explicabo</code></p>
         </div>
         </form>
 
@@ -7257,7 +7084,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -7354,9 +7181,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"location\": \"iugyxnkpt\",
-    \"team_id\": 19,
-    \"league_id\": 15
+    \"location\": \"zldsbberahvrsqmolfbl\",
+    \"team_id\": 9,
+    \"league_id\": 5
 }"
 </code></pre></div>
 
@@ -7373,9 +7200,9 @@ const headers = {
 };
 
 let body = {
-    "location": "iugyxnkpt",
-    "team_id": 19,
-    "league_id": 15
+    "location": "zldsbberahvrsqmolfbl",
+    "team_id": 9,
+    "league_id": 5
 };
 
 fetch(url, {
@@ -7396,9 +7223,9 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'location' =&gt; 'iugyxnkpt',
-            'team_id' =&gt; 19,
-            'league_id' =&gt; 15,
+            'location' =&gt; 'zldsbberahvrsqmolfbl',
+            'team_id' =&gt; 9,
+            'league_id' =&gt; 5,
         ],
     ]
 );
@@ -7496,10 +7323,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="location"                data-endpoint="POSTapi-pictures"
-               value="iugyxnkpt"
+               value="zldsbberahvrsqmolfbl"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>iugyxnkpt</code></p>
+<p>Must not be greater than 255 characters. Example: <code>zldsbberahvrsqmolfbl</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
@@ -7507,10 +7334,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="team_id"                data-endpoint="POSTapi-pictures"
-               value="19"
+               value="9"
                data-component="body">
     <br>
-<p>Example: <code>19</code></p>
+<p>Example: <code>9</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>league_id</code></b>&nbsp;&nbsp;
@@ -7518,10 +7345,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="league_id"                data-endpoint="POSTapi-pictures"
-               value="15"
+               value="5"
                data-component="body">
     <br>
-<p>Example: <code>15</code></p>
+<p>Example: <code>5</code></p>
         </div>
         </form>
 
@@ -7538,14 +7365,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "/api/pictures/dolor" \
+    --get "/api/pictures/ut" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "/api/pictures/dolor"
+    "/api/pictures/ut"
 );
 
 const headers = {
@@ -7562,7 +7389,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    '/api/pictures/dolor',
+    '/api/pictures/ut',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7586,7 +7413,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 53
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -7669,10 +7496,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="picture"                data-endpoint="GETapi-pictures--picture-"
-               value="dolor"
+               value="ut"
                data-component="url">
     <br>
-<p>The picture. Example: <code>dolor</code></p>
+<p>The picture. Example: <code>ut</code></p>
             </div>
                     </form>
 
@@ -7690,13 +7517,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "/api/pictures/4" \
+    "/api/pictures/19" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"location\": \"gwhdkwhszqcovqyhni\",
-    \"team_id\": 17,
+    \"location\": \"jzzsn\",
+    \"team_id\": 2,
     \"league_id\": 19
 }"
 </code></pre></div>
@@ -7704,7 +7531,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "/api/pictures/4"
+    "/api/pictures/19"
 );
 
 const headers = {
@@ -7714,8 +7541,8 @@ const headers = {
 };
 
 let body = {
-    "location": "gwhdkwhszqcovqyhni",
-    "team_id": 17,
+    "location": "jzzsn",
+    "team_id": 2,
     "league_id": 19
 };
 
@@ -7729,7 +7556,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    '/api/pictures/4',
+    '/api/pictures/19',
     [
         'headers' =&gt; [
             'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
@@ -7737,8 +7564,8 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'location' =&gt; 'gwhdkwhszqcovqyhni',
-            'team_id' =&gt; 17,
+            'location' =&gt; 'jzzsn',
+            'team_id' =&gt; 2,
             'league_id' =&gt; 19,
         ],
     ]
@@ -7841,10 +7668,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-pictures--id-"
-               value="4"
+               value="19"
                data-component="url">
     <br>
-<p>The ID of the picture. Example: <code>4</code></p>
+<p>The ID of the picture. Example: <code>19</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -7853,10 +7680,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="location"                data-endpoint="PUTapi-pictures--id-"
-               value="gwhdkwhszqcovqyhni"
+               value="jzzsn"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>gwhdkwhszqcovqyhni</code></p>
+<p>Must not be greater than 255 characters. Example: <code>jzzsn</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
@@ -7864,10 +7691,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="team_id"                data-endpoint="PUTapi-pictures--id-"
-               value="17"
+               value="2"
                data-component="body">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>2</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>league_id</code></b>&nbsp;&nbsp;
@@ -7896,7 +7723,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "/api/pictures/11" \
+    "/api/pictures/8" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -7904,7 +7731,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "/api/pictures/11"
+    "/api/pictures/8"
 );
 
 const headers = {
@@ -7922,7 +7749,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    '/api/pictures/11',
+    '/api/pictures/8',
     [
         'headers' =&gt; [
             'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
@@ -8025,10 +7852,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-pictures--id-"
-               value="11"
+               value="8"
                data-component="url">
     <br>
-<p>The ID of the picture. Example: <code>11</code></p>
+<p>The ID of the picture. Example: <code>8</code></p>
             </div>
                     </form>
 
@@ -8051,9 +7878,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"qui\",
-    \"email\": \"madilyn77@example.com\",
-    \"password\": \"quisquam\"
+    \"name\": \"molestiae\",
+    \"email\": \"richmond16@example.org\",
+    \"password\": \"sit\"
 }"
 </code></pre></div>
 
@@ -8070,9 +7897,9 @@ const headers = {
 };
 
 let body = {
-    "name": "qui",
-    "email": "madilyn77@example.com",
-    "password": "quisquam"
+    "name": "molestiae",
+    "email": "richmond16@example.org",
+    "password": "sit"
 };
 
 fetch(url, {
@@ -8093,9 +7920,9 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'qui',
-            'email' =&gt; 'madilyn77@example.com',
-            'password' =&gt; 'quisquam',
+            'name' =&gt; 'molestiae',
+            'email' =&gt; 'richmond16@example.org',
+            'password' =&gt; 'sit',
         ],
     ]
 );
@@ -8193,10 +8020,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="qui"
+               value="molestiae"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>molestiae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -8204,10 +8031,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="madilyn77@example.com"
+               value="richmond16@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>madilyn77@example.com</code></p>
+<p>Must be a valid email address. Example: <code>richmond16@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -8215,10 +8042,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-register"
-               value="quisquam"
+               value="sit"
                data-component="body">
     <br>
-<p>Example: <code>quisquam</code></p>
+<p>Example: <code>sit</code></p>
         </div>
         </form>
 
