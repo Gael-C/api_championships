@@ -16,7 +16,7 @@ class CreateLeaguesTables extends Migration
         Schema::create('leagues', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->date('creation');
+            $table->char('creation', 4);
             $table->foreignId('last_champion')->references('id')->on('teams')->nullable();
             $table->foreignId('most_successfull')->references('id')->on('teams')->nullable();
             $table->text('description')->nullable();
