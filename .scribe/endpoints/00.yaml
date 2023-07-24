@@ -1,0 +1,1030 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/teams
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":1,"created_at":null,"updated_at":null,"name":"Avirons Bayonnais","nickname":"AB","foundation":"1906","stade":"Jean Dauger","capacity":"18069","website":"www.abrugby.fr","facebook":"https:\/\/www.facebook.com\/avironbayonnaisrugbypro","twitter":"https:\/\/twitter.com\/avironrugbypro","instagram":"https:\/\/www.instagram.com\/avironrugbypro\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/1b\/Logo_Aviron_Bayonnais_Rugby_-_2022.svg\/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":1,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":1,"league_id":6}}],"pictures":[]},{"id":2,"created_at":null,"updated_at":null,"name":"Union Bordaux B\u00e8gles","nickname":"UBB","foundation":"2006","stade":"Chaban-Delmas","capacity":"34462","website":"http:\/\/www.ubbrugby.com\/","facebook":"https:\/\/www.facebook.com\/ubbrugby","twitter":"https:\/\/twitter.com\/ubbrugby","instagram":"https:\/\/www.instagram.com\/ubbrugby","youtube":"https:\/\/www.youtube.com\/channel\/UC0ofHgdtPGcNd21eVuBSWBQ","logo":"https:\/\/www.ubbrugby.com\/application\/uploads\/files\/logo_UBB%20transparent.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":2,"league_id":1}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":2,"league_id":5}}],"pictures":[]},{"id":3,"created_at":null,"updated_at":null,"name":"Club Athl\u00e9tique Brive Corr\u00e8ze Limousin","nickname":"CAB","foundation":"1910","stade":"Am\u00e9d\u00e9e- Domenech","capacity":"13379","website":"www.cabrive-rugby.com","facebook":"https:\/\/www.facebook.com\/CA-Brive-Rugby-Officiel-136407633069304\/","twitter":"https:\/\/twitter.com\/CABCLRUGBY","instagram":"https:\/\/www.instagram.com\/cabriverugbyofficiel\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/56\/Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg\/800px-Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":3,"league_id":2}}],"pictures":[]},{"id":4,"created_at":null,"updated_at":null,"name":"Castres Olympique","nickname":"CO","foundation":"1906","stade":"Pierre-Fabre","capacity":"12500","website":"www.castres-olympique.com","facebook":"https:\/\/www.facebook.com\/CastresOlympiqueOfficiel","twitter":"https:\/\/twitter.com\/CastresRugby","instagram":"https:\/\/www.instagram.com\/castresrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/94\/Castres_Olympique.svg\/999px-Castres_Olympique.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":4,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":4,"league_id":6}}],"pictures":[]},{"id":5,"created_at":null,"updated_at":null,"name":"Association Sportive Montferrandaise Clermont Auvergne","nickname":"ASM","foundation":"1911","stade":"Marcel Michelin","capacity":"19372","website":"www.asm-rugby.com","facebook":"https:\/\/fr-fr.facebook.com\/asm.clermont.auvergne\/","twitter":"https:\/\/twitter.com\/ASMOfficiel","instagram":"","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a8\/Logo_ASM_Clermont_Auvergne_2019.svg\/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":5,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":5,"league_id":6}}],"pictures":[]},{"id":6,"created_at":null,"updated_at":null,"name":"Lyon Olympique Universitaire","nickname":"LOU","foundation":"1896","stade":"Matmut Stadium Gerland","capacity":"35029","website":"www.lourugby.fr","facebook":"https:\/\/www.facebook.com\/LOU.Rugby\/","twitter":"https:\/\/twitter.com\/lelourugby?lang=fr","instagram":"https:\/\/www.instagram.com\/lourugby1896\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCAwMdlmJy1PmeeXwdZuTjXw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/2\/25\/Lyon_olympique_universitaire.svg\/1200px-Lyon_olympique_universitaire.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":6,"league_id":1}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":6,"league_id":5}}],"pictures":[]},{"id":7,"created_at":null,"updated_at":null,"name":"Montpellier H\u00e9rault Rugby","nickname":"MHR","foundation":"1986","stade":"GGL Stadium","capacity":"15697","website":"www.montpellier-rugby.com","facebook":"https:\/\/www.facebook.com\/Montpellier.Rugby","twitter":"https:\/\/twitter.com\/MHR_officiel","instagram":"https:\/\/www.instagram.com\/mhr_officiel","youtube":"https:\/\/www.youtube.com\/user\/montpellierrugby?feature=results_main","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d9\/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg\/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":7,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":7,"league_id":6}}],"pictures":[]},{"id":8,"created_at":null,"updated_at":null,"name":"Section Paloise","nickname":"SP","foundation":"1902","stade":"Stade du Hameau","capacity":"14588","website":"http:\/\/www.section-paloise.com\/","facebook":"https:\/\/www.facebook.com\/SectionPaloiseBearnPyrenees","twitter":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","instagram":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/91\/Section_Paloise_logo.svg\/1200px-Section_Paloise_logo.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":8,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":8,"league_id":6}}],"pictures":[]},{"id":9,"created_at":null,"updated_at":null,"name":"Rugby Club Toulonnais","nickname":"RCT","foundation":"1908","stade":"Stade Mayol","capacity":"17500","website":"http:\/\/www.rctoulon.com\/","facebook":"https:\/\/www.facebook.com\/RCTofficiel","twitter":"https:\/\/twitter.com\/rctofficiel","instagram":"https:\/\/instagram.com\/rctofficiel\/","youtube":"https:\/\/www.youtube.com\/c\/RCTRugbyClubToulonnais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/5a\/Logo_Rugby_club_toulonnais.svg\/1200px-Logo_Rugby_club_toulonnais.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":9,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":9,"league_id":6}}],"pictures":[]},{"id":10,"created_at":null,"updated_at":null,"name":"Stade Fran\u00e7ais Paris","nickname":"SFP","foundation":"1883","stade":"Jean-Bouin","capacity":"25000","website":"www.stade.fr","facebook":"https:\/\/www.facebook.com\/SFPARIS","twitter":"https:\/\/twitter.com\/SFParisRugby","instagram":"https:\/\/www.instagram.com\/stade_francais_paris\/","youtube":"https:\/\/www.youtube.com\/channel\/UC9HI0fd8SE_IfSaFkVKfPLA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/0f\/Logo_Stade_fran%C3%A7ais_PR_2018.svg\/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":10,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":10,"league_id":6}}],"pictures":[]},{"id":11,"created_at":null,"updated_at":null,"name":"Stade Rochelais","nickname":"SR","foundation":"1898","stade":"Marcel Deflandre","capacity":"16000","website":"http:\/\/www.staderochelais.com\/","facebook":"https:\/\/www.facebook.com\/staderochelais","twitter":"https:\/\/twitter.com\/staderochelais","instagram":"https:\/\/www.instagram.com\/staderochelais","youtube":"https:\/\/www.dailymotion.com\/staderochelais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/44\/Logo_Stade_rochelais_2016.svg\/1594px-Logo_Stade_rochelais_2016.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":11,"league_id":1}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":11,"league_id":5}}],"pictures":[]},{"id":12,"created_at":null,"updated_at":null,"name":"Stade Toulousain","nickname":"ST","foundation":"1907","stade":"Ernest Wallon","capacity":"19000","website":"www.stadetoulousain.fr","facebook":"https:\/\/fr-fr.facebook.com\/StadeToulousainOfficiel","twitter":"https:\/\/twitter.com\/StadeToulousain","instagram":"http:\/\/instagram.com\/stadetoulousainrugby","youtube":"https:\/\/www.youtube.com\/stadetoulousain","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/0\/01\/Logo_Stade_Toulousain_Rugby.svg","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":12,"league_id":1}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":12,"league_id":5}}],"pictures":[]},{"id":13,"created_at":null,"updated_at":null,"name":"Union Sportive Arlequins Perpignanais","nickname":"USAP","foundation":"1902","stade":"Aim\u00e9-Giral","capacity":"14593","website":"www.usap.fr","facebook":"https:\/\/www.facebook.com\/USAPOfficiel","twitter":"https:\/\/twitter.com\/usap_officiel","instagram":"https:\/\/www.instagram.com\/usapofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCUZuZFU1VeHD9ZJJ3t3wnsQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/77\/Logo_USA_Perpignan_2017.svg\/1200px-Logo_USA_Perpignan_2017.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":13,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":13,"league_id":6}}],"pictures":[]},{"id":14,"created_at":null,"updated_at":null,"name":"Racing 92","nickname":"R92","foundation":"1890","stade":"Paris La D\u00e9fense Ar\u00e9na","capacity":"32000","website":"www.racing92.fr","facebook":"https:\/\/www.facebook.com\/Racing92Officiel\/","twitter":"https:\/\/twitter.com\/Racing92","instagram":"https:\/\/www.instagram.com\/Racing92\/","youtube":"https:\/\/www.youtube.com\/channel\/UC4MQWtqrcD567vQIKyBJcsQ\/","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c7\/Logo_Racing_92_2015.svg\/640px-Logo_Racing_92_2015.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":14,"league_id":1}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":14,"league_id":5}}],"pictures":[]},{"id":15,"created_at":null,"updated_at":null,"name":"Provence Rugby Aix-Marseille","nickname":"PR","foundation":"1970","stade":"Maurice-David","capacity":"6425","website":"https:\/\/www.provencerugby.com\/","facebook":"https:\/\/www.facebook.com\/ProvenceRugby","twitter":"https:\/\/twitter.com\/ProvenceRugby","instagram":"https:\/\/instagram.com\/provencerugbyofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UC6j-ShG-12kluScwHKoEhew","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/48\/Logo_Provence_Rugby_-_2021.svg\/1200px-Logo_Provence_Rugby_-_2021.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":15,"league_id":2}}],"pictures":[]},{"id":16,"created_at":null,"updated_at":null,"name":"Stade Aurillacois Cantal Auvergne","nickname":"SACA","foundation":"1904","stade":"Jean-Alrice","capacity":"7800","website":"www.stade-aurillacois.fr","facebook":"https:\/\/www.facebook.com\/SArugbyofficiel\/","twitter":"https:\/\/twitter.com\/SArugbyofficiel","instagram":"https:\/\/www.instagram.com\/sarugbyofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCouXlRCs_l6lnTG1pTSQKaQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c2\/Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg\/800px-Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":16,"league_id":2}}],"pictures":[]},{"id":17,"created_at":null,"updated_at":null,"name":"Sportive Union Agen Lot-et-Garonne","nickname":"SUA","foundation":"1905","stade":"Armandie","capacity":"14400","website":"http:\/\/www.agen-rugby.com\/","facebook":"https:\/\/www.facebook.com\/agenrugby\/","twitter":"https:\/\/twitter.com\/agen_rugby","instagram":"https:\/\/www.instagram.com\/agen_rugby\/","youtube":"http:\/\/www.dailymotion.com\/agenrugby","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/51\/Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg\/674px-Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":17,"league_id":2}}],"pictures":[]},{"id":18,"created_at":null,"updated_at":null,"name":"Soyaux Angoul\u00eame XV Charente","nickname":"SA XV","foundation":"2010","stade":"Chanzy","capacity":"8000","website":"http:\/\/www.saxvcharente.fr\/","facebook":"https:\/\/www.facebook.com\/saxvcharente.fr","twitter":"https:\/\/twitter.com\/saxv_charente","instagram":"https:\/\/www.instagram.com\/saxv_charente_rugby","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a5\/Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg\/1200px-Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":18,"league_id":2}}],"pictures":[]},{"id":19,"created_at":null,"updated_at":null,"name":"Association Sportive B\u00e9ziers H\u00e9rault","nickname":"ASBH","foundation":"1911","stade":"Raoul-Barri\u00e8re","capacity":"18255","website":"https:\/\/www.asbh.net\/","facebook":"https:\/\/www.facebook.com\/pages\/ASBH-Officiel","twitter":"https:\/\/twitter.com\/ASBHOfficiel","instagram":"https:\/\/www.instagram.com\/asbhofficiel\/","youtube":"https:\/\/www.youtube.com\/c\/ASB%C3%A9ziersH%C3%A9raultRugby","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/14\/Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg\/1200px-Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":19,"league_id":2}}],"pictures":[]},{"id":20,"created_at":null,"updated_at":null,"name":"Biarritz Olympique","nickname":"BO","foundation":"1913","stade":"Parc des sports Aguil\u00e9ra","capacity":"13400","website":"bo-pb.com","facebook":"https:\/\/www.facebook.com\/BOPB-page-officielle-208217155896387\/","twitter":"https:\/\/twitter.com\/BOPBweb","instagram":"https:\/\/www.instagram.com\/bopb_officiel\/?hl=fr","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/05\/Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg\/1200px-Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":20,"league_id":2}}],"pictures":[]},{"id":21,"created_at":null,"updated_at":null,"name":"Union Sportive Carcasonnaise XV","nickname":"USC XV","foundation":"1899","stade":"Albert-Domec","capacity":"6500","website":"http:\/\/www.uscarcassonne.com\/","facebook":"https:\/\/www.facebook.com\/USCXV","twitter":"https:\/\/twitter.com\/USCXV","instagram":"https:\/\/www.instagram.com\/uscarcassonnexv","youtube":"https:\/\/www.youtube.com\/user\/UsCarcassonne1","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/ca\/Logo_Union_sportive_carcassonnaise_XV_2010.svg\/1200px-Logo_Union_sportive_carcassonnaise_XV_2010.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":21,"league_id":2}}],"pictures":[]},{"id":22,"created_at":null,"updated_at":null,"name":"Colomiers Rugby","nickname":"COL","foundation":"1915","stade":"Michel Bendichou","capacity":"11000","website":"http:\/\/www.colomiers-rugby.com\/","facebook":"https:\/\/www.facebook.com\/ColomiersRugbyOfficiel\/","twitter":"https:\/\/twitter.com\/ColomiersRugby","instagram":"https:\/\/instagram.com\/colomiersrugby","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/e\/e9\/Logo_Colomiers_Rugby_2008.svg","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":22,"league_id":2}}],"pictures":[]},{"id":23,"created_at":null,"updated_at":null,"name":"Football Club de Grenoble Rugby","nickname":"FCGB","foundation":"1892","stade":"Stade des Alpes","capacity":"20068","website":"http:\/\/www.fcgrugby.com\/","facebook":"https:\/\/www.facebook.com\/FCGrugby","twitter":"https:\/\/twitter.com\/fcgrugby?lang=fr","instagram":"https:\/\/www.instagram.com\/fcgrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/4\/46\/Logo_FC_Grenoble_Rugby.svg","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":23,"league_id":2}}],"pictures":[]},{"id":24,"created_at":null,"updated_at":null,"name":"Union Sportive Montabanaise XV","nickname":"USM XV","foundation":"1903","stade":"Sapiac","capacity":"1937","website":"www.usmsapiac.fr","facebook":"https:\/\/www.facebook.com\/USMsapiac","twitter":"https:\/\/twitter.com\/UsmSapiacRugby","instagram":"https:\/\/www.instagram.com\/usm_sapiac\/","youtube":"https:\/\/www.youtube.com\/channel\/UCBOhWG8te6jvgqnx-2JPwWA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/92\/Logo_US_Montalbanaise_-_2017.svg\/1200px-Logo_US_Montalbanaise_-_2017.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":24,"league_id":2}}],"pictures":[]},{"id":25,"created_at":null,"updated_at":null,"name":"Stade Montois Rugby","nickname":"SMR","foundation":"1908","stade":"Andr\u00e9 et Guy Boniface","capacity":"8250","website":"http:\/\/www.stademontoisrugby.fr\/","facebook":"https:\/\/www.facebook.com\/SM.Rugby.Pro\/","twitter":"https:\/\/twitter.com\/SMR_Rugby","instagram":"https:\/\/www.instagram.com\/stademontoisrugby\/?hl=fr","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a0\/Stade_Montois_Rugby_Pro.svg\/1200px-Stade_Montois_Rugby_Pro.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":25,"league_id":2}}],"pictures":[]},{"id":26,"created_at":null,"updated_at":null,"name":"Rugby Massy Club Essonne","nickname":"RCME","foundation":"1971","stade":"Jules Ladoum\u00e8gue","capacity":"3000","website":"rcmessonne.com","facebook":"https:\/\/www.facebook.com\/pages\/Rugby-Club-Massy-Essonne","twitter":"https:\/\/twitter.com\/RCME91","instagram":"https:\/\/www.instagram.com\/rcme_officiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCTYBfKIfruJbj8QRfL0PZ1w","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/0a\/Logo_Rugby_Club_Massy_Essonne_-_2020.svg\/800px-Logo_Rugby_Club_Massy_Essonne_-_2020.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":26,"league_id":2}}],"pictures":[]},{"id":27,"created_at":null,"updated_at":null,"name":"USON Nevers Rugby","nickname":"USON","foundation":"1903","stade":"Stade du Pr\u00e9 Fleuri ","capacity":"7500","website":"http:\/\/www.usonneversrugby.com\/","facebook":"https:\/\/www.facebook.com\/UsonNeversRugby","twitter":"https:\/\/twitter.com\/usonneversrugby","instagram":"https:\/\/www.instagram.com\/usonneversrugby","youtube":"https:\/\/www.youtube.com\/user\/UsonRugbyPlus","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/4a\/Logo_USON_Nevers_2016.svg\/782px-Logo_USON_Nevers_2016.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":27,"league_id":2}}],"pictures":[]},{"id":28,"created_at":null,"updated_at":null,"name":"Oyonnax Rugby","nickname":"OYO","foundation":"1909","stade":"Charles Mathon","capacity":"11400","website":"http:\/\/www.oyonnaxrugby.com\/","facebook":"https:\/\/www.facebook.com\/OyonnaxRugbyOfficiel","twitter":"https:\/\/twitter.com\/OyonnaxRugby","instagram":"https:\/\/www.instagram.com\/oyonnaxrugby\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCf7BLip3jg_Vod8RRJa7T6Q","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9d\/Logo_Oyonnax_rugby_2018.svg\/1200px-Logo_Oyonnax_rugby_2018.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":28,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":28,"league_id":6}}],"pictures":[]},{"id":29,"created_at":null,"updated_at":null,"name":"Rouen Normandie Rugby","nickname":"RNR","foundation":"2009","stade":"Robert Diochon","capacity":"12018","website":"https:\/\/rouennormandierugby.fr\/","facebook":"https:\/\/www.facebook.com\/RouenNormandieRugby\/","twitter":"https:\/\/twitter.com\/rouenndierugby?lang=fr","instagram":"https:\/\/www.instagram.com\/rouen_normandie_rugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/8e\/Logo_Rouen_Normandie_Rugby_-_2019.svg\/1200px-Logo_Rouen_Normandie_Rugby_-_2019.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":29,"league_id":2}}],"pictures":[]},{"id":30,"created_at":null,"updated_at":null,"name":"Rugby Club Vannetais","nickname":"RCV","foundation":"1950","stade":"La Rabine","capacity":"11415","website":"http:\/\/www.rugbyclubvannes.bzh\/","facebook":"https:\/\/www.facebook.com\/RugbyClubVannes","twitter":"https:\/\/twitter.com\/RugbyClubVannes","instagram":"https:\/\/www.instagram.com\/rugbyclubvannes\/","youtube":"https:\/\/www.youtube.com\/channel\/UCcmJvevXM_U1OWchJwOJxbQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/74\/Logo_RC_Vannes_-_2022.svg\/1200px-Logo_RC_Vannes_-_2022.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":30,"league_id":2}}],"pictures":[]},{"id":31,"created_at":null,"updated_at":null,"name":"Bath Rugby","nickname":"BR","foundation":"1865","stade":"Recreation Ground","capacity":"14000","website":"https:\/\/www.bathrugby.com\/","facebook":"http:\/\/www.facebook.com\/bathrugby","twitter":"http:\/\/twitter.com\/bathrugby","instagram":"https:\/\/instagram.com\/bathrugby\/","youtube":"https:\/\/www.youtube.com\/user\/BathRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c3\/Logo_Bath_Rugby_2014.svg\/1200px-Logo_Bath_Rugby_2014.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":31,"league_id":3}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":31,"league_id":6}}],"pictures":[]},{"id":32,"created_at":null,"updated_at":null,"name":"Bristol Bears","nickname":"Bears","foundation":"1888","stade":"Ashton Gate Stadium","capacity":"27000","website":"https:\/\/www.bristolbearsrugby.com\/","facebook":"https:\/\/www.facebook.com\/bristolbears","twitter":"https:\/\/twitter.com\/BristolBears","instagram":"https:\/\/instagram.com\/bristolbearsrfc\/","youtube":"https:\/\/www.youtube.com\/c\/Bristolbearstv","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/5a\/Logo_Bristol_Bears_2018.svg\/1200px-Logo_Bristol_Bears_2018.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":32,"league_id":3}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":32,"league_id":6}}],"pictures":[]},{"id":33,"created_at":null,"updated_at":null,"name":"Exeter Rugby Club","nickname":"Chiefs","foundation":"1871","stade":"Sandy Park ","capacity":"12500","website":"http:\/\/www.exeterchiefs.co.uk\/","facebook":"https:\/\/facebook.com\/ExeterChiefs","twitter":"https:\/\/twitter.com\/ExeterChiefs","instagram":"https:\/\/instagram.com\/officialexeterchiefs\/","youtube":"https:\/\/www.youtube.com\/user\/officialexeterchiefs","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/e\/e7\/Logo_Exeter_Chiefs_2022.svg","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":33,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":33,"league_id":5}}],"pictures":[]},{"id":34,"created_at":null,"updated_at":null,"name":"Gloucester Rugby","nickname":"Cherry and Whites","foundation":"1873","stade":"Kingsholm Stadium","capacity":"16500","website":"https:\/\/www.gloucesterrugby.co.uk\/","facebook":"https:\/\/facebook.com\/GloucesterRugby","twitter":"https:\/\/twitter.com\/GloucesterRugby","instagram":"https:\/\/instagram.com\/officialGloucesterRugby","youtube":"https:\/\/www.youtube.com\/user\/GloucesterRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/72\/Logo_Gloucester_Rugby_2018.svg\/1200px-Logo_Gloucester_Rugby_2018.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":34,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":34,"league_id":5}}],"pictures":[]},{"id":35,"created_at":null,"updated_at":null,"name":"Harlequins Football Club","nickname":"Quins","foundation":"1866","stade":"The Stoop","capacity":"14800","website":"https:\/\/www.quins.co.uk\/","facebook":"https:\/\/en-gb.facebook.com\/harlequins\/","twitter":"https:\/\/twitter.com\/Harlequins","instagram":"https:\/\/www.instagram.com\/harlequins","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Logo_Harlequin_Football_Club_2011.svg\/1200px-Logo_Harlequin_Football_Club_2011.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":35,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":35,"league_id":5}}],"pictures":[]},{"id":36,"created_at":null,"updated_at":null,"name":"Leicester Football Club","nickname":"Tigers","foundation":"1880","stade":"Welford Road Staidum","capacity":"24000","website":"http:\/\/www.tigers.co.uk\/home.php","facebook":"https:\/\/www.facebook.com\/leicestertigers","twitter":"https:\/\/twitter.com\/leicestertigers","instagram":"https:\/\/www.instagram.com\/leicestertigers\/","youtube":"https:\/\/www.youtube.com\/user\/LeicesterTigersLTTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Logo_Harlequin_Football_Club_2011.svg\/1200px-Logo_Harlequin_Football_Club_2011.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":36,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":36,"league_id":5}}],"pictures":[]},{"id":37,"created_at":null,"updated_at":null,"name":"London Irish Football Club","nickname":"The Exiles","foundation":"1898","stade":"Gtech Community Stadium","capacity":"17250","website":"www.london-irish.com","facebook":"https:\/\/www.facebook.com\/LIRFC","twitter":"https:\/\/twitter.com\/londonirish","instagram":"https:\/\/www.instagram.com\/londonirish1898\/","youtube":"https:\/\/www.youtube.com\/channel\/UCQYMvGMgRj8Yjbdv72hOgXA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/90\/Logo_London_Irish_2019.svg\/1200px-Logo_London_Irish_2019.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":37,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":37,"league_id":5}}],"pictures":[]},{"id":38,"created_at":null,"updated_at":null,"name":"Newcastle Falcons","nickname":"Falcons","foundation":"1877","stade":"Kingston Park","capacity":"10200","website":"http:\/\/www.newcastlefalcons.co.uk","facebook":"https:\/\/www.facebook.com\/newcastle.falcons","twitter":"https:\/\/twitter.com\/FalconsRugby","instagram":"","youtube":"https:\/\/www.youtube.com\/user\/NewcastleFalcons1","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d7\/Logo_Newcastle_Falcons.svg\/1200px-Logo_Newcastle_Falcons.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":38,"league_id":3}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":38,"league_id":6}}],"pictures":[]},{"id":39,"created_at":null,"updated_at":null,"name":"Northampton Saints Rugby Football Club","nickname":"Saints","foundation":"1880","stade":"Franklin''s Garden","capacity":"15500","website":"http:\/\/www.northamptonsaints.co.uk\/","facebook":"https:\/\/facebook.com\/northamptonsaints","twitter":"https:\/\/twitter.com\/SaintsRugby","instagram":"https:\/\/instagram.com\/northamptonsaints","youtube":"https:\/\/youtube.com\/user\/TheSaintsTV","logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSNmxktUnK8vEBaJUhNjtafLRLw7s7PqlxiDBWzkCo&s","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":39,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":39,"league_id":5}}],"pictures":[]},{"id":40,"created_at":null,"updated_at":null,"name":"Sale Sharks Rugby Union Football Club","nickname":"Sharks","foundation":"1861","stade":"AJ Bell Stadium","capacity":"12000","website":"https:\/\/www.salesharks.com\/","facebook":"https:\/\/www.facebook.com\/SaleSharksRugby\/","twitter":"https:\/\/twitter.com\/SaleSharksRugby","instagram":"https:\/\/www.instagram.com\/salesharks\/","youtube":"https:\/\/www.youtube.com\/channel\/UC_k3xuhlC_jBgfpJdMqAKxw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Sale_Sharks_%28logo%29.svg\/1200px-Sale_Sharks_%28logo%29.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":40,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":40,"league_id":5}}],"pictures":[]},{"id":41,"created_at":null,"updated_at":null,"name":"Saracens Football Club","nickname":"Sarries","foundation":"1876","stade":"StoneX Stadium","capacity":"15000","website":"http:\/\/www.saracens.com\/","facebook":"https:\/\/www.facebook.com\/SaracensOfficial","twitter":"https:\/\/twitter.com\/Saracens","instagram":"https:\/\/www.instagram.com\/saracensofficial","youtube":"https:\/\/www.youtube.com\/channel\/UCHZjhtppDSbFEXWA80d5WBw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/05\/Logo_Saracens_2021.svg\/1200px-Logo_Saracens_2021.svg.png","description":null,"leagues":[{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","pivot":{"team_id":41,"league_id":3}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":41,"league_id":5}}],"pictures":[]},{"id":42,"created_at":null,"updated_at":null,"name":"Bulls","nickname":"The Bulls","foundation":"1997","stade":"Lotus Versfeld","capacity":"51762","website":"bullsrugby.co.za","facebook":"https:\/\/www.facebook.com\/BullsOfficial","twitter":"https:\/\/twitter.com\/BlueBullsRugby","instagram":"https:\/\/www.instagram.com\/blue_bulls_official\/","youtube":"https:\/\/www.youtube.com\/user\/VodacomBulls\/feed","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/55\/Bulls-logo.jpg","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":42,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":42,"league_id":5}}],"pictures":[]},{"id":43,"created_at":null,"updated_at":null,"name":"Cardiff Rugby","nickname":"Blues","foundation":"2003","stade":"Cardiff Arms Park","capacity":"12500","website":"https:\/\/www.cardiffrugby.wales\/","facebook":"https:\/\/www.facebook.com\/cardiffrugby1876","twitter":"https:\/\/twitter.com\/cardiff_rugby","instagram":"https:\/\/www.instagram.com\/cardiff.rugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":43,"league_id":4}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":43,"league_id":6}}],"pictures":[]},{"id":44,"created_at":null,"updated_at":null,"name":"Connacht Rugby","nickname":"Greens","foundation":"1885","stade":"Galway Sportsground","capacity":"8100","website":"https:\/\/www.connachtrugby.ie\/","facebook":"https:\/\/www.facebook.com\/ConnachtRugby","twitter":"https:\/\/twitter.com\/connachtrugby","instagram":"https:\/\/www.instagram.com\/connachtrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":44,"league_id":4}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":44,"league_id":6}}],"pictures":[]},{"id":45,"created_at":null,"updated_at":null,"name":"Edimbourg Rugby","nickname":"Gunners","foundation":"1872","stade":"Murrayfield","capacity":"67000","website":"https:\/\/www.edinburghrugby.org\/","facebook":"https:\/\/www.facebook.com\/EdinburghRugby","twitter":"https:\/\/twitter.com\/EdinburghRugby","instagram":"https:\/\/www.instagram.com\/edinburghrugby","youtube":"https:\/\/www.youtube.com\/EdinburghRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":45,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":45,"league_id":5}}],"pictures":[]},{"id":46,"created_at":null,"updated_at":null,"name":"Glasgow Warriors","nickname":"Warriors","foundation":"1872","stade":"Scotstun Stadium","capacity":"11000","website":"http:\/\/www.glasgowwarriors.org\/","facebook":"https:\/\/www.facebook.com\/GlasgowWarriors","twitter":"https:\/\/twitter.com\/GlasgowWarriors","instagram":"https:\/\/www.instagram.com\/glasgowwarriors","youtube":"https:\/\/www.youtube.com\/glasgowwarriors","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/75\/Logo_Glasgow_Warriors_2019.svg\/1200px-Logo_Glasgow_Warriors_2019.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":46,"league_id":4}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":46,"league_id":6}}],"pictures":[]},{"id":47,"created_at":null,"updated_at":null,"name":"Leinster Rugby","nickname":"Boys in blue","foundation":"1875","stade":"RDS Arena","capacity":"18500","website":"http:\/\/www.leinsterrugby.ie\/","facebook":"https:\/\/www.facebook.com\/leinsterrugby\/?fref=ts","twitter":"https:\/\/twitter.com\/leinsterrugby","instagram":"https:\/\/www.instagram.com\/leinsterrugby\/?hl=en","youtube":"https:\/\/www.youtube.com\/user\/LeinsterrugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/2\/2c\/Logo_Leinster_Rugby.svg\/1200px-Logo_Leinster_Rugby.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":47,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":47,"league_id":5}}],"pictures":[]},{"id":48,"created_at":null,"updated_at":null,"name":"Lions","nickname":"Cats","foundation":"1996","stade":"Ellis Park Stadium","capacity":"59611","website":"http:\/\/www.lionsrugby.co.za\/","facebook":"https:\/\/www.facebook.com\/lionsrugbyco\/","twitter":"https:\/\/twitter.com\/LionsRugbyCo","instagram":"https:\/\/twitter.com\/LionsRugbyCo","youtube":"https:\/\/www.youtube.com\/channel\/UCdddB27Aoxea_QS0EyPJoRQ","logo":"https:\/\/assets.stickpng.com\/images\/5ae2e50233b73fa43b1a8986.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":48,"league_id":4}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":48,"league_id":6}}],"pictures":[]},{"id":49,"created_at":null,"updated_at":null,"name":"Scarlets","nickname":"Scarlets","foundation":"2003","stade":"Parc y Scarlets","capacity":"14870","website":"https:\/\/www.scarlets.wales\/","facebook":"https:\/\/www.facebook.com\/OfficialScarlets\/","twitter":"https:\/\/twitter.com\/scarlets_rugby","instagram":"https:\/\/www.instagram.com\/scarlets_rugby\/","youtube":"https:\/\/www.youtube.com\/channel\/UCSpQ51CzUYp_ambKRD7fDCg","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/03\/Logo_Scarlets_2008.svg\/1200px-Logo_Scarlets_2008.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":49,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":49,"league_id":5}}],"pictures":[]},{"id":50,"created_at":null,"updated_at":null,"name":"Munster Rugby","nickname":"Red Army","foundation":"1879","stade":"Thomond Park","capacity":"26500","website":"http:\/\/www.munsterrugby.ie\/","facebook":"","twitter":"https:\/\/twitter.com\/MunsterRugby","instagram":"https:\/\/twitter.com\/MunsterRugby","youtube":"https:\/\/www.youtube.com\/user\/MunsterView","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/94\/Munster_Rugby_%28logo%29.svg\/1200px-Munster_Rugby_%28logo%29.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":50,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":50,"league_id":5}}],"pictures":[]},{"id":51,"created_at":null,"updated_at":null,"name":"Dragons RFC","nickname":"Dragons","foundation":"2003","stade":"Rodney Parade","capacity":"11676","website":"https:\/\/www.dragonsrugby.wales\/","facebook":"https:\/\/www.facebook.com\/dragonsrfc.wales\/","twitter":"https:\/\/twitter.com\/dragonsrugby","instagram":"https:\/\/twitter.com\/dragonsrugby","youtube":"https:\/\/www.youtube.com\/channel\/UCdB_8F9Yqur14jXdSzxyQeA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/d\/d1\/Logo_Dragons_RFC_2022.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":51,"league_id":4}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":51,"league_id":6}}],"pictures":[]},{"id":52,"created_at":null,"updated_at":null,"name":"Ospreys","nickname":"Y Gweilch","foundation":"2003","stade":"Liberty Stadium","capacity":"20000","website":"http:\/\/www.ospreysrugby.com\/","facebook":"https:\/\/www.facebook.com\/ospreysrugby","twitter":"https:\/\/twitter.com\/ospreys","instagram":"https:\/\/www.instagram.com\/ospreys_official\/","youtube":"https:\/\/www.youtube.com\/user\/OspreysHighlights","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7f\/Logo_Ospreys.svg\/1200px-Logo_Ospreys.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":52,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":52,"league_id":5}}],"pictures":[]},{"id":53,"created_at":null,"updated_at":null,"name":"Durban Sharks","nickname":"Sharks","foundation":"1996","stade":"Kings Park Stadium","capacity":"55000","website":"http:\/\/www.sharksrugby.co.za\/","facebook":"https:\/\/www.facebook.com\/SharksRugby","twitter":"https:\/\/twitter.com\/SharksRugby","instagram":"https:\/\/www.instagram.com\/sharksrugby\/","youtube":"https:\/\/www.youtube.com\/user\/TheSharksZA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7b\/CellCSharksRugbylogo.svg\/1200px-CellCSharksRugbylogo.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":53,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":53,"league_id":5}}],"pictures":[]},{"id":54,"created_at":null,"updated_at":null,"name":"Stormers","nickname":"The Stormers","foundation":"1996","stade":"Cape Town Stadium","capacity":"55000","website":"http:\/\/thestormers.com\/","facebook":"https:\/\/www.facebook.com\/stormers","twitter":"https:\/\/twitter.com\/thestormers","instagram":"https:\/\/www.instagram.com\/dhlstormers\/","youtube":"https:\/\/www.youtube.com\/user\/StormersTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/18\/Logo_Stormers_Rugby.svg\/1200px-Logo_Stormers_Rugby.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":54,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":54,"league_id":5}}],"pictures":[]},{"id":55,"created_at":null,"updated_at":null,"name":"Benetton Rugby Tr\u00e9vise","nickname":"Benetton","foundation":"1932","stade":"Stadio Comunale di Monigo","capacity":"6700","website":"http:\/\/www.benettonrugby.it\/","facebook":"https:\/\/www.facebook.com\/BenettonRugbyTreviso","twitter":"https:\/\/twitter.com\/benettonrugby?lang=it","instagram":"https:\/\/www.instagram.com\/benettonrugby\/","youtube":"https:\/\/www.youtube.com\/user\/BenettonRugby","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a3\/Logo_Benetton_Rugby.svg\/1200px-Logo_Benetton_Rugby.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":55,"league_id":4}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":55,"league_id":6}}],"pictures":[]},{"id":56,"created_at":null,"updated_at":null,"name":"Ulster Rugby","nickname":"UlsterMan","foundation":"1872","stade":"Ravenhill Stadium","capacity":"18200","website":"http:\/\/www.ulsterrugby.com\/","facebook":"https:\/\/www.facebook.com\/ulsterrugby\/?utm_source=web&utm_medium=footer&utm_campaign=social-links","twitter":"https:\/\/twitter.com\/UlsterRugby?utm_source=web&utm_medium=footer&utm_campaign=social-links","instagram":"https:\/\/www.instagram.com\/officialulsterrugby","youtube":"https:\/\/www.youtube.com\/user\/UlsterRugbyTV?sub_confirmation=1","logo":"https:\/\/i.bleacherreport.net\/images\/team_logos\/328x328\/ulster_rugby.png?canvas=492,328","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":56,"league_id":4}},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","pivot":{"team_id":56,"league_id":5}}],"pictures":[]},{"id":57,"created_at":null,"updated_at":null,"name":"Z\u00e8bres Parma","nickname":"Z\u00e8bra","foundation":"1973","stade":"Stadio XXV Aprile","capacity":"5000","website":"https:\/\/www.zebreparma.it\/","facebook":"https:\/\/www.zebreparma.it\/it-it\/facebook.aspx","twitter":"https:\/\/www.zebreparma.it\/it-it\/twitter.aspx","instagram":"https:\/\/www.zebreparma.it\/it-it\/instagram.aspx","youtube":"https:\/\/www.zebreparma.it\/it-it\/youtube.aspx","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/b7\/Logo_Zebre_Rugby_Club_2017.svg\/1024px-Logo_Zebre_Rugby_Club_2017.svg.png","description":null,"leagues":[{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","pivot":{"team_id":57,"league_id":4}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":57,"league_id":6}}],"pictures":[]},{"id":58,"created_at":"2023-07-20T12:24:44.000000Z","updated_at":"2023-07-20T12:58:44.000000Z","name":"Union Sportive Dacquoise","nickname":"USD","foundation":"1904","stade":"Maurice-Boyau","capacity":"7262","website":"https:\/\/usdax.fr\/rugby\/","facebook":"http:\/\/www.facebook.com\/usdaxrugbylandes","twitter":"http:\/\/twitter.com\/usdaxrugby","instagram":"https:\/\/www.instagram.com\/usdaxrugby\/","youtube":null,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7d\/Logo_US_Dax_Rugby_Landes_-_2018.svg\/langfr-130px-Logo_US_Dax_Rugby_Landes_-_2018.svg.png","description":null,"leagues":[],"pictures":[]},{"id":59,"created_at":"2023-07-20T12:30:58.000000Z","updated_at":"2023-07-20T12:59:55.000000Z","name":"Valence Romans Dr\u00f4me Rugby","nickname":"VRDR","foundation":"2016","stade":"Georges-Pompidou","capacity":"15000","website":"http:\/\/www.vrdr.fr\/","facebook":"https:\/\/fr-fr.facebook.com\/VRDRrugby\/","twitter":"https:\/\/twitter.com\/vrdrrugby","instagram":"https:\/\/www.instagram.com\/vrdrrugby\/","youtube":"https:\/\/www.youtube.com\/channel\/UCZUNaco8URaVgTHs0U961lw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7c\/Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg\/langfr-130px-Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg.png","description":null,"leagues":[{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","pivot":{"team_id":59,"league_id":2}}],"pictures":[]}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/teams
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: lroorihrokvkhq
+        type: string
+        custom: []
+      nickname:
+        name: nickname
+        description: 'Must not be greater than 5 characters.'
+        required: true
+        example: woj
+        type: string
+        custom: []
+      foundation:
+        name: foundation
+        description: 'Must not be greater than 4 characters.'
+        required: true
+        example: f
+        type: string
+        custom: []
+      stade:
+        name: stade
+        description: ''
+        required: true
+        example: quo
+        type: string
+        custom: []
+      capacity:
+        name: capacity
+        description: ''
+        required: true
+        example: distinctio
+        type: string
+        custom: []
+      website:
+        name: website
+        description: ''
+        required: true
+        example: magnam
+        type: string
+        custom: []
+      facebook:
+        name: facebook
+        description: ''
+        required: false
+        example: quidem
+        type: string
+        custom: []
+      twitter:
+        name: twitter
+        description: ''
+        required: false
+        example: est
+        type: string
+        custom: []
+      instagram:
+        name: instagram
+        description: ''
+        required: false
+        example: voluptatem
+        type: string
+        custom: []
+      youtube:
+        name: youtube
+        description: ''
+        required: false
+        example: recusandae
+        type: string
+        custom: []
+      logo:
+        name: logo
+        description: ''
+        required: true
+        example: omnis
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: lroorihrokvkhq
+      nickname: woj
+      foundation: f
+      stade: quo
+      capacity: distinctio
+      website: magnam
+      facebook: quidem
+      twitter: est
+      instagram: voluptatem
+      youtube: recusandae
+      logo: omnis
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer h6cke48vba56fDa3Z1gEVdP'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/teams/{team_id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      team_id:
+        name: team_id
+        description: 'The ID of the team.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      team_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"id":1,"created_at":null,"updated_at":null,"name":"Avirons Bayonnais","nickname":"AB","foundation":"1906","stade":"Jean Dauger","capacity":"18069","website":"www.abrugby.fr","facebook":"https:\/\/www.facebook.com\/avironbayonnaisrugbypro","twitter":"https:\/\/twitter.com\/avironrugbypro","instagram":"https:\/\/www.instagram.com\/avironrugbypro\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/1b\/Logo_Aviron_Bayonnais_Rugby_-_2022.svg\/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png","description":null,"leagues":[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","pivot":{"team_id":1,"league_id":1}},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","pivot":{"team_id":1,"league_id":6}}],"pictures":[]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/teams/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the team.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: aaaxxfrxpungncofj
+        type: string
+        custom: []
+      nickname:
+        name: nickname
+        description: 'Must not be greater than 5 characters.'
+        required: false
+        example: o
+        type: string
+        custom: []
+      foundation:
+        name: foundation
+        description: 'Must not be greater than 4 characters.'
+        required: false
+        example: 'n'
+        type: string
+        custom: []
+      stade:
+        name: stade
+        description: ''
+        required: false
+        example: sint
+        type: string
+        custom: []
+      capacity:
+        name: capacity
+        description: ''
+        required: false
+        example: fuga
+        type: string
+        custom: []
+      website:
+        name: website
+        description: ''
+        required: false
+        example: numquam
+        type: string
+        custom: []
+      facebook:
+        name: facebook
+        description: ''
+        required: false
+        example: vel
+        type: string
+        custom: []
+      twitter:
+        name: twitter
+        description: ''
+        required: false
+        example: fuga
+        type: string
+        custom: []
+      instagram:
+        name: instagram
+        description: ''
+        required: false
+        example: perspiciatis
+        type: string
+        custom: []
+      youtube:
+        name: youtube
+        description: ''
+        required: false
+        example: non
+        type: string
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: false
+        example: 'Repudiandae qui provident ut dolor vel dolores maiores.'
+        type: string
+        custom: []
+      logo:
+        name: logo
+        description: ''
+        required: false
+        example: autem
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: aaaxxfrxpungncofj
+      nickname: o
+      foundation: 'n'
+      stade: sint
+      capacity: fuga
+      website: numquam
+      facebook: vel
+      twitter: fuga
+      instagram: perspiciatis
+      youtube: non
+      description: 'Repudiandae qui provident ut dolor vel dolores maiores.'
+      logo: autem
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer vcEdaVe8465DP6a1kbfZh3g'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/teams/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the team.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 65cEZgv4b8khfae6d3VP1Da'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/leagues
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","teams":[{"id":1,"created_at":null,"updated_at":null,"name":"Avirons Bayonnais","nickname":"AB","foundation":"1906","stade":"Jean Dauger","capacity":"18069","website":"www.abrugby.fr","facebook":"https:\/\/www.facebook.com\/avironbayonnaisrugbypro","twitter":"https:\/\/twitter.com\/avironrugbypro","instagram":"https:\/\/www.instagram.com\/avironrugbypro\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/1b\/Logo_Aviron_Bayonnais_Rugby_-_2022.svg\/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png","description":null,"pivot":{"league_id":1,"team_id":1}},{"id":2,"created_at":null,"updated_at":null,"name":"Union Bordaux B\u00e8gles","nickname":"UBB","foundation":"2006","stade":"Chaban-Delmas","capacity":"34462","website":"http:\/\/www.ubbrugby.com\/","facebook":"https:\/\/www.facebook.com\/ubbrugby","twitter":"https:\/\/twitter.com\/ubbrugby","instagram":"https:\/\/www.instagram.com\/ubbrugby","youtube":"https:\/\/www.youtube.com\/channel\/UC0ofHgdtPGcNd21eVuBSWBQ","logo":"https:\/\/www.ubbrugby.com\/application\/uploads\/files\/logo_UBB%20transparent.png","description":null,"pivot":{"league_id":1,"team_id":2}},{"id":4,"created_at":null,"updated_at":null,"name":"Castres Olympique","nickname":"CO","foundation":"1906","stade":"Pierre-Fabre","capacity":"12500","website":"www.castres-olympique.com","facebook":"https:\/\/www.facebook.com\/CastresOlympiqueOfficiel","twitter":"https:\/\/twitter.com\/CastresRugby","instagram":"https:\/\/www.instagram.com\/castresrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/94\/Castres_Olympique.svg\/999px-Castres_Olympique.svg.png","description":null,"pivot":{"league_id":1,"team_id":4}},{"id":5,"created_at":null,"updated_at":null,"name":"Association Sportive Montferrandaise Clermont Auvergne","nickname":"ASM","foundation":"1911","stade":"Marcel Michelin","capacity":"19372","website":"www.asm-rugby.com","facebook":"https:\/\/fr-fr.facebook.com\/asm.clermont.auvergne\/","twitter":"https:\/\/twitter.com\/ASMOfficiel","instagram":"","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a8\/Logo_ASM_Clermont_Auvergne_2019.svg\/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png","description":null,"pivot":{"league_id":1,"team_id":5}},{"id":6,"created_at":null,"updated_at":null,"name":"Lyon Olympique Universitaire","nickname":"LOU","foundation":"1896","stade":"Matmut Stadium Gerland","capacity":"35029","website":"www.lourugby.fr","facebook":"https:\/\/www.facebook.com\/LOU.Rugby\/","twitter":"https:\/\/twitter.com\/lelourugby?lang=fr","instagram":"https:\/\/www.instagram.com\/lourugby1896\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCAwMdlmJy1PmeeXwdZuTjXw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/2\/25\/Lyon_olympique_universitaire.svg\/1200px-Lyon_olympique_universitaire.svg.png","description":null,"pivot":{"league_id":1,"team_id":6}},{"id":7,"created_at":null,"updated_at":null,"name":"Montpellier H\u00e9rault Rugby","nickname":"MHR","foundation":"1986","stade":"GGL Stadium","capacity":"15697","website":"www.montpellier-rugby.com","facebook":"https:\/\/www.facebook.com\/Montpellier.Rugby","twitter":"https:\/\/twitter.com\/MHR_officiel","instagram":"https:\/\/www.instagram.com\/mhr_officiel","youtube":"https:\/\/www.youtube.com\/user\/montpellierrugby?feature=results_main","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d9\/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg\/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png","description":null,"pivot":{"league_id":1,"team_id":7}},{"id":8,"created_at":null,"updated_at":null,"name":"Section Paloise","nickname":"SP","foundation":"1902","stade":"Stade du Hameau","capacity":"14588","website":"http:\/\/www.section-paloise.com\/","facebook":"https:\/\/www.facebook.com\/SectionPaloiseBearnPyrenees","twitter":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","instagram":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/91\/Section_Paloise_logo.svg\/1200px-Section_Paloise_logo.svg.png","description":null,"pivot":{"league_id":1,"team_id":8}},{"id":9,"created_at":null,"updated_at":null,"name":"Rugby Club Toulonnais","nickname":"RCT","foundation":"1908","stade":"Stade Mayol","capacity":"17500","website":"http:\/\/www.rctoulon.com\/","facebook":"https:\/\/www.facebook.com\/RCTofficiel","twitter":"https:\/\/twitter.com\/rctofficiel","instagram":"https:\/\/instagram.com\/rctofficiel\/","youtube":"https:\/\/www.youtube.com\/c\/RCTRugbyClubToulonnais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/5a\/Logo_Rugby_club_toulonnais.svg\/1200px-Logo_Rugby_club_toulonnais.svg.png","description":null,"pivot":{"league_id":1,"team_id":9}},{"id":10,"created_at":null,"updated_at":null,"name":"Stade Fran\u00e7ais Paris","nickname":"SFP","foundation":"1883","stade":"Jean-Bouin","capacity":"25000","website":"www.stade.fr","facebook":"https:\/\/www.facebook.com\/SFPARIS","twitter":"https:\/\/twitter.com\/SFParisRugby","instagram":"https:\/\/www.instagram.com\/stade_francais_paris\/","youtube":"https:\/\/www.youtube.com\/channel\/UC9HI0fd8SE_IfSaFkVKfPLA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/0f\/Logo_Stade_fran%C3%A7ais_PR_2018.svg\/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png","description":null,"pivot":{"league_id":1,"team_id":10}},{"id":11,"created_at":null,"updated_at":null,"name":"Stade Rochelais","nickname":"SR","foundation":"1898","stade":"Marcel Deflandre","capacity":"16000","website":"http:\/\/www.staderochelais.com\/","facebook":"https:\/\/www.facebook.com\/staderochelais","twitter":"https:\/\/twitter.com\/staderochelais","instagram":"https:\/\/www.instagram.com\/staderochelais","youtube":"https:\/\/www.dailymotion.com\/staderochelais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/44\/Logo_Stade_rochelais_2016.svg\/1594px-Logo_Stade_rochelais_2016.svg.png","description":null,"pivot":{"league_id":1,"team_id":11}},{"id":12,"created_at":null,"updated_at":null,"name":"Stade Toulousain","nickname":"ST","foundation":"1907","stade":"Ernest Wallon","capacity":"19000","website":"www.stadetoulousain.fr","facebook":"https:\/\/fr-fr.facebook.com\/StadeToulousainOfficiel","twitter":"https:\/\/twitter.com\/StadeToulousain","instagram":"http:\/\/instagram.com\/stadetoulousainrugby","youtube":"https:\/\/www.youtube.com\/stadetoulousain","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/0\/01\/Logo_Stade_Toulousain_Rugby.svg","description":null,"pivot":{"league_id":1,"team_id":12}},{"id":13,"created_at":null,"updated_at":null,"name":"Union Sportive Arlequins Perpignanais","nickname":"USAP","foundation":"1902","stade":"Aim\u00e9-Giral","capacity":"14593","website":"www.usap.fr","facebook":"https:\/\/www.facebook.com\/USAPOfficiel","twitter":"https:\/\/twitter.com\/usap_officiel","instagram":"https:\/\/www.instagram.com\/usapofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCUZuZFU1VeHD9ZJJ3t3wnsQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/77\/Logo_USA_Perpignan_2017.svg\/1200px-Logo_USA_Perpignan_2017.svg.png","description":null,"pivot":{"league_id":1,"team_id":13}},{"id":14,"created_at":null,"updated_at":null,"name":"Racing 92","nickname":"R92","foundation":"1890","stade":"Paris La D\u00e9fense Ar\u00e9na","capacity":"32000","website":"www.racing92.fr","facebook":"https:\/\/www.facebook.com\/Racing92Officiel\/","twitter":"https:\/\/twitter.com\/Racing92","instagram":"https:\/\/www.instagram.com\/Racing92\/","youtube":"https:\/\/www.youtube.com\/channel\/UC4MQWtqrcD567vQIKyBJcsQ\/","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c7\/Logo_Racing_92_2015.svg\/640px-Logo_Racing_92_2015.svg.png","description":null,"pivot":{"league_id":1,"team_id":14}},{"id":28,"created_at":null,"updated_at":null,"name":"Oyonnax Rugby","nickname":"OYO","foundation":"1909","stade":"Charles Mathon","capacity":"11400","website":"http:\/\/www.oyonnaxrugby.com\/","facebook":"https:\/\/www.facebook.com\/OyonnaxRugbyOfficiel","twitter":"https:\/\/twitter.com\/OyonnaxRugby","instagram":"https:\/\/www.instagram.com\/oyonnaxrugby\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCf7BLip3jg_Vod8RRJa7T6Q","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9d\/Logo_Oyonnax_rugby_2018.svg\/1200px-Logo_Oyonnax_rugby_2018.svg.png","description":null,"pivot":{"league_id":1,"team_id":28}}]},{"id":2,"name":"Pro D2","creation":"2000","created_at":null,"last_champion":28,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c5\/ProD2_logo_2012.svg\/langfr-150px-ProD2_logo_2012.svg.png","most_successfull":6,"updated_at":"2023-07-20T12:45:45.000000Z","teams":[{"id":3,"created_at":null,"updated_at":null,"name":"Club Athl\u00e9tique Brive Corr\u00e8ze Limousin","nickname":"CAB","foundation":"1910","stade":"Am\u00e9d\u00e9e- Domenech","capacity":"13379","website":"www.cabrive-rugby.com","facebook":"https:\/\/www.facebook.com\/CA-Brive-Rugby-Officiel-136407633069304\/","twitter":"https:\/\/twitter.com\/CABCLRUGBY","instagram":"https:\/\/www.instagram.com\/cabriverugbyofficiel\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/56\/Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg\/800px-Club_athl%C3%A9tique_Brive_Corr%C3%A8ze_Limousin_logo.svg.png","description":null,"pivot":{"league_id":2,"team_id":3}},{"id":15,"created_at":null,"updated_at":null,"name":"Provence Rugby Aix-Marseille","nickname":"PR","foundation":"1970","stade":"Maurice-David","capacity":"6425","website":"https:\/\/www.provencerugby.com\/","facebook":"https:\/\/www.facebook.com\/ProvenceRugby","twitter":"https:\/\/twitter.com\/ProvenceRugby","instagram":"https:\/\/instagram.com\/provencerugbyofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UC6j-ShG-12kluScwHKoEhew","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/48\/Logo_Provence_Rugby_-_2021.svg\/1200px-Logo_Provence_Rugby_-_2021.svg.png","description":null,"pivot":{"league_id":2,"team_id":15}},{"id":16,"created_at":null,"updated_at":null,"name":"Stade Aurillacois Cantal Auvergne","nickname":"SACA","foundation":"1904","stade":"Jean-Alrice","capacity":"7800","website":"www.stade-aurillacois.fr","facebook":"https:\/\/www.facebook.com\/SArugbyofficiel\/","twitter":"https:\/\/twitter.com\/SArugbyofficiel","instagram":"https:\/\/www.instagram.com\/sarugbyofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCouXlRCs_l6lnTG1pTSQKaQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c2\/Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg\/800px-Logo_Stade_aurillacois_Cantal_Auvergne_2018.svg.png","description":null,"pivot":{"league_id":2,"team_id":16}},{"id":17,"created_at":null,"updated_at":null,"name":"Sportive Union Agen Lot-et-Garonne","nickname":"SUA","foundation":"1905","stade":"Armandie","capacity":"14400","website":"http:\/\/www.agen-rugby.com\/","facebook":"https:\/\/www.facebook.com\/agenrugby\/","twitter":"https:\/\/twitter.com\/agen_rugby","instagram":"https:\/\/www.instagram.com\/agen_rugby\/","youtube":"http:\/\/www.dailymotion.com\/agenrugby","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/51\/Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg\/674px-Logo_Sporting_Union_Agen_Lot-et-Garonne_2020.svg.png","description":null,"pivot":{"league_id":2,"team_id":17}},{"id":18,"created_at":null,"updated_at":null,"name":"Soyaux Angoul\u00eame XV Charente","nickname":"SA XV","foundation":"2010","stade":"Chanzy","capacity":"8000","website":"http:\/\/www.saxvcharente.fr\/","facebook":"https:\/\/www.facebook.com\/saxvcharente.fr","twitter":"https:\/\/twitter.com\/saxv_charente","instagram":"https:\/\/www.instagram.com\/saxv_charente_rugby","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a5\/Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg\/1200px-Logo_Soyaux_Angoul%C3%AAme_XV_Charente_-_2017.svg.png","description":null,"pivot":{"league_id":2,"team_id":18}},{"id":19,"created_at":null,"updated_at":null,"name":"Association Sportive B\u00e9ziers H\u00e9rault","nickname":"ASBH","foundation":"1911","stade":"Raoul-Barri\u00e8re","capacity":"18255","website":"https:\/\/www.asbh.net\/","facebook":"https:\/\/www.facebook.com\/pages\/ASBH-Officiel","twitter":"https:\/\/twitter.com\/ASBHOfficiel","instagram":"https:\/\/www.instagram.com\/asbhofficiel\/","youtube":"https:\/\/www.youtube.com\/c\/ASB%C3%A9ziersH%C3%A9raultRugby","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/14\/Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg\/1200px-Logo_AS_B%C3%A9ziers_H%C3%A9rault.svg.png","description":null,"pivot":{"league_id":2,"team_id":19}},{"id":20,"created_at":null,"updated_at":null,"name":"Biarritz Olympique","nickname":"BO","foundation":"1913","stade":"Parc des sports Aguil\u00e9ra","capacity":"13400","website":"bo-pb.com","facebook":"https:\/\/www.facebook.com\/BOPB-page-officielle-208217155896387\/","twitter":"https:\/\/twitter.com\/BOPBweb","instagram":"https:\/\/www.instagram.com\/bopb_officiel\/?hl=fr","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/05\/Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg\/1200px-Logo_Biarritz_Olympique_Pays_Basque_-_2016.svg.png","description":null,"pivot":{"league_id":2,"team_id":20}},{"id":21,"created_at":null,"updated_at":null,"name":"Union Sportive Carcasonnaise XV","nickname":"USC XV","foundation":"1899","stade":"Albert-Domec","capacity":"6500","website":"http:\/\/www.uscarcassonne.com\/","facebook":"https:\/\/www.facebook.com\/USCXV","twitter":"https:\/\/twitter.com\/USCXV","instagram":"https:\/\/www.instagram.com\/uscarcassonnexv","youtube":"https:\/\/www.youtube.com\/user\/UsCarcassonne1","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/ca\/Logo_Union_sportive_carcassonnaise_XV_2010.svg\/1200px-Logo_Union_sportive_carcassonnaise_XV_2010.svg.png","description":null,"pivot":{"league_id":2,"team_id":21}},{"id":22,"created_at":null,"updated_at":null,"name":"Colomiers Rugby","nickname":"COL","foundation":"1915","stade":"Michel Bendichou","capacity":"11000","website":"http:\/\/www.colomiers-rugby.com\/","facebook":"https:\/\/www.facebook.com\/ColomiersRugbyOfficiel\/","twitter":"https:\/\/twitter.com\/ColomiersRugby","instagram":"https:\/\/instagram.com\/colomiersrugby","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/e\/e9\/Logo_Colomiers_Rugby_2008.svg","description":null,"pivot":{"league_id":2,"team_id":22}},{"id":23,"created_at":null,"updated_at":null,"name":"Football Club de Grenoble Rugby","nickname":"FCGB","foundation":"1892","stade":"Stade des Alpes","capacity":"20068","website":"http:\/\/www.fcgrugby.com\/","facebook":"https:\/\/www.facebook.com\/FCGrugby","twitter":"https:\/\/twitter.com\/fcgrugby?lang=fr","instagram":"https:\/\/www.instagram.com\/fcgrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/4\/46\/Logo_FC_Grenoble_Rugby.svg","description":null,"pivot":{"league_id":2,"team_id":23}},{"id":24,"created_at":null,"updated_at":null,"name":"Union Sportive Montabanaise XV","nickname":"USM XV","foundation":"1903","stade":"Sapiac","capacity":"1937","website":"www.usmsapiac.fr","facebook":"https:\/\/www.facebook.com\/USMsapiac","twitter":"https:\/\/twitter.com\/UsmSapiacRugby","instagram":"https:\/\/www.instagram.com\/usm_sapiac\/","youtube":"https:\/\/www.youtube.com\/channel\/UCBOhWG8te6jvgqnx-2JPwWA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/92\/Logo_US_Montalbanaise_-_2017.svg\/1200px-Logo_US_Montalbanaise_-_2017.svg.png","description":null,"pivot":{"league_id":2,"team_id":24}},{"id":25,"created_at":null,"updated_at":null,"name":"Stade Montois Rugby","nickname":"SMR","foundation":"1908","stade":"Andr\u00e9 et Guy Boniface","capacity":"8250","website":"http:\/\/www.stademontoisrugby.fr\/","facebook":"https:\/\/www.facebook.com\/SM.Rugby.Pro\/","twitter":"https:\/\/twitter.com\/SMR_Rugby","instagram":"https:\/\/www.instagram.com\/stademontoisrugby\/?hl=fr","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a0\/Stade_Montois_Rugby_Pro.svg\/1200px-Stade_Montois_Rugby_Pro.svg.png","description":null,"pivot":{"league_id":2,"team_id":25}},{"id":26,"created_at":null,"updated_at":null,"name":"Rugby Massy Club Essonne","nickname":"RCME","foundation":"1971","stade":"Jules Ladoum\u00e8gue","capacity":"3000","website":"rcmessonne.com","facebook":"https:\/\/www.facebook.com\/pages\/Rugby-Club-Massy-Essonne","twitter":"https:\/\/twitter.com\/RCME91","instagram":"https:\/\/www.instagram.com\/rcme_officiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCTYBfKIfruJbj8QRfL0PZ1w","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/0a\/Logo_Rugby_Club_Massy_Essonne_-_2020.svg\/800px-Logo_Rugby_Club_Massy_Essonne_-_2020.svg.png","description":null,"pivot":{"league_id":2,"team_id":26}},{"id":27,"created_at":null,"updated_at":null,"name":"USON Nevers Rugby","nickname":"USON","foundation":"1903","stade":"Stade du Pr\u00e9 Fleuri ","capacity":"7500","website":"http:\/\/www.usonneversrugby.com\/","facebook":"https:\/\/www.facebook.com\/UsonNeversRugby","twitter":"https:\/\/twitter.com\/usonneversrugby","instagram":"https:\/\/www.instagram.com\/usonneversrugby","youtube":"https:\/\/www.youtube.com\/user\/UsonRugbyPlus","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/4a\/Logo_USON_Nevers_2016.svg\/782px-Logo_USON_Nevers_2016.svg.png","description":null,"pivot":{"league_id":2,"team_id":27}},{"id":29,"created_at":null,"updated_at":null,"name":"Rouen Normandie Rugby","nickname":"RNR","foundation":"2009","stade":"Robert Diochon","capacity":"12018","website":"https:\/\/rouennormandierugby.fr\/","facebook":"https:\/\/www.facebook.com\/RouenNormandieRugby\/","twitter":"https:\/\/twitter.com\/rouenndierugby?lang=fr","instagram":"https:\/\/www.instagram.com\/rouen_normandie_rugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/8e\/Logo_Rouen_Normandie_Rugby_-_2019.svg\/1200px-Logo_Rouen_Normandie_Rugby_-_2019.svg.png","description":null,"pivot":{"league_id":2,"team_id":29}},{"id":30,"created_at":null,"updated_at":null,"name":"Rugby Club Vannetais","nickname":"RCV","foundation":"1950","stade":"La Rabine","capacity":"11415","website":"http:\/\/www.rugbyclubvannes.bzh\/","facebook":"https:\/\/www.facebook.com\/RugbyClubVannes","twitter":"https:\/\/twitter.com\/RugbyClubVannes","instagram":"https:\/\/www.instagram.com\/rugbyclubvannes\/","youtube":"https:\/\/www.youtube.com\/channel\/UCcmJvevXM_U1OWchJwOJxbQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/74\/Logo_RC_Vannes_-_2022.svg\/1200px-Logo_RC_Vannes_-_2022.svg.png","description":null,"pivot":{"league_id":2,"team_id":30}},{"id":59,"created_at":"2023-07-20T12:30:58.000000Z","updated_at":"2023-07-20T12:59:55.000000Z","name":"Valence Romans Dr\u00f4me Rugby","nickname":"VRDR","foundation":"2016","stade":"Georges-Pompidou","capacity":"15000","website":"http:\/\/www.vrdr.fr\/","facebook":"https:\/\/fr-fr.facebook.com\/VRDRrugby\/","twitter":"https:\/\/twitter.com\/vrdrrugby","instagram":"https:\/\/www.instagram.com\/vrdrrugby\/","youtube":"https:\/\/www.youtube.com\/channel\/UCZUNaco8URaVgTHs0U961lw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7c\/Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg\/langfr-130px-Logo_Valence_Romans_Dr%C3%B4me_Rugby_-_2019.svg.png","description":null,"pivot":{"league_id":2,"team_id":59}}]},{"id":3,"name":"Premiership Rugby","creation":"1987","created_at":null,"last_champion":41,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/bd\/Logo_Premiership_Rugby_2018.svg\/langfr-180px-Logo_Premiership_Rugby_2018.svg.png","most_successfull":36,"updated_at":"2023-07-20T12:46:18.000000Z","teams":[{"id":31,"created_at":null,"updated_at":null,"name":"Bath Rugby","nickname":"BR","foundation":"1865","stade":"Recreation Ground","capacity":"14000","website":"https:\/\/www.bathrugby.com\/","facebook":"http:\/\/www.facebook.com\/bathrugby","twitter":"http:\/\/twitter.com\/bathrugby","instagram":"https:\/\/instagram.com\/bathrugby\/","youtube":"https:\/\/www.youtube.com\/user\/BathRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c3\/Logo_Bath_Rugby_2014.svg\/1200px-Logo_Bath_Rugby_2014.svg.png","description":null,"pivot":{"league_id":3,"team_id":31}},{"id":32,"created_at":null,"updated_at":null,"name":"Bristol Bears","nickname":"Bears","foundation":"1888","stade":"Ashton Gate Stadium","capacity":"27000","website":"https:\/\/www.bristolbearsrugby.com\/","facebook":"https:\/\/www.facebook.com\/bristolbears","twitter":"https:\/\/twitter.com\/BristolBears","instagram":"https:\/\/instagram.com\/bristolbearsrfc\/","youtube":"https:\/\/www.youtube.com\/c\/Bristolbearstv","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/5a\/Logo_Bristol_Bears_2018.svg\/1200px-Logo_Bristol_Bears_2018.svg.png","description":null,"pivot":{"league_id":3,"team_id":32}},{"id":33,"created_at":null,"updated_at":null,"name":"Exeter Rugby Club","nickname":"Chiefs","foundation":"1871","stade":"Sandy Park ","capacity":"12500","website":"http:\/\/www.exeterchiefs.co.uk\/","facebook":"https:\/\/facebook.com\/ExeterChiefs","twitter":"https:\/\/twitter.com\/ExeterChiefs","instagram":"https:\/\/instagram.com\/officialexeterchiefs\/","youtube":"https:\/\/www.youtube.com\/user\/officialexeterchiefs","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/e\/e7\/Logo_Exeter_Chiefs_2022.svg","description":null,"pivot":{"league_id":3,"team_id":33}},{"id":34,"created_at":null,"updated_at":null,"name":"Gloucester Rugby","nickname":"Cherry and Whites","foundation":"1873","stade":"Kingsholm Stadium","capacity":"16500","website":"https:\/\/www.gloucesterrugby.co.uk\/","facebook":"https:\/\/facebook.com\/GloucesterRugby","twitter":"https:\/\/twitter.com\/GloucesterRugby","instagram":"https:\/\/instagram.com\/officialGloucesterRugby","youtube":"https:\/\/www.youtube.com\/user\/GloucesterRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/72\/Logo_Gloucester_Rugby_2018.svg\/1200px-Logo_Gloucester_Rugby_2018.svg.png","description":null,"pivot":{"league_id":3,"team_id":34}},{"id":35,"created_at":null,"updated_at":null,"name":"Harlequins Football Club","nickname":"Quins","foundation":"1866","stade":"The Stoop","capacity":"14800","website":"https:\/\/www.quins.co.uk\/","facebook":"https:\/\/en-gb.facebook.com\/harlequins\/","twitter":"https:\/\/twitter.com\/Harlequins","instagram":"https:\/\/www.instagram.com\/harlequins","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Logo_Harlequin_Football_Club_2011.svg\/1200px-Logo_Harlequin_Football_Club_2011.svg.png","description":null,"pivot":{"league_id":3,"team_id":35}},{"id":36,"created_at":null,"updated_at":null,"name":"Leicester Football Club","nickname":"Tigers","foundation":"1880","stade":"Welford Road Staidum","capacity":"24000","website":"http:\/\/www.tigers.co.uk\/home.php","facebook":"https:\/\/www.facebook.com\/leicestertigers","twitter":"https:\/\/twitter.com\/leicestertigers","instagram":"https:\/\/www.instagram.com\/leicestertigers\/","youtube":"https:\/\/www.youtube.com\/user\/LeicesterTigersLTTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Logo_Harlequin_Football_Club_2011.svg\/1200px-Logo_Harlequin_Football_Club_2011.svg.png","description":null,"pivot":{"league_id":3,"team_id":36}},{"id":37,"created_at":null,"updated_at":null,"name":"London Irish Football Club","nickname":"The Exiles","foundation":"1898","stade":"Gtech Community Stadium","capacity":"17250","website":"www.london-irish.com","facebook":"https:\/\/www.facebook.com\/LIRFC","twitter":"https:\/\/twitter.com\/londonirish","instagram":"https:\/\/www.instagram.com\/londonirish1898\/","youtube":"https:\/\/www.youtube.com\/channel\/UCQYMvGMgRj8Yjbdv72hOgXA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/90\/Logo_London_Irish_2019.svg\/1200px-Logo_London_Irish_2019.svg.png","description":null,"pivot":{"league_id":3,"team_id":37}},{"id":38,"created_at":null,"updated_at":null,"name":"Newcastle Falcons","nickname":"Falcons","foundation":"1877","stade":"Kingston Park","capacity":"10200","website":"http:\/\/www.newcastlefalcons.co.uk","facebook":"https:\/\/www.facebook.com\/newcastle.falcons","twitter":"https:\/\/twitter.com\/FalconsRugby","instagram":"","youtube":"https:\/\/www.youtube.com\/user\/NewcastleFalcons1","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d7\/Logo_Newcastle_Falcons.svg\/1200px-Logo_Newcastle_Falcons.svg.png","description":null,"pivot":{"league_id":3,"team_id":38}},{"id":39,"created_at":null,"updated_at":null,"name":"Northampton Saints Rugby Football Club","nickname":"Saints","foundation":"1880","stade":"Franklin''s Garden","capacity":"15500","website":"http:\/\/www.northamptonsaints.co.uk\/","facebook":"https:\/\/facebook.com\/northamptonsaints","twitter":"https:\/\/twitter.com\/SaintsRugby","instagram":"https:\/\/instagram.com\/northamptonsaints","youtube":"https:\/\/youtube.com\/user\/TheSaintsTV","logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSNmxktUnK8vEBaJUhNjtafLRLw7s7PqlxiDBWzkCo&s","description":null,"pivot":{"league_id":3,"team_id":39}},{"id":40,"created_at":null,"updated_at":null,"name":"Sale Sharks Rugby Union Football Club","nickname":"Sharks","foundation":"1861","stade":"AJ Bell Stadium","capacity":"12000","website":"https:\/\/www.salesharks.com\/","facebook":"https:\/\/www.facebook.com\/SaleSharksRugby\/","twitter":"https:\/\/twitter.com\/SaleSharksRugby","instagram":"https:\/\/www.instagram.com\/salesharks\/","youtube":"https:\/\/www.youtube.com\/channel\/UC_k3xuhlC_jBgfpJdMqAKxw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Sale_Sharks_%28logo%29.svg\/1200px-Sale_Sharks_%28logo%29.svg.png","description":null,"pivot":{"league_id":3,"team_id":40}},{"id":41,"created_at":null,"updated_at":null,"name":"Saracens Football Club","nickname":"Sarries","foundation":"1876","stade":"StoneX Stadium","capacity":"15000","website":"http:\/\/www.saracens.com\/","facebook":"https:\/\/www.facebook.com\/SaracensOfficial","twitter":"https:\/\/twitter.com\/Saracens","instagram":"https:\/\/www.instagram.com\/saracensofficial","youtube":"https:\/\/www.youtube.com\/channel\/UCHZjhtppDSbFEXWA80d5WBw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/05\/Logo_Saracens_2021.svg\/1200px-Logo_Saracens_2021.svg.png","description":null,"pivot":{"league_id":3,"team_id":41}}]},{"id":4,"name":"United Rugby Championship","creation":"2001","created_at":null,"last_champion":50,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/db\/Logo_United_Rugby_Championship_2021.png\/180px-Logo_United_Rugby_Championship_2021.png","most_successfull":54,"updated_at":"2023-07-20T12:46:41.000000Z","teams":[{"id":42,"created_at":null,"updated_at":null,"name":"Bulls","nickname":"The Bulls","foundation":"1997","stade":"Lotus Versfeld","capacity":"51762","website":"bullsrugby.co.za","facebook":"https:\/\/www.facebook.com\/BullsOfficial","twitter":"https:\/\/twitter.com\/BlueBullsRugby","instagram":"https:\/\/www.instagram.com\/blue_bulls_official\/","youtube":"https:\/\/www.youtube.com\/user\/VodacomBulls\/feed","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/55\/Bulls-logo.jpg","description":null,"pivot":{"league_id":4,"team_id":42}},{"id":43,"created_at":null,"updated_at":null,"name":"Cardiff Rugby","nickname":"Blues","foundation":"2003","stade":"Cardiff Arms Park","capacity":"12500","website":"https:\/\/www.cardiffrugby.wales\/","facebook":"https:\/\/www.facebook.com\/cardiffrugby1876","twitter":"https:\/\/twitter.com\/cardiff_rugby","instagram":"https:\/\/www.instagram.com\/cardiff.rugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"pivot":{"league_id":4,"team_id":43}},{"id":44,"created_at":null,"updated_at":null,"name":"Connacht Rugby","nickname":"Greens","foundation":"1885","stade":"Galway Sportsground","capacity":"8100","website":"https:\/\/www.connachtrugby.ie\/","facebook":"https:\/\/www.facebook.com\/ConnachtRugby","twitter":"https:\/\/twitter.com\/connachtrugby","instagram":"https:\/\/www.instagram.com\/connachtrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"pivot":{"league_id":4,"team_id":44}},{"id":45,"created_at":null,"updated_at":null,"name":"Edimbourg Rugby","nickname":"Gunners","foundation":"1872","stade":"Murrayfield","capacity":"67000","website":"https:\/\/www.edinburghrugby.org\/","facebook":"https:\/\/www.facebook.com\/EdinburghRugby","twitter":"https:\/\/twitter.com\/EdinburghRugby","instagram":"https:\/\/www.instagram.com\/edinburghrugby","youtube":"https:\/\/www.youtube.com\/EdinburghRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"pivot":{"league_id":4,"team_id":45}},{"id":46,"created_at":null,"updated_at":null,"name":"Glasgow Warriors","nickname":"Warriors","foundation":"1872","stade":"Scotstun Stadium","capacity":"11000","website":"http:\/\/www.glasgowwarriors.org\/","facebook":"https:\/\/www.facebook.com\/GlasgowWarriors","twitter":"https:\/\/twitter.com\/GlasgowWarriors","instagram":"https:\/\/www.instagram.com\/glasgowwarriors","youtube":"https:\/\/www.youtube.com\/glasgowwarriors","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/75\/Logo_Glasgow_Warriors_2019.svg\/1200px-Logo_Glasgow_Warriors_2019.svg.png","description":null,"pivot":{"league_id":4,"team_id":46}},{"id":47,"created_at":null,"updated_at":null,"name":"Leinster Rugby","nickname":"Boys in blue","foundation":"1875","stade":"RDS Arena","capacity":"18500","website":"http:\/\/www.leinsterrugby.ie\/","facebook":"https:\/\/www.facebook.com\/leinsterrugby\/?fref=ts","twitter":"https:\/\/twitter.com\/leinsterrugby","instagram":"https:\/\/www.instagram.com\/leinsterrugby\/?hl=en","youtube":"https:\/\/www.youtube.com\/user\/LeinsterrugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/2\/2c\/Logo_Leinster_Rugby.svg\/1200px-Logo_Leinster_Rugby.svg.png","description":null,"pivot":{"league_id":4,"team_id":47}},{"id":48,"created_at":null,"updated_at":null,"name":"Lions","nickname":"Cats","foundation":"1996","stade":"Ellis Park Stadium","capacity":"59611","website":"http:\/\/www.lionsrugby.co.za\/","facebook":"https:\/\/www.facebook.com\/lionsrugbyco\/","twitter":"https:\/\/twitter.com\/LionsRugbyCo","instagram":"https:\/\/twitter.com\/LionsRugbyCo","youtube":"https:\/\/www.youtube.com\/channel\/UCdddB27Aoxea_QS0EyPJoRQ","logo":"https:\/\/assets.stickpng.com\/images\/5ae2e50233b73fa43b1a8986.png","description":null,"pivot":{"league_id":4,"team_id":48}},{"id":49,"created_at":null,"updated_at":null,"name":"Scarlets","nickname":"Scarlets","foundation":"2003","stade":"Parc y Scarlets","capacity":"14870","website":"https:\/\/www.scarlets.wales\/","facebook":"https:\/\/www.facebook.com\/OfficialScarlets\/","twitter":"https:\/\/twitter.com\/scarlets_rugby","instagram":"https:\/\/www.instagram.com\/scarlets_rugby\/","youtube":"https:\/\/www.youtube.com\/channel\/UCSpQ51CzUYp_ambKRD7fDCg","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/03\/Logo_Scarlets_2008.svg\/1200px-Logo_Scarlets_2008.svg.png","description":null,"pivot":{"league_id":4,"team_id":49}},{"id":50,"created_at":null,"updated_at":null,"name":"Munster Rugby","nickname":"Red Army","foundation":"1879","stade":"Thomond Park","capacity":"26500","website":"http:\/\/www.munsterrugby.ie\/","facebook":"","twitter":"https:\/\/twitter.com\/MunsterRugby","instagram":"https:\/\/twitter.com\/MunsterRugby","youtube":"https:\/\/www.youtube.com\/user\/MunsterView","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/94\/Munster_Rugby_%28logo%29.svg\/1200px-Munster_Rugby_%28logo%29.svg.png","description":null,"pivot":{"league_id":4,"team_id":50}},{"id":51,"created_at":null,"updated_at":null,"name":"Dragons RFC","nickname":"Dragons","foundation":"2003","stade":"Rodney Parade","capacity":"11676","website":"https:\/\/www.dragonsrugby.wales\/","facebook":"https:\/\/www.facebook.com\/dragonsrfc.wales\/","twitter":"https:\/\/twitter.com\/dragonsrugby","instagram":"https:\/\/twitter.com\/dragonsrugby","youtube":"https:\/\/www.youtube.com\/channel\/UCdB_8F9Yqur14jXdSzxyQeA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/d\/d1\/Logo_Dragons_RFC_2022.png","description":null,"pivot":{"league_id":4,"team_id":51}},{"id":52,"created_at":null,"updated_at":null,"name":"Ospreys","nickname":"Y Gweilch","foundation":"2003","stade":"Liberty Stadium","capacity":"20000","website":"http:\/\/www.ospreysrugby.com\/","facebook":"https:\/\/www.facebook.com\/ospreysrugby","twitter":"https:\/\/twitter.com\/ospreys","instagram":"https:\/\/www.instagram.com\/ospreys_official\/","youtube":"https:\/\/www.youtube.com\/user\/OspreysHighlights","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7f\/Logo_Ospreys.svg\/1200px-Logo_Ospreys.svg.png","description":null,"pivot":{"league_id":4,"team_id":52}},{"id":53,"created_at":null,"updated_at":null,"name":"Durban Sharks","nickname":"Sharks","foundation":"1996","stade":"Kings Park Stadium","capacity":"55000","website":"http:\/\/www.sharksrugby.co.za\/","facebook":"https:\/\/www.facebook.com\/SharksRugby","twitter":"https:\/\/twitter.com\/SharksRugby","instagram":"https:\/\/www.instagram.com\/sharksrugby\/","youtube":"https:\/\/www.youtube.com\/user\/TheSharksZA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7b\/CellCSharksRugbylogo.svg\/1200px-CellCSharksRugbylogo.svg.png","description":null,"pivot":{"league_id":4,"team_id":53}},{"id":54,"created_at":null,"updated_at":null,"name":"Stormers","nickname":"The Stormers","foundation":"1996","stade":"Cape Town Stadium","capacity":"55000","website":"http:\/\/thestormers.com\/","facebook":"https:\/\/www.facebook.com\/stormers","twitter":"https:\/\/twitter.com\/thestormers","instagram":"https:\/\/www.instagram.com\/dhlstormers\/","youtube":"https:\/\/www.youtube.com\/user\/StormersTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/18\/Logo_Stormers_Rugby.svg\/1200px-Logo_Stormers_Rugby.svg.png","description":null,"pivot":{"league_id":4,"team_id":54}},{"id":55,"created_at":null,"updated_at":null,"name":"Benetton Rugby Tr\u00e9vise","nickname":"Benetton","foundation":"1932","stade":"Stadio Comunale di Monigo","capacity":"6700","website":"http:\/\/www.benettonrugby.it\/","facebook":"https:\/\/www.facebook.com\/BenettonRugbyTreviso","twitter":"https:\/\/twitter.com\/benettonrugby?lang=it","instagram":"https:\/\/www.instagram.com\/benettonrugby\/","youtube":"https:\/\/www.youtube.com\/user\/BenettonRugby","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a3\/Logo_Benetton_Rugby.svg\/1200px-Logo_Benetton_Rugby.svg.png","description":null,"pivot":{"league_id":4,"team_id":55}},{"id":56,"created_at":null,"updated_at":null,"name":"Ulster Rugby","nickname":"UlsterMan","foundation":"1872","stade":"Ravenhill Stadium","capacity":"18200","website":"http:\/\/www.ulsterrugby.com\/","facebook":"https:\/\/www.facebook.com\/ulsterrugby\/?utm_source=web&utm_medium=footer&utm_campaign=social-links","twitter":"https:\/\/twitter.com\/UlsterRugby?utm_source=web&utm_medium=footer&utm_campaign=social-links","instagram":"https:\/\/www.instagram.com\/officialulsterrugby","youtube":"https:\/\/www.youtube.com\/user\/UlsterRugbyTV?sub_confirmation=1","logo":"https:\/\/i.bleacherreport.net\/images\/team_logos\/328x328\/ulster_rugby.png?canvas=492,328","description":null,"pivot":{"league_id":4,"team_id":56}},{"id":57,"created_at":null,"updated_at":null,"name":"Z\u00e8bres Parma","nickname":"Z\u00e8bra","foundation":"1973","stade":"Stadio XXV Aprile","capacity":"5000","website":"https:\/\/www.zebreparma.it\/","facebook":"https:\/\/www.zebreparma.it\/it-it\/facebook.aspx","twitter":"https:\/\/www.zebreparma.it\/it-it\/twitter.aspx","instagram":"https:\/\/www.zebreparma.it\/it-it\/instagram.aspx","youtube":"https:\/\/www.zebreparma.it\/it-it\/youtube.aspx","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/b7\/Logo_Zebre_Rugby_Club_2017.svg\/1024px-Logo_Zebre_Rugby_Club_2017.svg.png","description":null,"pivot":{"league_id":4,"team_id":57}}]},{"id":5,"name":"Champion''s Cup","creation":"1995","created_at":null,"last_champion":11,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9a\/Logo_Champions_Cup_2018.png\/180px-Logo_Champions_Cup_2018.png","most_successfull":12,"updated_at":"2023-07-20T12:47:23.000000Z","teams":[{"id":2,"created_at":null,"updated_at":null,"name":"Union Bordaux B\u00e8gles","nickname":"UBB","foundation":"2006","stade":"Chaban-Delmas","capacity":"34462","website":"http:\/\/www.ubbrugby.com\/","facebook":"https:\/\/www.facebook.com\/ubbrugby","twitter":"https:\/\/twitter.com\/ubbrugby","instagram":"https:\/\/www.instagram.com\/ubbrugby","youtube":"https:\/\/www.youtube.com\/channel\/UC0ofHgdtPGcNd21eVuBSWBQ","logo":"https:\/\/www.ubbrugby.com\/application\/uploads\/files\/logo_UBB%20transparent.png","description":null,"pivot":{"league_id":5,"team_id":2}},{"id":6,"created_at":null,"updated_at":null,"name":"Lyon Olympique Universitaire","nickname":"LOU","foundation":"1896","stade":"Matmut Stadium Gerland","capacity":"35029","website":"www.lourugby.fr","facebook":"https:\/\/www.facebook.com\/LOU.Rugby\/","twitter":"https:\/\/twitter.com\/lelourugby?lang=fr","instagram":"https:\/\/www.instagram.com\/lourugby1896\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCAwMdlmJy1PmeeXwdZuTjXw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/2\/25\/Lyon_olympique_universitaire.svg\/1200px-Lyon_olympique_universitaire.svg.png","description":null,"pivot":{"league_id":5,"team_id":6}},{"id":11,"created_at":null,"updated_at":null,"name":"Stade Rochelais","nickname":"SR","foundation":"1898","stade":"Marcel Deflandre","capacity":"16000","website":"http:\/\/www.staderochelais.com\/","facebook":"https:\/\/www.facebook.com\/staderochelais","twitter":"https:\/\/twitter.com\/staderochelais","instagram":"https:\/\/www.instagram.com\/staderochelais","youtube":"https:\/\/www.dailymotion.com\/staderochelais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/44\/Logo_Stade_rochelais_2016.svg\/1594px-Logo_Stade_rochelais_2016.svg.png","description":null,"pivot":{"league_id":5,"team_id":11}},{"id":12,"created_at":null,"updated_at":null,"name":"Stade Toulousain","nickname":"ST","foundation":"1907","stade":"Ernest Wallon","capacity":"19000","website":"www.stadetoulousain.fr","facebook":"https:\/\/fr-fr.facebook.com\/StadeToulousainOfficiel","twitter":"https:\/\/twitter.com\/StadeToulousain","instagram":"http:\/\/instagram.com\/stadetoulousainrugby","youtube":"https:\/\/www.youtube.com\/stadetoulousain","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/0\/01\/Logo_Stade_Toulousain_Rugby.svg","description":null,"pivot":{"league_id":5,"team_id":12}},{"id":14,"created_at":null,"updated_at":null,"name":"Racing 92","nickname":"R92","foundation":"1890","stade":"Paris La D\u00e9fense Ar\u00e9na","capacity":"32000","website":"www.racing92.fr","facebook":"https:\/\/www.facebook.com\/Racing92Officiel\/","twitter":"https:\/\/twitter.com\/Racing92","instagram":"https:\/\/www.instagram.com\/Racing92\/","youtube":"https:\/\/www.youtube.com\/channel\/UC4MQWtqrcD567vQIKyBJcsQ\/","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c7\/Logo_Racing_92_2015.svg\/640px-Logo_Racing_92_2015.svg.png","description":null,"pivot":{"league_id":5,"team_id":14}},{"id":33,"created_at":null,"updated_at":null,"name":"Exeter Rugby Club","nickname":"Chiefs","foundation":"1871","stade":"Sandy Park ","capacity":"12500","website":"http:\/\/www.exeterchiefs.co.uk\/","facebook":"https:\/\/facebook.com\/ExeterChiefs","twitter":"https:\/\/twitter.com\/ExeterChiefs","instagram":"https:\/\/instagram.com\/officialexeterchiefs\/","youtube":"https:\/\/www.youtube.com\/user\/officialexeterchiefs","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/e\/e7\/Logo_Exeter_Chiefs_2022.svg","description":null,"pivot":{"league_id":5,"team_id":33}},{"id":34,"created_at":null,"updated_at":null,"name":"Gloucester Rugby","nickname":"Cherry and Whites","foundation":"1873","stade":"Kingsholm Stadium","capacity":"16500","website":"https:\/\/www.gloucesterrugby.co.uk\/","facebook":"https:\/\/facebook.com\/GloucesterRugby","twitter":"https:\/\/twitter.com\/GloucesterRugby","instagram":"https:\/\/instagram.com\/officialGloucesterRugby","youtube":"https:\/\/www.youtube.com\/user\/GloucesterRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/72\/Logo_Gloucester_Rugby_2018.svg\/1200px-Logo_Gloucester_Rugby_2018.svg.png","description":null,"pivot":{"league_id":5,"team_id":34}},{"id":35,"created_at":null,"updated_at":null,"name":"Harlequins Football Club","nickname":"Quins","foundation":"1866","stade":"The Stoop","capacity":"14800","website":"https:\/\/www.quins.co.uk\/","facebook":"https:\/\/en-gb.facebook.com\/harlequins\/","twitter":"https:\/\/twitter.com\/Harlequins","instagram":"https:\/\/www.instagram.com\/harlequins","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Logo_Harlequin_Football_Club_2011.svg\/1200px-Logo_Harlequin_Football_Club_2011.svg.png","description":null,"pivot":{"league_id":5,"team_id":35}},{"id":36,"created_at":null,"updated_at":null,"name":"Leicester Football Club","nickname":"Tigers","foundation":"1880","stade":"Welford Road Staidum","capacity":"24000","website":"http:\/\/www.tigers.co.uk\/home.php","facebook":"https:\/\/www.facebook.com\/leicestertigers","twitter":"https:\/\/twitter.com\/leicestertigers","instagram":"https:\/\/www.instagram.com\/leicestertigers\/","youtube":"https:\/\/www.youtube.com\/user\/LeicesterTigersLTTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Logo_Harlequin_Football_Club_2011.svg\/1200px-Logo_Harlequin_Football_Club_2011.svg.png","description":null,"pivot":{"league_id":5,"team_id":36}},{"id":37,"created_at":null,"updated_at":null,"name":"London Irish Football Club","nickname":"The Exiles","foundation":"1898","stade":"Gtech Community Stadium","capacity":"17250","website":"www.london-irish.com","facebook":"https:\/\/www.facebook.com\/LIRFC","twitter":"https:\/\/twitter.com\/londonirish","instagram":"https:\/\/www.instagram.com\/londonirish1898\/","youtube":"https:\/\/www.youtube.com\/channel\/UCQYMvGMgRj8Yjbdv72hOgXA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/90\/Logo_London_Irish_2019.svg\/1200px-Logo_London_Irish_2019.svg.png","description":null,"pivot":{"league_id":5,"team_id":37}},{"id":39,"created_at":null,"updated_at":null,"name":"Northampton Saints Rugby Football Club","nickname":"Saints","foundation":"1880","stade":"Franklin''s Garden","capacity":"15500","website":"http:\/\/www.northamptonsaints.co.uk\/","facebook":"https:\/\/facebook.com\/northamptonsaints","twitter":"https:\/\/twitter.com\/SaintsRugby","instagram":"https:\/\/instagram.com\/northamptonsaints","youtube":"https:\/\/youtube.com\/user\/TheSaintsTV","logo":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSNmxktUnK8vEBaJUhNjtafLRLw7s7PqlxiDBWzkCo&s","description":null,"pivot":{"league_id":5,"team_id":39}},{"id":40,"created_at":null,"updated_at":null,"name":"Sale Sharks Rugby Union Football Club","nickname":"Sharks","foundation":"1861","stade":"AJ Bell Stadium","capacity":"12000","website":"https:\/\/www.salesharks.com\/","facebook":"https:\/\/www.facebook.com\/SaleSharksRugby\/","twitter":"https:\/\/twitter.com\/SaleSharksRugby","instagram":"https:\/\/www.instagram.com\/salesharks\/","youtube":"https:\/\/www.youtube.com\/channel\/UC_k3xuhlC_jBgfpJdMqAKxw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/34\/Sale_Sharks_%28logo%29.svg\/1200px-Sale_Sharks_%28logo%29.svg.png","description":null,"pivot":{"league_id":5,"team_id":40}},{"id":41,"created_at":null,"updated_at":null,"name":"Saracens Football Club","nickname":"Sarries","foundation":"1876","stade":"StoneX Stadium","capacity":"15000","website":"http:\/\/www.saracens.com\/","facebook":"https:\/\/www.facebook.com\/SaracensOfficial","twitter":"https:\/\/twitter.com\/Saracens","instagram":"https:\/\/www.instagram.com\/saracensofficial","youtube":"https:\/\/www.youtube.com\/channel\/UCHZjhtppDSbFEXWA80d5WBw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/05\/Logo_Saracens_2021.svg\/1200px-Logo_Saracens_2021.svg.png","description":null,"pivot":{"league_id":5,"team_id":41}},{"id":42,"created_at":null,"updated_at":null,"name":"Bulls","nickname":"The Bulls","foundation":"1997","stade":"Lotus Versfeld","capacity":"51762","website":"bullsrugby.co.za","facebook":"https:\/\/www.facebook.com\/BullsOfficial","twitter":"https:\/\/twitter.com\/BlueBullsRugby","instagram":"https:\/\/www.instagram.com\/blue_bulls_official\/","youtube":"https:\/\/www.youtube.com\/user\/VodacomBulls\/feed","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/55\/Bulls-logo.jpg","description":null,"pivot":{"league_id":5,"team_id":42}},{"id":45,"created_at":null,"updated_at":null,"name":"Edimbourg Rugby","nickname":"Gunners","foundation":"1872","stade":"Murrayfield","capacity":"67000","website":"https:\/\/www.edinburghrugby.org\/","facebook":"https:\/\/www.facebook.com\/EdinburghRugby","twitter":"https:\/\/twitter.com\/EdinburghRugby","instagram":"https:\/\/www.instagram.com\/edinburghrugby","youtube":"https:\/\/www.youtube.com\/EdinburghRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"pivot":{"league_id":5,"team_id":45}},{"id":47,"created_at":null,"updated_at":null,"name":"Leinster Rugby","nickname":"Boys in blue","foundation":"1875","stade":"RDS Arena","capacity":"18500","website":"http:\/\/www.leinsterrugby.ie\/","facebook":"https:\/\/www.facebook.com\/leinsterrugby\/?fref=ts","twitter":"https:\/\/twitter.com\/leinsterrugby","instagram":"https:\/\/www.instagram.com\/leinsterrugby\/?hl=en","youtube":"https:\/\/www.youtube.com\/user\/LeinsterrugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/2\/2c\/Logo_Leinster_Rugby.svg\/1200px-Logo_Leinster_Rugby.svg.png","description":null,"pivot":{"league_id":5,"team_id":47}},{"id":49,"created_at":null,"updated_at":null,"name":"Scarlets","nickname":"Scarlets","foundation":"2003","stade":"Parc y Scarlets","capacity":"14870","website":"https:\/\/www.scarlets.wales\/","facebook":"https:\/\/www.facebook.com\/OfficialScarlets\/","twitter":"https:\/\/twitter.com\/scarlets_rugby","instagram":"https:\/\/www.instagram.com\/scarlets_rugby\/","youtube":"https:\/\/www.youtube.com\/channel\/UCSpQ51CzUYp_ambKRD7fDCg","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/03\/Logo_Scarlets_2008.svg\/1200px-Logo_Scarlets_2008.svg.png","description":null,"pivot":{"league_id":5,"team_id":49}},{"id":50,"created_at":null,"updated_at":null,"name":"Munster Rugby","nickname":"Red Army","foundation":"1879","stade":"Thomond Park","capacity":"26500","website":"http:\/\/www.munsterrugby.ie\/","facebook":"","twitter":"https:\/\/twitter.com\/MunsterRugby","instagram":"https:\/\/twitter.com\/MunsterRugby","youtube":"https:\/\/www.youtube.com\/user\/MunsterView","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/94\/Munster_Rugby_%28logo%29.svg\/1200px-Munster_Rugby_%28logo%29.svg.png","description":null,"pivot":{"league_id":5,"team_id":50}},{"id":52,"created_at":null,"updated_at":null,"name":"Ospreys","nickname":"Y Gweilch","foundation":"2003","stade":"Liberty Stadium","capacity":"20000","website":"http:\/\/www.ospreysrugby.com\/","facebook":"https:\/\/www.facebook.com\/ospreysrugby","twitter":"https:\/\/twitter.com\/ospreys","instagram":"https:\/\/www.instagram.com\/ospreys_official\/","youtube":"https:\/\/www.youtube.com\/user\/OspreysHighlights","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7f\/Logo_Ospreys.svg\/1200px-Logo_Ospreys.svg.png","description":null,"pivot":{"league_id":5,"team_id":52}},{"id":53,"created_at":null,"updated_at":null,"name":"Durban Sharks","nickname":"Sharks","foundation":"1996","stade":"Kings Park Stadium","capacity":"55000","website":"http:\/\/www.sharksrugby.co.za\/","facebook":"https:\/\/www.facebook.com\/SharksRugby","twitter":"https:\/\/twitter.com\/SharksRugby","instagram":"https:\/\/www.instagram.com\/sharksrugby\/","youtube":"https:\/\/www.youtube.com\/user\/TheSharksZA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/7b\/CellCSharksRugbylogo.svg\/1200px-CellCSharksRugbylogo.svg.png","description":null,"pivot":{"league_id":5,"team_id":53}},{"id":54,"created_at":null,"updated_at":null,"name":"Stormers","nickname":"The Stormers","foundation":"1996","stade":"Cape Town Stadium","capacity":"55000","website":"http:\/\/thestormers.com\/","facebook":"https:\/\/www.facebook.com\/stormers","twitter":"https:\/\/twitter.com\/thestormers","instagram":"https:\/\/www.instagram.com\/dhlstormers\/","youtube":"https:\/\/www.youtube.com\/user\/StormersTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/18\/Logo_Stormers_Rugby.svg\/1200px-Logo_Stormers_Rugby.svg.png","description":null,"pivot":{"league_id":5,"team_id":54}},{"id":56,"created_at":null,"updated_at":null,"name":"Ulster Rugby","nickname":"UlsterMan","foundation":"1872","stade":"Ravenhill Stadium","capacity":"18200","website":"http:\/\/www.ulsterrugby.com\/","facebook":"https:\/\/www.facebook.com\/ulsterrugby\/?utm_source=web&utm_medium=footer&utm_campaign=social-links","twitter":"https:\/\/twitter.com\/UlsterRugby?utm_source=web&utm_medium=footer&utm_campaign=social-links","instagram":"https:\/\/www.instagram.com\/officialulsterrugby","youtube":"https:\/\/www.youtube.com\/user\/UlsterRugbyTV?sub_confirmation=1","logo":"https:\/\/i.bleacherreport.net\/images\/team_logos\/328x328\/ulster_rugby.png?canvas=492,328","description":null,"pivot":{"league_id":5,"team_id":56}}]},{"id":6,"name":"EPCR Challenge Cup","creation":"1996","created_at":null,"last_champion":9,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/6\/69\/Logo_Challenge_Cup_2021.png\/180px-Logo_Challenge_Cup_2021.png","most_successfull":5,"updated_at":"2023-07-20T12:48:06.000000Z","teams":[{"id":1,"created_at":null,"updated_at":null,"name":"Avirons Bayonnais","nickname":"AB","foundation":"1906","stade":"Jean Dauger","capacity":"18069","website":"www.abrugby.fr","facebook":"https:\/\/www.facebook.com\/avironbayonnaisrugbypro","twitter":"https:\/\/twitter.com\/avironrugbypro","instagram":"https:\/\/www.instagram.com\/avironrugbypro\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/1b\/Logo_Aviron_Bayonnais_Rugby_-_2022.svg\/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png","description":null,"pivot":{"league_id":6,"team_id":1}},{"id":4,"created_at":null,"updated_at":null,"name":"Castres Olympique","nickname":"CO","foundation":"1906","stade":"Pierre-Fabre","capacity":"12500","website":"www.castres-olympique.com","facebook":"https:\/\/www.facebook.com\/CastresOlympiqueOfficiel","twitter":"https:\/\/twitter.com\/CastresRugby","instagram":"https:\/\/www.instagram.com\/castresrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/94\/Castres_Olympique.svg\/999px-Castres_Olympique.svg.png","description":null,"pivot":{"league_id":6,"team_id":4}},{"id":5,"created_at":null,"updated_at":null,"name":"Association Sportive Montferrandaise Clermont Auvergne","nickname":"ASM","foundation":"1911","stade":"Marcel Michelin","capacity":"19372","website":"www.asm-rugby.com","facebook":"https:\/\/fr-fr.facebook.com\/asm.clermont.auvergne\/","twitter":"https:\/\/twitter.com\/ASMOfficiel","instagram":"","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a8\/Logo_ASM_Clermont_Auvergne_2019.svg\/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png","description":null,"pivot":{"league_id":6,"team_id":5}},{"id":7,"created_at":null,"updated_at":null,"name":"Montpellier H\u00e9rault Rugby","nickname":"MHR","foundation":"1986","stade":"GGL Stadium","capacity":"15697","website":"www.montpellier-rugby.com","facebook":"https:\/\/www.facebook.com\/Montpellier.Rugby","twitter":"https:\/\/twitter.com\/MHR_officiel","instagram":"https:\/\/www.instagram.com\/mhr_officiel","youtube":"https:\/\/www.youtube.com\/user\/montpellierrugby?feature=results_main","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d9\/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg\/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png","description":null,"pivot":{"league_id":6,"team_id":7}},{"id":8,"created_at":null,"updated_at":null,"name":"Section Paloise","nickname":"SP","foundation":"1902","stade":"Stade du Hameau","capacity":"14588","website":"http:\/\/www.section-paloise.com\/","facebook":"https:\/\/www.facebook.com\/SectionPaloiseBearnPyrenees","twitter":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","instagram":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/91\/Section_Paloise_logo.svg\/1200px-Section_Paloise_logo.svg.png","description":null,"pivot":{"league_id":6,"team_id":8}},{"id":9,"created_at":null,"updated_at":null,"name":"Rugby Club Toulonnais","nickname":"RCT","foundation":"1908","stade":"Stade Mayol","capacity":"17500","website":"http:\/\/www.rctoulon.com\/","facebook":"https:\/\/www.facebook.com\/RCTofficiel","twitter":"https:\/\/twitter.com\/rctofficiel","instagram":"https:\/\/instagram.com\/rctofficiel\/","youtube":"https:\/\/www.youtube.com\/c\/RCTRugbyClubToulonnais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/5a\/Logo_Rugby_club_toulonnais.svg\/1200px-Logo_Rugby_club_toulonnais.svg.png","description":null,"pivot":{"league_id":6,"team_id":9}},{"id":10,"created_at":null,"updated_at":null,"name":"Stade Fran\u00e7ais Paris","nickname":"SFP","foundation":"1883","stade":"Jean-Bouin","capacity":"25000","website":"www.stade.fr","facebook":"https:\/\/www.facebook.com\/SFPARIS","twitter":"https:\/\/twitter.com\/SFParisRugby","instagram":"https:\/\/www.instagram.com\/stade_francais_paris\/","youtube":"https:\/\/www.youtube.com\/channel\/UC9HI0fd8SE_IfSaFkVKfPLA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/0f\/Logo_Stade_fran%C3%A7ais_PR_2018.svg\/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png","description":null,"pivot":{"league_id":6,"team_id":10}},{"id":13,"created_at":null,"updated_at":null,"name":"Union Sportive Arlequins Perpignanais","nickname":"USAP","foundation":"1902","stade":"Aim\u00e9-Giral","capacity":"14593","website":"www.usap.fr","facebook":"https:\/\/www.facebook.com\/USAPOfficiel","twitter":"https:\/\/twitter.com\/usap_officiel","instagram":"https:\/\/www.instagram.com\/usapofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCUZuZFU1VeHD9ZJJ3t3wnsQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/77\/Logo_USA_Perpignan_2017.svg\/1200px-Logo_USA_Perpignan_2017.svg.png","description":null,"pivot":{"league_id":6,"team_id":13}},{"id":28,"created_at":null,"updated_at":null,"name":"Oyonnax Rugby","nickname":"OYO","foundation":"1909","stade":"Charles Mathon","capacity":"11400","website":"http:\/\/www.oyonnaxrugby.com\/","facebook":"https:\/\/www.facebook.com\/OyonnaxRugbyOfficiel","twitter":"https:\/\/twitter.com\/OyonnaxRugby","instagram":"https:\/\/www.instagram.com\/oyonnaxrugby\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCf7BLip3jg_Vod8RRJa7T6Q","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9d\/Logo_Oyonnax_rugby_2018.svg\/1200px-Logo_Oyonnax_rugby_2018.svg.png","description":null,"pivot":{"league_id":6,"team_id":28}},{"id":31,"created_at":null,"updated_at":null,"name":"Bath Rugby","nickname":"BR","foundation":"1865","stade":"Recreation Ground","capacity":"14000","website":"https:\/\/www.bathrugby.com\/","facebook":"http:\/\/www.facebook.com\/bathrugby","twitter":"http:\/\/twitter.com\/bathrugby","instagram":"https:\/\/instagram.com\/bathrugby\/","youtube":"https:\/\/www.youtube.com\/user\/BathRugbyTV","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c3\/Logo_Bath_Rugby_2014.svg\/1200px-Logo_Bath_Rugby_2014.svg.png","description":null,"pivot":{"league_id":6,"team_id":31}},{"id":32,"created_at":null,"updated_at":null,"name":"Bristol Bears","nickname":"Bears","foundation":"1888","stade":"Ashton Gate Stadium","capacity":"27000","website":"https:\/\/www.bristolbearsrugby.com\/","facebook":"https:\/\/www.facebook.com\/bristolbears","twitter":"https:\/\/twitter.com\/BristolBears","instagram":"https:\/\/instagram.com\/bristolbearsrfc\/","youtube":"https:\/\/www.youtube.com\/c\/Bristolbearstv","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/5a\/Logo_Bristol_Bears_2018.svg\/1200px-Logo_Bristol_Bears_2018.svg.png","description":null,"pivot":{"league_id":6,"team_id":32}},{"id":38,"created_at":null,"updated_at":null,"name":"Newcastle Falcons","nickname":"Falcons","foundation":"1877","stade":"Kingston Park","capacity":"10200","website":"http:\/\/www.newcastlefalcons.co.uk","facebook":"https:\/\/www.facebook.com\/newcastle.falcons","twitter":"https:\/\/twitter.com\/FalconsRugby","instagram":"","youtube":"https:\/\/www.youtube.com\/user\/NewcastleFalcons1","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d7\/Logo_Newcastle_Falcons.svg\/1200px-Logo_Newcastle_Falcons.svg.png","description":null,"pivot":{"league_id":6,"team_id":38}},{"id":43,"created_at":null,"updated_at":null,"name":"Cardiff Rugby","nickname":"Blues","foundation":"2003","stade":"Cardiff Arms Park","capacity":"12500","website":"https:\/\/www.cardiffrugby.wales\/","facebook":"https:\/\/www.facebook.com\/cardiffrugby1876","twitter":"https:\/\/twitter.com\/cardiff_rugby","instagram":"https:\/\/www.instagram.com\/cardiff.rugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"pivot":{"league_id":6,"team_id":43}},{"id":44,"created_at":null,"updated_at":null,"name":"Connacht Rugby","nickname":"Greens","foundation":"1885","stade":"Galway Sportsground","capacity":"8100","website":"https:\/\/www.connachtrugby.ie\/","facebook":"https:\/\/www.facebook.com\/ConnachtRugby","twitter":"https:\/\/twitter.com\/connachtrugby","instagram":"https:\/\/www.instagram.com\/connachtrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/85\/Logo_Cardiff_Rugby_2021.svg\/1200px-Logo_Cardiff_Rugby_2021.svg.png","description":null,"pivot":{"league_id":6,"team_id":44}},{"id":46,"created_at":null,"updated_at":null,"name":"Glasgow Warriors","nickname":"Warriors","foundation":"1872","stade":"Scotstun Stadium","capacity":"11000","website":"http:\/\/www.glasgowwarriors.org\/","facebook":"https:\/\/www.facebook.com\/GlasgowWarriors","twitter":"https:\/\/twitter.com\/GlasgowWarriors","instagram":"https:\/\/www.instagram.com\/glasgowwarriors","youtube":"https:\/\/www.youtube.com\/glasgowwarriors","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/75\/Logo_Glasgow_Warriors_2019.svg\/1200px-Logo_Glasgow_Warriors_2019.svg.png","description":null,"pivot":{"league_id":6,"team_id":46}},{"id":48,"created_at":null,"updated_at":null,"name":"Lions","nickname":"Cats","foundation":"1996","stade":"Ellis Park Stadium","capacity":"59611","website":"http:\/\/www.lionsrugby.co.za\/","facebook":"https:\/\/www.facebook.com\/lionsrugbyco\/","twitter":"https:\/\/twitter.com\/LionsRugbyCo","instagram":"https:\/\/twitter.com\/LionsRugbyCo","youtube":"https:\/\/www.youtube.com\/channel\/UCdddB27Aoxea_QS0EyPJoRQ","logo":"https:\/\/assets.stickpng.com\/images\/5ae2e50233b73fa43b1a8986.png","description":null,"pivot":{"league_id":6,"team_id":48}},{"id":51,"created_at":null,"updated_at":null,"name":"Dragons RFC","nickname":"Dragons","foundation":"2003","stade":"Rodney Parade","capacity":"11676","website":"https:\/\/www.dragonsrugby.wales\/","facebook":"https:\/\/www.facebook.com\/dragonsrfc.wales\/","twitter":"https:\/\/twitter.com\/dragonsrugby","instagram":"https:\/\/twitter.com\/dragonsrugby","youtube":"https:\/\/www.youtube.com\/channel\/UCdB_8F9Yqur14jXdSzxyQeA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/d\/d1\/Logo_Dragons_RFC_2022.png","description":null,"pivot":{"league_id":6,"team_id":51}},{"id":55,"created_at":null,"updated_at":null,"name":"Benetton Rugby Tr\u00e9vise","nickname":"Benetton","foundation":"1932","stade":"Stadio Comunale di Monigo","capacity":"6700","website":"http:\/\/www.benettonrugby.it\/","facebook":"https:\/\/www.facebook.com\/BenettonRugbyTreviso","twitter":"https:\/\/twitter.com\/benettonrugby?lang=it","instagram":"https:\/\/www.instagram.com\/benettonrugby\/","youtube":"https:\/\/www.youtube.com\/user\/BenettonRugby","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a3\/Logo_Benetton_Rugby.svg\/1200px-Logo_Benetton_Rugby.svg.png","description":null,"pivot":{"league_id":6,"team_id":55}},{"id":57,"created_at":null,"updated_at":null,"name":"Z\u00e8bres Parma","nickname":"Z\u00e8bra","foundation":"1973","stade":"Stadio XXV Aprile","capacity":"5000","website":"https:\/\/www.zebreparma.it\/","facebook":"https:\/\/www.zebreparma.it\/it-it\/facebook.aspx","twitter":"https:\/\/www.zebreparma.it\/it-it\/twitter.aspx","instagram":"https:\/\/www.zebreparma.it\/it-it\/instagram.aspx","youtube":"https:\/\/www.zebreparma.it\/it-it\/youtube.aspx","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/b\/b7\/Logo_Zebre_Rugby_Club_2017.svg\/1024px-Logo_Zebre_Rugby_Club_2017.svg.png","description":null,"pivot":{"league_id":6,"team_id":57}}]}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/leagues
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 75 characters.'
+        required: true
+        example: irjyoaldbpqjtzcg
+        type: string
+        custom: []
+      creation:
+        name: creation
+        description: 'Must not be greater than 4 characters.'
+        required: true
+        example: xp
+        type: string
+        custom: []
+      last_champion:
+        name: last_champion
+        description: ''
+        required: false
+        example: 1
+        type: integer
+        custom: []
+      most_successfull:
+        name: most_successfull
+        description: ''
+        required: false
+        example: 20
+        type: integer
+        custom: []
+      logo:
+        name: logo
+        description: ''
+        required: true
+        example: qui
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: irjyoaldbpqjtzcg
+      creation: xp
+      last_champion: 1
+      most_successfull: 20
+      logo: qui
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer PcVeg35h8Zkf66DaE1abd4v'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/leagues/{league_id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      league_id:
+        name: league_id
+        description: 'The ID of the league.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      league_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"id":1,"name":"Top 14","creation":"1892","created_at":null,"last_champion":12,"logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/3\/3a\/Top_14.svg\/langfr-180px-Top_14.svg.png","most_successfull":12,"updated_at":"2023-07-20T12:45:08.000000Z","teams":[{"id":1,"created_at":null,"updated_at":null,"name":"Avirons Bayonnais","nickname":"AB","foundation":"1906","stade":"Jean Dauger","capacity":"18069","website":"www.abrugby.fr","facebook":"https:\/\/www.facebook.com\/avironbayonnaisrugbypro","twitter":"https:\/\/twitter.com\/avironrugbypro","instagram":"https:\/\/www.instagram.com\/avironrugbypro\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/1\/1b\/Logo_Aviron_Bayonnais_Rugby_-_2022.svg\/1936px-Logo_Aviron_Bayonnais_Rugby_-_2022.svg.png","description":null,"pivot":{"league_id":1,"team_id":1}},{"id":2,"created_at":null,"updated_at":null,"name":"Union Bordaux B\u00e8gles","nickname":"UBB","foundation":"2006","stade":"Chaban-Delmas","capacity":"34462","website":"http:\/\/www.ubbrugby.com\/","facebook":"https:\/\/www.facebook.com\/ubbrugby","twitter":"https:\/\/twitter.com\/ubbrugby","instagram":"https:\/\/www.instagram.com\/ubbrugby","youtube":"https:\/\/www.youtube.com\/channel\/UC0ofHgdtPGcNd21eVuBSWBQ","logo":"https:\/\/www.ubbrugby.com\/application\/uploads\/files\/logo_UBB%20transparent.png","description":null,"pivot":{"league_id":1,"team_id":2}},{"id":4,"created_at":null,"updated_at":null,"name":"Castres Olympique","nickname":"CO","foundation":"1906","stade":"Pierre-Fabre","capacity":"12500","website":"www.castres-olympique.com","facebook":"https:\/\/www.facebook.com\/CastresOlympiqueOfficiel","twitter":"https:\/\/twitter.com\/CastresRugby","instagram":"https:\/\/www.instagram.com\/castresrugby\/","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/94\/Castres_Olympique.svg\/999px-Castres_Olympique.svg.png","description":null,"pivot":{"league_id":1,"team_id":4}},{"id":5,"created_at":null,"updated_at":null,"name":"Association Sportive Montferrandaise Clermont Auvergne","nickname":"ASM","foundation":"1911","stade":"Marcel Michelin","capacity":"19372","website":"www.asm-rugby.com","facebook":"https:\/\/fr-fr.facebook.com\/asm.clermont.auvergne\/","twitter":"https:\/\/twitter.com\/ASMOfficiel","instagram":"","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a8\/Logo_ASM_Clermont_Auvergne_2019.svg\/1200px-Logo_ASM_Clermont_Auvergne_2019.svg.png","description":null,"pivot":{"league_id":1,"team_id":5}},{"id":6,"created_at":null,"updated_at":null,"name":"Lyon Olympique Universitaire","nickname":"LOU","foundation":"1896","stade":"Matmut Stadium Gerland","capacity":"35029","website":"www.lourugby.fr","facebook":"https:\/\/www.facebook.com\/LOU.Rugby\/","twitter":"https:\/\/twitter.com\/lelourugby?lang=fr","instagram":"https:\/\/www.instagram.com\/lourugby1896\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCAwMdlmJy1PmeeXwdZuTjXw","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/2\/25\/Lyon_olympique_universitaire.svg\/1200px-Lyon_olympique_universitaire.svg.png","description":null,"pivot":{"league_id":1,"team_id":6}},{"id":7,"created_at":null,"updated_at":null,"name":"Montpellier H\u00e9rault Rugby","nickname":"MHR","foundation":"1986","stade":"GGL Stadium","capacity":"15697","website":"www.montpellier-rugby.com","facebook":"https:\/\/www.facebook.com\/Montpellier.Rugby","twitter":"https:\/\/twitter.com\/MHR_officiel","instagram":"https:\/\/www.instagram.com\/mhr_officiel","youtube":"https:\/\/www.youtube.com\/user\/montpellierrugby?feature=results_main","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d9\/Logo_Montpellier_H%C3%A9rault_rugby_2013.svg\/1200px-Logo_Montpellier_H%C3%A9rault_rugby_2013.svg.png","description":null,"pivot":{"league_id":1,"team_id":7}},{"id":8,"created_at":null,"updated_at":null,"name":"Section Paloise","nickname":"SP","foundation":"1902","stade":"Stade du Hameau","capacity":"14588","website":"http:\/\/www.section-paloise.com\/","facebook":"https:\/\/www.facebook.com\/SectionPaloiseBearnPyrenees","twitter":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","instagram":"http:\/\/instagram.com\/sectionpaloisebearnpyrenees","youtube":"","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/91\/Section_Paloise_logo.svg\/1200px-Section_Paloise_logo.svg.png","description":null,"pivot":{"league_id":1,"team_id":8}},{"id":9,"created_at":null,"updated_at":null,"name":"Rugby Club Toulonnais","nickname":"RCT","foundation":"1908","stade":"Stade Mayol","capacity":"17500","website":"http:\/\/www.rctoulon.com\/","facebook":"https:\/\/www.facebook.com\/RCTofficiel","twitter":"https:\/\/twitter.com\/rctofficiel","instagram":"https:\/\/instagram.com\/rctofficiel\/","youtube":"https:\/\/www.youtube.com\/c\/RCTRugbyClubToulonnais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/5\/5a\/Logo_Rugby_club_toulonnais.svg\/1200px-Logo_Rugby_club_toulonnais.svg.png","description":null,"pivot":{"league_id":1,"team_id":9}},{"id":10,"created_at":null,"updated_at":null,"name":"Stade Fran\u00e7ais Paris","nickname":"SFP","foundation":"1883","stade":"Jean-Bouin","capacity":"25000","website":"www.stade.fr","facebook":"https:\/\/www.facebook.com\/SFPARIS","twitter":"https:\/\/twitter.com\/SFParisRugby","instagram":"https:\/\/www.instagram.com\/stade_francais_paris\/","youtube":"https:\/\/www.youtube.com\/channel\/UC9HI0fd8SE_IfSaFkVKfPLA","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/0\/0f\/Logo_Stade_fran%C3%A7ais_PR_2018.svg\/1200px-Logo_Stade_fran%C3%A7ais_PR_2018.svg.png","description":null,"pivot":{"league_id":1,"team_id":10}},{"id":11,"created_at":null,"updated_at":null,"name":"Stade Rochelais","nickname":"SR","foundation":"1898","stade":"Marcel Deflandre","capacity":"16000","website":"http:\/\/www.staderochelais.com\/","facebook":"https:\/\/www.facebook.com\/staderochelais","twitter":"https:\/\/twitter.com\/staderochelais","instagram":"https:\/\/www.instagram.com\/staderochelais","youtube":"https:\/\/www.dailymotion.com\/staderochelais","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/4\/44\/Logo_Stade_rochelais_2016.svg\/1594px-Logo_Stade_rochelais_2016.svg.png","description":null,"pivot":{"league_id":1,"team_id":11}},{"id":12,"created_at":null,"updated_at":null,"name":"Stade Toulousain","nickname":"ST","foundation":"1907","stade":"Ernest Wallon","capacity":"19000","website":"www.stadetoulousain.fr","facebook":"https:\/\/fr-fr.facebook.com\/StadeToulousainOfficiel","twitter":"https:\/\/twitter.com\/StadeToulousain","instagram":"http:\/\/instagram.com\/stadetoulousainrugby","youtube":"https:\/\/www.youtube.com\/stadetoulousain","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/0\/01\/Logo_Stade_Toulousain_Rugby.svg","description":null,"pivot":{"league_id":1,"team_id":12}},{"id":13,"created_at":null,"updated_at":null,"name":"Union Sportive Arlequins Perpignanais","nickname":"USAP","foundation":"1902","stade":"Aim\u00e9-Giral","capacity":"14593","website":"www.usap.fr","facebook":"https:\/\/www.facebook.com\/USAPOfficiel","twitter":"https:\/\/twitter.com\/usap_officiel","instagram":"https:\/\/www.instagram.com\/usapofficiel\/","youtube":"https:\/\/www.youtube.com\/channel\/UCUZuZFU1VeHD9ZJJ3t3wnsQ","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/7\/77\/Logo_USA_Perpignan_2017.svg\/1200px-Logo_USA_Perpignan_2017.svg.png","description":null,"pivot":{"league_id":1,"team_id":13}},{"id":14,"created_at":null,"updated_at":null,"name":"Racing 92","nickname":"R92","foundation":"1890","stade":"Paris La D\u00e9fense Ar\u00e9na","capacity":"32000","website":"www.racing92.fr","facebook":"https:\/\/www.facebook.com\/Racing92Officiel\/","twitter":"https:\/\/twitter.com\/Racing92","instagram":"https:\/\/www.instagram.com\/Racing92\/","youtube":"https:\/\/www.youtube.com\/channel\/UC4MQWtqrcD567vQIKyBJcsQ\/","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/c\/c7\/Logo_Racing_92_2015.svg\/640px-Logo_Racing_92_2015.svg.png","description":null,"pivot":{"league_id":1,"team_id":14}},{"id":28,"created_at":null,"updated_at":null,"name":"Oyonnax Rugby","nickname":"OYO","foundation":"1909","stade":"Charles Mathon","capacity":"11400","website":"http:\/\/www.oyonnaxrugby.com\/","facebook":"https:\/\/www.facebook.com\/OyonnaxRugbyOfficiel","twitter":"https:\/\/twitter.com\/OyonnaxRugby","instagram":"https:\/\/www.instagram.com\/oyonnaxrugby\/?hl=fr","youtube":"https:\/\/www.youtube.com\/channel\/UCf7BLip3jg_Vod8RRJa7T6Q","logo":"https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/9d\/Logo_Oyonnax_rugby_2018.svg\/1200px-Logo_Oyonnax_rugby_2018.svg.png","description":null,"pivot":{"league_id":1,"team_id":28}}],"pictures":[]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/leagues/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the league.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 75 characters.'
+        required: false
+        example: gqeipovlrzyodq
+        type: string
+        custom: []
+      creation:
+        name: creation
+        description: 'Must not be greater than 4 characters.'
+        required: false
+        example: z
+        type: string
+        custom: []
+      last_champion:
+        name: last_champion
+        description: ''
+        required: false
+        example: 12
+        type: integer
+        custom: []
+      most_successfull:
+        name: most_successfull
+        description: ''
+        required: false
+        example: 2
+        type: integer
+        custom: []
+      logo:
+        name: logo
+        description: ''
+        required: false
+        example: fugiat
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: gqeipovlrzyodq
+      creation: z
+      last_champion: 12
+      most_successfull: 2
+      logo: fugiat
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6D6a4e3VgEbhcdkP18afZ5v'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/leagues/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the league.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer dv4ZfD6P5kg81ecaaE6bV3h'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/pictures
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/pictures
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      location:
+        name: location
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: iugyxnkpt
+        type: string
+        custom: []
+      team_id:
+        name: team_id
+        description: ''
+        required: false
+        example: 19
+        type: integer
+        custom: []
+      league_id:
+        name: league_id
+        description: ''
+        required: false
+        example: 15
+        type: integer
+        custom: []
+    cleanBodyParameters:
+      location: iugyxnkpt
+      team_id: 19
+      league_id: 15
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer df1eVEhbg3c8456D6akaZvP'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/pictures/{picture}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      picture:
+        name: picture
+        description: 'The picture.'
+        required: true
+        example: dolor
+        type: string
+        custom: []
+    cleanUrlParameters:
+      picture: dolor
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/pictures/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the picture.'
+        required: true
+        example: 4
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 4
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      location:
+        name: location
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: gwhdkwhszqcovqyhni
+        type: string
+        custom: []
+      team_id:
+        name: team_id
+        description: ''
+        required: false
+        example: 17
+        type: integer
+        custom: []
+      league_id:
+        name: league_id
+        description: ''
+        required: false
+        example: 19
+        type: integer
+        custom: []
+    cleanBodyParameters:
+      location: gwhdkwhszqcovqyhni
+      team_id: 17
+      league_id: 19
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer hgDPv68eV4E5aZ1kcda36fb'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/pictures/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the picture.'
+        required: true
+        example: 11
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 11
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer Dbv4Z6hdE8a5cgfaPVk613e'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/register
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Fonction qui permet de créer un nouveau user et de génerer un Token'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: qui
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: madilyn77@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: quisquam
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: qui
+      email: madilyn77@example.com
+      password: quisquam
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer f3ahZPEa8D6g1V5bkecv64d'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/login
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

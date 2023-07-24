@@ -24,6 +24,7 @@ class PicturesController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(Request $request)
     {
@@ -58,6 +59,7 @@ class PicturesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Pictures  $pictures
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(Request $request, Pictures $pictures)
     {
@@ -80,6 +82,7 @@ class PicturesController extends Controller
      *
      * @param  \App\Models\Pictures  $pictures
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(Pictures $pictures)
     {
