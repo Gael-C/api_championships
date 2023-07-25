@@ -12,7 +12,7 @@ C'est une API qui, à l'heure actuelle renvoie les 6 grands championnat de rugby
 - EPCR Challenge Cup
 
 Mais elle peut tout à fait coller à d'autres sports en équipes.
-Si besoin, vous trouverez un diagramme de classe ici.
+Si besoin, vous trouverez un diagramme d'entité [ici](ER_diagramme.png.)
 
 ## Installation
 
