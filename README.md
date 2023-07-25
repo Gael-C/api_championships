@@ -59,7 +59,7 @@ et, est accessible à l'adresse que vous avez renseignez, en terminant par /api-
 
 ## Routes accessibles 
 
-Liste des routes ici
+Liste des routes [ici](routes.md)
 
 ## Évolutions à venir
 
