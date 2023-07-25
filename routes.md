@@ -2,7 +2,7 @@
 
 
 
-| Méthode | URL  | Description | Route protégée |
+| Méthode | URL  | Description | API Key |
 | :---: | :---: | :---: | :---: |
 | GET | /teams  |  Renvoi la liste de toutes les équipes | non  |
 | GET | /teams/{id}  |  Renvoi l'équipe concernée | non  |
