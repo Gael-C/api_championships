@@ -12,11 +12,11 @@ C'est une API qui, à l'heure actuelle renvoie les 6 grands championnat de rugby
 - EPCR Challenge Cup
 
 Mais elle peut tout à fait coller à d'autres sports en équipes.
-Si besoin, vous trouverez un diagramme d'entité [ici](ER_diagramme.png)
+Si besoin, vous trouverez un shcéma de la base [ici](Schema_bdd.png)
 
 ## Installation
 
-1. Tout d'abord bien évidemment, faire un git clone.
+1. Tout d'abord bien évidemment, faire un git clone de la branche test, il n'y a aucune protection pour les routes.
 
 2. Après le clonage, effectuer un composer install.
 
