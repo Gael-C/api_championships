@@ -17,8 +17,11 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200);
-    }
+        try {
+            return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200);
+        } catch (\Throwable $e) {
+            print_r($e->getMessage());
+        }    }
 
     /**
      * Store a newly created resource in storage.
