@@ -18,17 +18,7 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        try {
-            DB::connection()->getPDO();
-            dump('Database is connected. Database Name is : ' . DB::connection()->getDatabaseName());
-         } catch (Exception $e) {
-            dump('Database connection failed');
-         }  die("Could not connect to the database.  Please check your configuration. error:" . $e );
-        // try {
-        //     return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200);
-        // } catch (\Throwable $e) {
-        //     print_r($e->getMessage());
-        // }   
+        return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200); 
      }
 
     /**
