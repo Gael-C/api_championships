@@ -17,6 +17,7 @@ class TeamsController extends Controller
      */
     public function index()
     {
+        print_r(Team::with(['leagues', 'pictures'])->get());
         return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200);
     }
 
