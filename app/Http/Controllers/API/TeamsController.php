@@ -24,7 +24,6 @@ class TeamsController extends Controller
          } catch (Exception $e) {
             dump('Database connection failed');
          }  die("Could not connect to the database.  Please check your configuration. error:" . $e );
-        }
         // try {
         //     return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200);
         // } catch (\Throwable $e) {
