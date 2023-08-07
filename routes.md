@@ -1,4 +1,8 @@
-| Méthode | URL  | Description | Route protégée |
+## Routes disponibles
+
+
+
+| Méthode | URL  | Description | API Key |
 | :---: | :---: | :---: | :---: |
 | GET | /teams  |  Renvoi la liste de toutes les équipes | non  |
 | GET | /teams/{id}  |  Renvoi l'équipe concernée | non  |
@@ -17,3 +21,8 @@
 | DELETE | /pictures/{id}  |  Supprime la photo concernée | oui  |
 | POST | /register  |  Créer un nouveau compte | oui  |
 | POST | /login  |  Récupérer son token | non  |
+
+
+## Précisions
+
+Ces routes ne sont pas protégées sur la branche test.
