@@ -33,8 +33,12 @@ class LeaguesController extends Controller
             'creation' => 'required|string|max:4',
             'last_champion' => 'nullable|integer|exists:team,id',
             'most_successfull' => 'nullable|integer|exists:team,id',
-            'logo' => 'required|string'
+            'logo' => 'required|image'
         ]);
+
+        $logo = $request->logo;
+        $validated['logo'] = $logo->store('logo', 'public');
+
 
         $league = League::create($validated);
 
@@ -62,17 +66,26 @@ class LeaguesController extends Controller
      */
     public function update(Request $request, League $league)
     {
-        $validated = $request->validate([
-            'name' => 'nullable|string|max:75',
-            'creation' => 'nullable|string|max:4',
-            'last_champion' => 'nullable|integer|exists:teams,id',
-            'most_successfull' => 'nullable|integer|exists:teams,id',
-            'logo' => 'nullable|string'
-        ]);
+        if($request->_method === 'PUT' || $request->_method === 'PATCH'){
 
-        $league->update($validated);
+            $validated = $request->validate([
+                'name' => 'nullable|string|max:75',
+                'creation' => 'nullable|string|max:4',
+                'last_champion' => 'nullable|integer|exists:teams,id',
+                'most_successfull' => 'nullable|integer|exists:teams,id',
+                'logo' => 'nullable|image',
+            ]);
 
-        return new JsonResponse($league, 200);
+            if (isset($validated['logo'])) {
+
+                $logo = $request->logo;
+                $validated['logo'] = $logo->store('logo', 'public');
+            }
+
+            $league->update($validated);
+
+            return new JsonResponse($league, 200);
+        }
     }
 
     /**
