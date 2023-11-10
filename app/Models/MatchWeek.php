@@ -17,8 +17,8 @@ class MatchWeek extends Model
         return $this->belongsTo(Seasons::class);    
     }
 
-    public function match()
+    public function matches()
     {
-        return $this->hasMany(Matchs::class);
+        return $this->hasMany(Matches::class);
     }
 }

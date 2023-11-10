@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\Matchs;
+use App\Models\Matches;
 use Illuminate\Http\Request;
 
-class MatchsController extends Controller
+class MatchesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -32,10 +32,10 @@ class MatchsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Matchs  $matchs
+     * @param  \App\Models\Matches  $matches
      * @return \Illuminate\Http\Response
      */
-    public function show(Matchs $matchs)
+    public function show(Matches $matches)
     {
         //
     }
@@ -44,10 +44,10 @@ class MatchsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Matchs  $matchs
+     * @param  \App\Models\Matches  $matches
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Matchs $matchs)
+    public function update(Request $request, Matches $matches)
     {
         //
     }
@@ -55,10 +55,10 @@ class MatchsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Matchs  $matchs
+     * @param  \App\Models\Matches  $matches
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Matchs $matchs)
+    public function destroy(Matches $matches)
     {
         //
     }

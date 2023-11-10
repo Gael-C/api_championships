@@ -16,7 +16,7 @@ class MatchWeekController extends Controller
      */
     public function index()
     {
-        return new JsonResponse(MatchWeek::with(['match']));
+        return new JsonResponse(MatchWeek::with('matches')->get(), 200);
     }
 
     /**
