@@ -4,15 +4,16 @@ namespace App\Http\Controllers\API;
 
 use App\CommandBus;
 use App\Http\Command\CreateTeamCommand;
+use App\Http\Command\DeleteTeamCommand;
 use App\Http\Command\UpdateTeamCommand;
 use App\Models\Team;
 use App\Models\Pictures;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use App\Http\Query\GetAllTeamsQuery;
+use App\Http\Query\GetAllTeams;
 use App\Http\Query\GetOneTeam;
+use Illuminate\Http\Response;
 
 class TeamsController extends Controller
 {
@@ -20,25 +21,26 @@ class TeamsController extends Controller
     public function __construct(private CommandBus $commandBus)
     {
     }
+
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function index()
+    public function index(): JsonResponse
     {
-        $teams = new GetAllTeamsQuery();
+        $teams = new GetAllTeams();
         return new JsonResponse($teams->get(), 200);
      }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return JsonResponse
      * @authenticated
      */
-    public function store(Request $request)
+    public function store(Request $request): JsonResponse
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
@@ -54,7 +56,7 @@ class TeamsController extends Controller
             'description' => 'nullable|string',
             'logo' => 'required|image',
             'stade_pic' => 'required|image',
-            'league' =>'required|int'
+            'league' =>'required|integer|exists:league,id'
         ]);
 
         $name = $validated['name'];
@@ -74,7 +76,7 @@ class TeamsController extends Controller
             return new JsonResponse("Merci de renseigner un championnat", 403);
          }
         $league = $validated['league'];
-   
+
         $logo = $logo->store('logo', 'public');
         $stade_pic = $stade_pic->store('stade_pic', 'public');
         $team = new CreateTeamCommand(
@@ -95,17 +97,17 @@ class TeamsController extends Controller
 
         $this->commandBus->handle($team);
 
-        
+
         return new JsonResponse(["message" => "Votre équipe à bien été créée"], 201);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Team  $team
-     * @return \Illuminate\Http\Response
+     * @param Team $team
+     * @return JsonResponse
      */
-    public function show(Team $team)
+    public function show(Team $team): JsonResponse
     {
         $query = new GetOneTeam($team->id);
         return new JsonResponse($query->get(), 200);
@@ -114,9 +116,9 @@ class TeamsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Team  $team
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Team $team
+     * @return JsonResponse
      * @authenticated
      */
     public function update(Request $request, Team $team)
@@ -138,7 +140,7 @@ class TeamsController extends Controller
                 'stade_pic' => 'nullable|image',
                 'league' => 'nullable|int'
             ]);
-            
+
             $name = $validated['name']?? '';
             $nickname = $validated['nickname'] ?? '';
             $foundation = $validated['foundation'] ?? '';
@@ -153,7 +155,7 @@ class TeamsController extends Controller
             $stade_pic = $validated['stade_pic'] ?? '';
             $league = $validated['league'] ?? '';
             if (isset($validated['logo']) && isset($validated['stade_pic'])) {
-                
+
                 $logo = $logo->store('logo', 'public');
                 $stade_pic = $stade_pic->store('stade_pic','public');
 
@@ -189,12 +191,13 @@ class TeamsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Team  $team
-     * @return \Illuminate\Http\Response
+     * @param Team $team
+     * @return JsonResponse
      * @authenticated
      */
-    public function destroy(Team $team)
+    public function destroy(Team $team): JsonResponse
     {
-        return new JsonResponse($team->delete(), 200);
+        $this->commandBus->handle(new DeleteTeamCommand($team->id));
+        return new JsonResponse(["L'équipe avec l'id ".$team->id." a bien été supprimée"], 200);
     }
 }

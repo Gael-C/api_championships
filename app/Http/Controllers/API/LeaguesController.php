@@ -2,66 +2,89 @@
 
 namespace App\Http\Controllers\API;
 
+use App\CommandBus;
+use App\Http\Command\CreateLeagueCommand;
+use App\Http\Command\DeleteLeagueCommand;
+use App\Http\Command\DeleteLeagueHandler;
 use App\Http\Controllers\Controller;
+use App\Http\Query\GetAllLeagues;
+use App\Http\Query\GetOneLeague;
 use App\Models\League;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class LeaguesController extends Controller
 {
+
+    /**
+     * @param CommandBus $commandBus
+     */
+    public function __construct(private CommandBus $commandBus)
+    {
+    }
+
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function index()
+    public function index(): JsonResponse
     {
-        return League::with('teams')->get();
+        $leagues = new GetAllLeagues();
+
+        return new JsonResponse($leagues->get(), 200);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param  Request  $request
+     * @return JsonResponse
      * @authenticated
      */
-    public function store(Request $request)
+    public function store(Request $request): JsonResponse
     {
         $validated = $request->validate([
             'name' => 'required|string|max:75',
             'creation' => 'required|string|max:4',
-            'last_champion' => 'nullable|integer|exists:team,id',
-            'most_successfull' => 'nullable|integer|exists:team,id',
+            'last_champion' => 'required|integer|exists:teams,id',
+            'most_successfull' => 'nullable|integer|exists:teams,id',
             'logo' => 'required|image'
         ]);
 
-        $logo = $request->logo;
-        $validated['logo'] = $logo->store('logo', 'public');
+        $validated['logo'] = $validated['logo']->store('logo', 'public');
 
+        $league = new CreateLeagueCommand(
+            $validated['name'],
+            $validated['creation'],
+            $validated['last_champion'],
+            $validated['most_successfull'],
+            $validated['logo']
+        );
 
-        $league = League::create($validated);
+        $this->commandBus->handle($league);
 
-        return new JsonResponse($league, 201);
+        return new JsonResponse("Votre league a bien été créé", 201);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\League  $league
-     * @return \Illuminate\Http\Response
+     * @param  League  $league
+     * @return JsonResponse
      */
-    public function show(League $league)
+    public function show(League $league): JsonResponse
     {
-        return new JsonResponse($league->load(['teams', 'pictures']), 200);
+        $query = new GetOneLeague($league->id);
+        return new JsonResponse($query->get(), 200);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\League  $league
-     * @return \Illuminate\Http\Response
+     * @param Request  $request
+     * @param  League  $league
+     * @return JsonResponse
      * @authenticated
      */
     public function update(Request $request, League $league)
@@ -91,12 +114,13 @@ class LeaguesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\League  $league
-     * @return \Illuminate\Http\Response
+     * @param League  $league
+     * @return JsonResponse
      * @authenticated
      */
-    public function destroy(League $league)
+    public function destroy(League $league): JsonResponse
     {
-        return new JsonResponse($league->delete(), 200);
+        $this->commandBus->handle(new DeleteLeagueCommand($league->id));
+        return new JsonResponse("La league avec l'id ".$league->id." a bien été supprimée", 200);
     }
 }

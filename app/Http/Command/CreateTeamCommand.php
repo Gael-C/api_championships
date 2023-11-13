@@ -3,7 +3,7 @@
 namespace App\Http\Command;
 
 
-readonly class CreateTeamCommand
+class CreateTeamCommand
 {
     private string $name;
     private string $nickname;
@@ -59,7 +59,7 @@ readonly class CreateTeamCommand
     {
         return $this->nickname;
     }
-    
+
     public function getFoundation():string
     {
         return $this->foundation;
@@ -79,7 +79,7 @@ readonly class CreateTeamCommand
     {
         return $this->website;
     }
-    
+
     public function getFacebook():string
     {
         return $this->facebook ?? '';
@@ -99,7 +99,7 @@ readonly class CreateTeamCommand
     {
         return $this->youtube ?? '';
     }
-    
+
     public function getLogo():string
     {
         return $this->logo;

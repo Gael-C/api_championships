@@ -2,14 +2,13 @@
 
 namespace App\Http\Query;
 
-use App\Models\Team;
+use App\Models\Matches;
 use Illuminate\Database\Eloquent\Collection;
 
-class GetAllTeamsQuery
+class GetAllMatches
 {
     public function get():Collection
     {
-        $teams = Team::with(['leagues', 'pictures'])->get();
-        return $teams;
+        return Matches::class->get();
     }
 }
