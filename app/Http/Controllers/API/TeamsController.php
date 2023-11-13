@@ -2,15 +2,24 @@
 
 namespace App\Http\Controllers\API;
 
+use App\CommandBus;
+use App\Http\Command\CreateTeamCommand;
+use App\Http\Command\UpdateTeamCommand;
 use App\Models\Team;
 use App\Models\Pictures;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use App\Http\Query\GetAllTeamsQuery;
+use App\Http\Query\GetOneTeam;
 
 class TeamsController extends Controller
 {
+
+    public function __construct(private CommandBus $commandBus)
+    {
+    }
     /**
      * Display a listing of the resource.
      *
@@ -18,7 +27,8 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        return new JsonResponse(Team::with(['leagues', 'pictures'])->get(), 200); 
+        $teams = new GetAllTeamsQuery();
+        return new JsonResponse($teams->get(), 200);
      }
 
     /**
@@ -30,7 +40,6 @@ class TeamsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'nickname' => 'required|string|max:5',
@@ -38,44 +47,56 @@ class TeamsController extends Controller
             'stade' => 'required|string',
             'capacity' =>'required|string',
             'website' => 'required|string',
-            'facebook' => 'nullable|string',
             'twitter' => 'nullable|string',
+            'facebook' => 'nullable|string',
             'instagram' => 'nullable|string',
             'youtube' => 'nullable||string',
+            'description' => 'nullable|string',
             'logo' => 'required|image',
-            'stade_pic' => 'required|image'
+            'stade_pic' => 'required|image',
+            'league' =>'required|int'
         ]);
-        $logo = $request->logo;
-        $stade_pic = $request->stade_pic;
 
-        $validated['logo'] = $logo->store('logo', 'public');
-        $validated['stade_pic'] = $stade_pic->store('stade_pic','public');
+        $name = $validated['name'];
+        $nickname = $validated['nickname'];
+        $foundation = $validated['foundation'];
+        $stade = $validated['stade'];
+        $capacity = $validated['capacity'];
+        $website = $validated['website'];
+        $facebook = $validated['facebook'];
+        $twitter = $validated['twitter'];
+        $instagram = $validated['instagram'];
+        $youtube = $validated['youtube'];
+        $logo = $validated['logo'];
+        $stade_pic = $validated['stade_pic'];
 
-        $team = Team::create($validated);
-        
         if (!isset($request->league)) {
-           return new JsonResponse("Merci de renseigner un championnat", 403);
-        }
-        
-        $team->leagues()->attach($request->league);
-        
-        // if ($request->logo !== null) {
-        //     $logo = $request->logo;
-        //     $picture = Pictures::create([
-        //         'location' => $logo->store('logo', 'public'),
-        //         'team_id' => $team->id
-        //     ]);
-        // }
+            return new JsonResponse("Merci de renseigner un championnat", 403);
+         }
+        $league = $validated['league'];
+   
+        $logo = $logo->store('logo', 'public');
+        $stade_pic = $stade_pic->store('stade_pic', 'public');
+        $team = new CreateTeamCommand(
+            $name,
+            $nickname,
+            $foundation,
+            $stade,
+            $capacity,
+            $website,
+            $facebook,
+            $twitter,
+            $instagram,
+            $youtube,
+            $logo,
+            $stade_pic,
+            $league
+        );
 
-        // if ($request->stade_pic !== null) {
-        //     $stade_pic = $request->stade_pic;
-        //     $picture = Pictures::create([
-        //         'location' =>  $stade_pic->store('stade_pic','public'),
-        //         'team_id' => $team->id
-        //     ]);
-        // }
+        $this->commandBus->handle($team);
+
         
-        return new JsonResponse($team->load('leagues')->load('pictures'), 201);
+        return new JsonResponse(["message" => "Votre équipe à bien été créée"], 201);
     }
 
     /**
@@ -86,7 +107,8 @@ class TeamsController extends Controller
      */
     public function show(Team $team)
     {
-        return new JsonResponse($team->load(['leagues','pictures']), 200);
+        $query = new GetOneTeam($team->id);
+        return new JsonResponse($query->get(), 200);
     }
 
     /**
@@ -99,8 +121,7 @@ class TeamsController extends Controller
      */
     public function update(Request $request, Team $team)
     {
-        if($request->_method === 'PUT' || $request->_method === 'PATCH'){
-            
+        if($request->method() === 'PUT' || $request->method() === 'PATCH'){
             $validated = $request->validate([
                 'name' => 'nullable|string|max:255',
                 'nickname' => 'nullable|string|max:5',
@@ -114,48 +135,54 @@ class TeamsController extends Controller
                 'youtube' => 'nullable||string',
                 'description' => 'nullable|string',
                 'logo' => 'nullable|image',
-                'stade_pic' => 'nullable|image'
+                'stade_pic' => 'nullable|image',
+                'league' => 'nullable|int'
             ]);
             
+            $name = $validated['name']?? '';
+            $nickname = $validated['nickname'] ?? '';
+            $foundation = $validated['foundation'] ?? '';
+            $stade = $validated['stade'] ?? '';
+            $capacity = $validated['capacity'] ?? '';
+            $website = $validated['website'] ?? '';
+            $facebook = $validated['facebook'] ?? '';
+            $twitter = $validated['twitter'] ?? '';
+            $instagram = $validated['instagram'] ?? '';
+            $youtube = $validated['youtube'] ?? '';
+            $logo = $validated['logo'] ?? '';
+            $stade_pic = $validated['stade_pic'] ?? '';
+            $league = $validated['league'] ?? '';
             if (isset($validated['logo']) && isset($validated['stade_pic'])) {
                 
-                $logo = $request->logo;
-                $stade_pic = $request->stade_pic;
-                
-                $validated['logo'] = $logo->store('logo', 'public');
-                $validated['stade_pic'] = $stade_pic->store('stade_pic','public');
+                $logo = $logo->store('logo', 'public');
+                $stade_pic = $stade_pic->store('stade_pic','public');
+
             }elseif (isset($validated['logo'])) {
 
-                $logo = $request->logo;
-                $validated['logo'] = $logo->store('logo', 'public');
-            }else{
+                $logo = $logo->store('logo', 'public');
+            }elseif (isset($validated['stade_pic'])){
 
-                $stade_pic = $request->stade_pic;
-                $validated['stade_pic'] = $stade_pic->store('stade_pic','public');
+                $stade_pic = $stade_pic->store('stade_pic','public');
             }
+            $team = new UpdateTeamCommand(
+                $team->id,
+                $name,
+                $nickname,
+                $foundation,
+                $stade,
+                $capacity,
+                $website,
+                $facebook,
+                $twitter,
+                $instagram,
+                $youtube,
+                $logo,
+                $stade_pic,
+                $league
+            );
+            $this->commandBus->handle($team);
 
-            $team->update($validated);
-
-            if ($request->league !== null) {
-                $team->leagues()->attach($request->league);
-            }
-
-            // if ($request->logo !== null) {
-            //     $logo = $request->logo;
-            //     $picture = Pictures::create([
-            //         'location' => $logo->store('logo', 'public'),
-            //         'team_id' => $team->id
-            //     ]);
-            // }
-
-            // if ($request->stade_pic !== null) {
-            //     $stade_pic = $request->stade_pic;
-            //     $picture = Pictures::create([
-            //         'location' =>  $stade_pic->store('stade_pic','public'),
-            //         'team_id' => $team->id
-            //     ]);
-            // }
-            return new JsonResponse($team->load('leagues')->load('pictures'), 200);
+            return new JsonResponse(["message" => " L'équipe a bien été modifiée"],200);
         }
     }
 
