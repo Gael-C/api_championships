@@ -29,7 +29,7 @@ Route::middleware('auth:sanctum')->group(function () {
         'pictures' => PicturesController::class,
         'seasons' => SeasonController::class,
         'matchWeek' => MatchWeekController::class,
-        'match' => MatchesController::class
+        'matches' => MatchesController::class
     ]);
 });
 
@@ -49,8 +49,8 @@ Route::get('/seasons/{seasons}', [SeasonController::class, 'show']);
 Route::get('/matchWeek', [MatchWeekController::class, 'index']);
 Route::get('/matchWeek/{matchWeek}', [MatchWeekController::class, 'show']);
 
-Route::get('/match', [MatchesController::class, 'index']);
-Route::get('/match/{match}', [MatchesController::class, 'show']);
+Route::get('/matches', [MatchesController::class, 'index']);
+Route::get('/matches/{match}', [MatchesController::class, 'show']);
 
 Route::post('/register', [AuthController::class, 'register'])->middleware('auth:sanctum');
 Route::post('/login', [AuthController::class, 'login'])->name('login');

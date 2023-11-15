@@ -13,8 +13,10 @@ class CreateMatchweekMatches extends Migration
      */
     public function up()
     {
-        Schema::create('matchweek_matches', function (Blueprint $table) {
+        Schema::create('match_week_matches', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('matches_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('match_week_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

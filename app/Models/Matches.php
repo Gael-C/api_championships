@@ -19,7 +19,7 @@ class Matches extends Model
         return $this->belongsTo(Team::class);
     }
 
-    public function matchWeek() {
-        return $this->hasMany(MatchWeek::class);
+    public function matchWeeks() {
+        return $this->belongsToMany(MatchWeek::class);
     }
 }

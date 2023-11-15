@@ -9,6 +9,6 @@ class GetAllMatches
 {
     public function get():Collection
     {
-        return Matches::class->get();
+        return Matches::query()->get();
     }
 }

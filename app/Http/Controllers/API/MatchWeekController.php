@@ -3,20 +3,24 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Query\GetAllMatchWeeks;
+use App\Http\Query\GetOneMatchweek;
 use App\Models\MatchWeek;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Psy\Util\Json;
 
 class MatchWeekController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function index()
+    public function index(): JsonResponse
     {
-        return new JsonResponse(MatchWeek::with('matches')->get(), 200);
+        $matchWeek = new GetAllMatchWeeks();
+        return new JsonResponse($matchWeek->get(), 200);
     }
 
     /**
@@ -33,19 +37,20 @@ class MatchWeekController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\MatchWeek  $matchWeek
-     * @return \Illuminate\Http\Response
+     * @param MatchWeek $matchWeek
+     * @return JsonResponse
      */
-    public function show(MatchWeek $matchWeek)
+    public function show(MatchWeek $matchWeek): JsonResponse
     {
-        //
+        $query = new GetOneMatchweek($matchWeek->id);
+        return new JsonResponse($query->get(), 200);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\MatchWeek  $matchWeek
+     * @param MatchWeek $matchWeek
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, MatchWeek $matchWeek)
@@ -56,7 +61,7 @@ class MatchWeekController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\MatchWeek  $matchWeek
+     * @param MatchWeek $matchWeek
      * @return \Illuminate\Http\Response
      */
     public function destroy(MatchWeek $matchWeek)

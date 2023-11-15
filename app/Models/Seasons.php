@@ -9,11 +9,11 @@ class Seasons extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
+    protected $guarded = ['id', 'created_at', 'updated_at'];
 
     public function matchWeek()
     {
-        return $this->hasMany(MatchWeek::class);
+        return $this->hasMany(MatchWeek::class)->with('matches');
     }
 
 }

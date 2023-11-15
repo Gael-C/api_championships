@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\CommandBus;
 use App\Http\Controllers\Controller;
 use App\Http\Query\GetAllSeasons;
+use App\Http\Query\GetOneSeason;
 use App\Models\Seasons;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -48,9 +49,10 @@ class SeasonController extends Controller
      * @param  Seasons  $seasons
      * @return JsonResponse
      */
-    public function show(Seasons $seasons): JsonResponse
+    public function show(int $id): JsonResponse
     {
-        return new JsonResponse();
+        $query = new GetOneSeason($id);
+        return new JsonResponse($query->get(), 200);
     }
 
     /**

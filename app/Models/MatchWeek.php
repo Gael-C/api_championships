@@ -9,16 +9,16 @@ class MatchWeek extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
+    protected $guarded = ['id', 'created_at', 'updated_at'];
 
 
     public function seasons()
     {
-        return $this->belongsTo(Seasons::class);    
+        return $this->belongsTo(Seasons::class);
     }
 
     public function matches()
     {
-        return $this->hasMany(Matches::class);
+        return $this->belongsToMany(Matches::class);
     }
 }
