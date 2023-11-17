@@ -9,6 +9,6 @@ class GetAllMatches
 {
     public function get():Collection
     {
-        return Matches::query()->get();
+        return Matches::query()->get()->load('matchWeeks', 'homeTeam', 'awayTeam');
     }
 }

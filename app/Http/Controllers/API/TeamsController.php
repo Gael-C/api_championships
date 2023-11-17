@@ -198,6 +198,6 @@ class TeamsController extends Controller
     public function destroy(Team $team): JsonResponse
     {
         $this->commandBus->handle(new DeleteTeamCommand($team->id));
-        return new JsonResponse(["L'équipe avec l'id ".$team->id." a bien été supprimée"], 200);
+        return new JsonResponse("L'équipe avec l'id ".$team->id." a bien été supprimée", 200);
     }
 }

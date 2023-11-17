@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\API;
 
+use App\CommandBus;
+use App\Http\Command\CreateMatchesCommand;
 use App\Http\Controllers\Controller;
 use App\Http\Query\GetAllMatches;
 use App\Http\Query\GetOneMatch;
@@ -12,6 +14,10 @@ use Psy\Util\Json;
 
 class MatchesController extends Controller
 {
+
+    public function __construct(private CommandBus $commandBus)
+    {
+    }
     /**
      * Display a listing of the resource.
      *
@@ -31,7 +37,34 @@ class MatchesController extends Controller
      */
     public function store(Request $request): JsonResponse
     {
+        $validated = $request->validate([
+            "home_team_id" => "required|int",
+            "home_team_result" => "required|int",
+            "home_team_tries" => "required|int",
+            "away_team_id" => "required|int",
+            "away_team_result" => "required|int",
+            "away_team_tries" => "required|int",
+            "match_week" => "required|int"
+        ]);
 
+        $home_team = $validated['home_team_id'];
+        $home_result = $validated['home_team_result'];
+        $home_tries = $validated['home_team_tries'];
+        $away_team = $validated['away_team_id'];
+        $away_result = $validated['away_team_result'];
+        $away_tries = $validated['away_team_tries'];
+        $match_week = $validated['match_week'];
+
+        $this->commandBus->handle(new CreateMatchesCommand(
+            $home_team,
+            $home_result,
+            $home_tries,
+            $away_team,
+            $away_result,
+            $away_tries,
+            $match_week));
+
+        return  new JsonResponse("Le match a bien été créé", 201);
     }
 
     /**

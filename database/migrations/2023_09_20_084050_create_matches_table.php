@@ -21,7 +21,6 @@ class CreateMatchesTable extends Migration
             $table->foreignId('away_team_id')->references('id')->on('teams')->nullable()->constrained()->cascadeOnDelete();
             $table->integer('away_team_result');
             $table->integer('away_team_tries');
-            $table->foreignId('match_week_id')->nullable()->constrained()->cascadeOnDelete();
         });
     }
 

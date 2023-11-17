@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\API;
 
 use App\CommandBus;
+use App\Http\Command\CreateSeasonCommand;
+use App\Http\Command\DeleteSeasonCommand;
+use App\Http\Command\UpdateSeasonCommand;
 use App\Http\Controllers\Controller;
 use App\Http\Query\GetAllSeasons;
 use App\Http\Query\GetOneSeason;
@@ -40,13 +43,21 @@ class SeasonController extends Controller
      */
     public function store(Request $request): JsonResponse
     {
-        return new JsonResponse();
+        $validated = $request->validate([
+            'season' => 'required|string|max:10'
+        ]);
+
+        $seasonTime = $validated['season'];
+
+        $this->commandBus->handle(new CreateSeasonCommand($seasonTime));
+
+        return new JsonResponse(["message"=>"La saison a bien été créée"], 201);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  Seasons  $seasons
+     * @param  int  $id
      * @return JsonResponse
      */
     public function show(int $id): JsonResponse
@@ -59,22 +70,30 @@ class SeasonController extends Controller
      * Update the specified resource in storage.
      *
      * @param  Request  $request
-     * @param  Seasons  $seasons
+     * @param int $id
      * @return JsonResponse
      */
-    public function update(Request $request, Seasons $seasons): JsonResponse
+    public function update(Request $request, int $id): JsonResponse
     {
-        return  new JsonResponse();
+        $validated = $request->validate([
+            'season' => 'nullable|string|max:10'
+        ]);
+
+        $seasonTime = $validated['season'];
+
+        $this->commandBus->handle(new UpdateSeasonCommand($id, $seasonTime));
+        return new JsonResponse(["message" => "La saison avec l'id " . $id . " a été modifiée."]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  Seasons  $seasons
+     * @param  int  $id
      * @return JsonResponse
      */
-    public function destroy(Seasons $seasons): JsonResponse
+    public function destroy(int $id): JsonResponse
     {
-        return new JsonResponse();
+        $this->commandBus->handle(new DeleteSeasonCommand($id));
+        return new JsonResponse("La saison avec l'id ". $id." a bien été supprimée", 200);
     }
 }
