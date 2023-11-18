@@ -13,7 +13,7 @@ class GetOneSeason
 
     public function get(): array
     {
-        $season = Seasons::query()->select('*')->findOrFail($this->id)->load('matchWeek');
+        $season = Seasons::query()->select('*')->findOrFail($this->id)->load('matchWeeks');
         return $season->toArray();
     }
 }

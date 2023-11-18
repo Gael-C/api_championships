@@ -9,6 +9,6 @@ class GetAllMatchWeeks
 {
     public function get():Collection
     {
-        return MatchWeek::with('matches')->get();
+        return MatchWeek::query()->get()->load('matches');
     }
 }

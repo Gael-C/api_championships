@@ -19,6 +19,6 @@ class MatchWeek extends Model
 
     public function matches()
     {
-        return $this->belongsToMany(Matches::class);
+        return $this->belongsToMany(Matches::class)->with('awayTeam', 'homeTeam');
     }
 }

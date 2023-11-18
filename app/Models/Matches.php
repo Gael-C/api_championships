@@ -12,14 +12,14 @@ class Matches extends Model
     protected $guarded = ['id'];
 
     public function homeTeam() {
-        return $this->belongsTo(Team::class);
+        return $this->belongsTo(Team::class)->select('id', 'name');
     }
 
     public function awayTeam() {
-        return $this->belongsTo(Team::class);
+        return $this->belongsTo(Team::class)->select('id', 'name');
     }
 
     public function matchWeeks() {
-        return $this->belongsToMany(MatchWeek::class);
+        return $this->belongsToMany(MatchWeek::class)->select('matches_id', 'match_week_number', 'seasons_id');
     }
 }

@@ -11,7 +11,7 @@ class Seasons extends Model
 
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
-    public function matchWeek()
+    public function matchWeeks()
     {
         return $this->hasMany(MatchWeek::class)->with('matches');
     }

@@ -10,6 +10,6 @@ class GetAllSeasons
 {
     public function get():Collection
     {
-        return Seasons::with('matchWeek')->get();
+        return Seasons::query()->get()->load('matchWeeks');
     }
 }

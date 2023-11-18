@@ -9,6 +9,6 @@ class GetAllTeams
 {
     public function get():Collection
     {
-        return Team::with(['leagues', 'pictures'])->get();
+        return Team::query()->get()->load('leagues', 'pictures');
     }
 }
