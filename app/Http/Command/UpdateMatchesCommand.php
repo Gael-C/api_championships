@@ -21,7 +21,6 @@ class UpdateMatchesCommand
      * @param int $away_team
      * @param int $away_result
      * @param int $away_tries
-     * @param int $match_week
      */
     public function __construct(
         int $id,
@@ -30,8 +29,7 @@ class UpdateMatchesCommand
         int $home_tries,
         int $away_team,
         int $away_result,
-        int $away_tries,
-        int $match_week)
+        int $away_tries)
     {
         $this->id = $id;
         $this->home_team = $home_team;
@@ -40,7 +38,6 @@ class UpdateMatchesCommand
         $this->away_team = $away_team;
         $this->away_result = $away_result;
         $this->away_tries = $away_tries;
-        $this->match_week = $match_week;
     }
 
     public function getId(): int
@@ -96,9 +93,5 @@ class UpdateMatchesCommand
         return $this->away_tries;
     }
 
-    public function getMatchWeek(): int
-    {
-        return $this->match_week;
-    }
 
 }

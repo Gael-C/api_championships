@@ -18,7 +18,5 @@ class UpdateMatchesHandler
         $updatedMatches->away_team_tries = $command->getAwayTries();
 
         $updatedMatches->update();
-
-        $updatedMatches->matchWeeks()->attach($command->getMatchWeek());
     }
 }

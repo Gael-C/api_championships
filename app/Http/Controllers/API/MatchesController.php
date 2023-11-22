@@ -47,7 +47,7 @@ class MatchesController extends Controller
             "away_team_id" => "required|int",
             "away_team_result" => "required|int",
             "away_team_tries" => "required|int",
-            "match_week" => "required|int"
+            "match_week_id" => "required|int"
         ]);
 
         $home_team = $validated['home_team_id'];
@@ -56,7 +56,7 @@ class MatchesController extends Controller
         $away_team = $validated['away_team_id'];
         $away_result = $validated['away_team_result'];
         $away_tries = $validated['away_team_tries'];
-        $match_week = $validated['match_week'];
+        $match_week = $validated['match_week_id'];
 
         $this->commandBus->handle(new CreateMatchesCommand(
             $home_team,
@@ -98,7 +98,6 @@ class MatchesController extends Controller
             "away_team_id" => "required|int",
             "away_team_result" => "required|int",
             "away_team_tries" => "required|int",
-            "match_week" => "required|int"
         ]);
 
         $home_team = $validated['home_team_id'];
@@ -107,7 +106,6 @@ class MatchesController extends Controller
         $away_team = $validated['away_team_id'];
         $away_result = $validated['away_team_result'];
         $away_tries = $validated['away_team_tries'];
-        $match_week = $validated['match_week'];
 
         $this->commandBus->handle(new UpdateMatchesCommand(
             $id,
@@ -116,8 +114,7 @@ class MatchesController extends Controller
             $home_tries,
             $away_team,
             $away_result,
-            $away_tries,
-            $match_week));
+            $away_tries));
 
         return  new JsonResponse("Le match avec l'id ".$id." a bien été modifié.", 200);
     }
