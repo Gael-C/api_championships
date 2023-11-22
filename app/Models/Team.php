@@ -21,6 +21,11 @@ class Team extends Model
         return $this->hasMany(Pictures::class);
     }
 
+    public function classment()
+    {
+        return $this->hasMany(Classment::class,'team_id','id');
+    }
+
     public function mostSuccesfull()
     {
         return $this->hasOne(League::class);

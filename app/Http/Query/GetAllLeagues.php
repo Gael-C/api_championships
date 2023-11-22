@@ -9,6 +9,6 @@ class GetAllLeagues
 {
     public function get():Collection
     {
-        return League::with('teams')->get();
+        return League::query()->get()->load('teams', 'classment');
     }
 }

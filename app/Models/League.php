@@ -16,6 +16,11 @@ class League extends Model
         return $this->belongsToMany(Team::class)->select('team_id', 'name');
     }
 
+    public function classment()
+    {
+        return $this->hasMany(Classment::class);
+    }
+
     public function pictures()
     {
         return $this->hasMany(Pictures::class);

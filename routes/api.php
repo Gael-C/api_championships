@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\ClassmentController;
 use App\Http\Controllers\API\LeaguesController;
 use App\Http\Controllers\API\PicturesController;
 use App\Http\Controllers\API\TeamsController;
@@ -29,7 +30,8 @@ Route::middleware('auth:sanctum')->group(function () {
         'pictures' => PicturesController::class,
         'seasons' => SeasonController::class,
         'matchWeek' => MatchWeekController::class,
-        'matches' => MatchesController::class
+        'matches' => MatchesController::class,
+        'classement' => ClassmentController::class
     ]);
 });
 
@@ -51,6 +53,9 @@ Route::get('/matchWeek/{matchWeek}', [MatchWeekController::class, 'show']);
 
 Route::get('/matches', [MatchesController::class, 'index']);
 Route::get('/matches/{match}', [MatchesController::class, 'show']);
+
+Route::get('/classement', [ClassmentController::class, 'index']);
+Route::get('/classement/{id}', [ClassmentController::class, 'show']);
 
 Route::post('/register', [AuthController::class, 'register'])->middleware('auth:sanctum');
 Route::post('/login', [AuthController::class, 'login'])->name('login');

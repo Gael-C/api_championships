@@ -59,40 +59,26 @@ class TeamsController extends Controller
             'league' =>'required|integer|exists:league,id'
         ]);
 
-        $name = $validated['name'];
-        $nickname = $validated['nickname'];
-        $foundation = $validated['foundation'];
-        $stade = $validated['stade'];
-        $capacity = $validated['capacity'];
-        $website = $validated['website'];
-        $facebook = $validated['facebook'];
-        $twitter = $validated['twitter'];
-        $instagram = $validated['instagram'];
-        $youtube = $validated['youtube'];
-        $logo = $validated['logo'];
-        $stade_pic = $validated['stade_pic'];
-
         if (!isset($request->league)) {
             return new JsonResponse("Merci de renseigner un championnat", 403);
          }
-        $league = $validated['league'];
 
-        $logo = $logo->store('logo', 'public');
-        $stade_pic = $stade_pic->store('stade_pic', 'public');
+        $validated['logo'] = $validated['logo']->store('logo', 'public');
+        $validated['stade_pic'] = $validated['stade_pic']->store('stade_pic', 'public');
         $team = new CreateTeamCommand(
-            $name,
-            $nickname,
-            $foundation,
-            $stade,
-            $capacity,
-            $website,
-            $facebook,
-            $twitter,
-            $instagram,
-            $youtube,
-            $logo,
-            $stade_pic,
-            $league
+            $validated['name'],
+            $validated['nickname'],
+            $validated['foundation'],
+            $validated['stade'],
+            $validated['capacity'],
+            $validated['website'],
+            $validated['facebook'],
+            $validated['twitter'],
+            $validated['instagram'],
+            $validated['youtube'],
+            $validated['logo'],
+            $validated['stade_pic'],
+            $validated['league']
         );
 
         $this->commandBus->handle($team);
@@ -117,13 +103,12 @@ class TeamsController extends Controller
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @param Team $team
+     * @param int $id
      * @return JsonResponse
      * @authenticated
      */
-    public function update(Request $request, Team $team)
+    public function update(Request $request, int $id)
     {
-        if($request->method() === 'PUT' || $request->method() === 'PATCH'){
             $validated = $request->validate([
                 'name' => 'nullable|string|max:255',
                 'nickname' => 'nullable|string|max:5',
@@ -141,51 +126,36 @@ class TeamsController extends Controller
                 'league' => 'nullable|int'
             ]);
 
-            $name = $validated['name']?? '';
-            $nickname = $validated['nickname'] ?? '';
-            $foundation = $validated['foundation'] ?? '';
-            $stade = $validated['stade'] ?? '';
-            $capacity = $validated['capacity'] ?? '';
-            $website = $validated['website'] ?? '';
-            $facebook = $validated['facebook'] ?? '';
-            $twitter = $validated['twitter'] ?? '';
-            $instagram = $validated['instagram'] ?? '';
-            $youtube = $validated['youtube'] ?? '';
-            $logo = $validated['logo'] ?? '';
-            $stade_pic = $validated['stade_pic'] ?? '';
-            $league = $validated['league'] ?? '';
             if (isset($validated['logo']) && isset($validated['stade_pic'])) {
 
-                $logo = $logo->store('logo', 'public');
-                $stade_pic = $stade_pic->store('stade_pic','public');
+                $validated['logo'] = $validated['logo']->store('logo', 'public');
+                $validated['stade_pic'] = $validated['stade_pic']->store('stade_pic','public');
 
             }elseif (isset($validated['logo'])) {
 
-                $logo = $logo->store('logo', 'public');
+                $validated['logo'] =  $validated['logo']->store('logo', 'public');
             }elseif (isset($validated['stade_pic'])){
 
-                $stade_pic = $stade_pic->store('stade_pic','public');
+                $validated['stade_pic'] = $validated['stade_pic']->store('stade_pic','public');
             }
-            $team = new UpdateTeamCommand(
-                $team->id,
-                $name,
-                $nickname,
-                $foundation,
-                $stade,
-                $capacity,
-                $website,
-                $facebook,
-                $twitter,
-                $instagram,
-                $youtube,
-                $logo,
-                $stade_pic,
-                $league
-            );
-            $this->commandBus->handle($team);
+        $this->commandBus->handle(new UpdateTeamCommand(
+                $id,
+                $validated['name'],
+                $validated['nickname'],
+                $validated['foundation'],
+                $validated['stade'],
+                $validated['capacity'],
+                $validated['website'],
+                $validated['facebook'],
+                $validated['twitter'],
+                $validated['instagram'],
+                $validated['youtube'],
+                $validated['logo'],
+                $validated['stade_pic'],
+                $validated['league']
+            ));
 
-            return new JsonResponse(["message" => " L'équipe a bien été modifiée"],200);
-        }
+            return new JsonResponse( "L'équipe avec l'id ".$id."  a bien été modifiée",200);
     }
 
     /**
