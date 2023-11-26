@@ -6,8 +6,6 @@ use App\CommandBus;
 use App\Http\Command\CreateTeamCommand;
 use App\Http\Command\DeleteTeamCommand;
 use App\Http\Command\UpdateTeamCommand;
-use App\Models\Team;
-use App\Models\Pictures;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;

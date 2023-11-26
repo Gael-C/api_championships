@@ -14,11 +14,6 @@
 | POST | /leagues  |  Créer un nouveau championnat | oui  |
 | PUT/PATCH | /leagues/{id}  |  Modifie le championnat concernée | oui  |
 | DELETE | /leagues/{id}  |  Supprime le championnat concernée | oui  |
-| GET | /pictures  |  Renvoi la liste de toutes les photos| non  |
-| GET | /pictures/{id}  |  Renvoi la photo concernée| non  |
-| POST | /pictures  |  Créer une nouvelle photo | oui  |
-| PUT/PATCH | /pictures/{id}  |  Modifie la photo concernée | oui  |
-| DELETE | /pictures/{id}  |  Supprime la photo concernée | oui  |
 | POST | /register  |  Créer un nouveau compte | oui  |
 | POST | /login  |  Récupérer son token | non  |
 

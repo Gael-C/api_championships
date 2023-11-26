@@ -9,6 +9,6 @@ class GetAllTeams
 {
     public function get():Collection
     {
-        return Team::query()->get()->load('leagues','classment', 'pictures');
+        return Team::query()->get()->load('leagues','classment');
     }
 }

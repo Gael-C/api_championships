@@ -11,7 +11,7 @@ class GetOneTeam
 
     public function get():array
     {
-        $team = Team::query()->select('*')->findOrFail($this->id)->load('leagues', 'classment','pictures');
+        $team = Team::query()->select('*')->findOrFail($this->id)->load('leagues', 'classment');
         return $team->toArray();
     }
 }

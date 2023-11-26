@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\API\ClassmentController;
 use App\Http\Controllers\API\LeaguesController;
-use App\Http\Controllers\API\PicturesController;
 use App\Http\Controllers\API\TeamsController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\MatchesController;
@@ -27,7 +26,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResources([
         'teams' => TeamsController::class,
         'leagues' => LeaguesController::class,
-        'pictures' => PicturesController::class,
         'seasons' => SeasonController::class,
         'matchWeek' => MatchWeekController::class,
         'matches' => MatchesController::class,
@@ -41,9 +39,6 @@ Route::get('/teams/{team}', [TeamsController::class, 'show']);
 
 Route::get('/leagues', [LeaguesController::class, 'index']);
 Route::get('/leagues/{league}', [LeaguesController::class, 'show']);
-
-Route::get('/pictures', [PicturesController::class, 'index']);
-Route::get('/pictures/{picture}', [PicturesController::class, 'show']);
 
 Route::get('/seasons', [SeasonController::class, 'index']);
 Route::get('/seasons/{seasons}', [SeasonController::class, 'show']);
