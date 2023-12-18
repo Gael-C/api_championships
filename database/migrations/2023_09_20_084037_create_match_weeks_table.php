@@ -17,6 +17,7 @@ class CreateMatchWeeksTable extends Migration
             $table->id();
             $table->string('match_week_number');
             $table->foreignId('season_id')->nullable()->constrained()->cascadeOnDelete();
+            $table->timestamps();
         });
     }
 

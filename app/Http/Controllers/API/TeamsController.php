@@ -42,6 +42,7 @@ class TeamsController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
+            'slug' => 'required|string|max:20',
             'nickname' => 'required|string|max:5',
             'foundation' => 'required|string|max:4',
             'stade' => 'required|string',
@@ -53,23 +54,20 @@ class TeamsController extends Controller
             'youtube' => 'nullable||string',
             'description' => 'nullable|string',
             'logo' => 'required|image',
-            'stade_pic' => 'required|image',
-            'league' =>'required|integer|exists:league,id'
+            'league' =>'required|integer|exists:leagues,id'
         ]);
         $logo = $request->logo;
-        $stade_pic = $request->stade_pic;
 
         $validated['logo'] = $logo->store('logo', 'public');
-        $validated['stade_pic'] = $stade_pic->store('stade_pic','public');
 
         if (!isset($request->league)) {
             return new JsonResponse("Merci de renseigner un championnat", 403);
          }
 
         $validated['logo'] = $validated['logo']->store('logo', 'public');
-        $validated['stade_pic'] = $validated['stade_pic']->store('stade_pic', 'public');
         $team = new CreateTeamCommand(
             $validated['name'],
+            $validated['slug'],
             $validated['nickname'],
             $validated['foundation'],
             $validated['stade'],
@@ -80,7 +78,6 @@ class TeamsController extends Controller
             $validated['instagram'],
             $validated['youtube'],
             $validated['logo'],
-            $validated['stade_pic'],
             $validated['league']
         );
 
@@ -93,12 +90,12 @@ class TeamsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param int $id
+     * @param string $slug
      * @return JsonResponse
      */
-    public function show(int $id): JsonResponse
+    public function show(string $slug): JsonResponse
     {
-        $query = new GetOneTeam($id);
+        $query = new GetOneTeam($slug);
         return new JsonResponse($query->get(), 200);
     }
 
@@ -106,14 +103,15 @@ class TeamsController extends Controller
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @param int $id
+     * @param string $slug
      * @return JsonResponse
      * @authenticated
      */
-    public function update(Request $request, int $id)
+    public function update(Request $request, string $slug)
     {
             $validated = $request->validate([
                 'name' => 'nullable|string|max:255',
+                'slug' => 'nullable|string|max:20',
                 'nickname' => 'nullable|string|max:5',
                 'foundation' => 'nullable|string|max:4',
                 'stade' => 'nullable|string',
@@ -125,25 +123,17 @@ class TeamsController extends Controller
                 'youtube' => 'nullable||string',
                 'description' => 'nullable|string',
                 'logo' => 'nullable|image',
-                'stade_pic' => 'nullable|image',
                 'league' => 'nullable|int'
             ]);
             
-            if (isset($validated['logo']) && isset($validated['stade_pic'])) {
+            if (isset($validated['logo'])) {
 
                 $validated['logo'] = $validated['logo']->store('logo', 'public');
-                $validated['stade_pic'] = $validated['stade_pic']->store('stade_pic','public');
-
-            }elseif (isset($validated['logo'])) {
-
-                $validated['logo'] =  $validated['logo']->store('logo', 'public');
-            }elseif (isset($validated['stade_pic'])){
-
-                $validated['stade_pic'] = $validated['stade_pic']->store('stade_pic','public');
             }
         $this->commandBus->handle(new UpdateTeamCommand(
-                $id,
+                $slug,
                 $validated['name'],
+                $validated['slug'],
                 $validated['nickname'],
                 $validated['foundation'],
                 $validated['stade'],
@@ -154,24 +144,23 @@ class TeamsController extends Controller
                 $validated['instagram'],
                 $validated['youtube'],
                 $validated['logo'],
-                $validated['stade_pic'],
                 $validated['league']
             ));
 
-            return new JsonResponse( "L'équipe avec l'id ".$id."  a bien été modifiée",200);
+            return new JsonResponse( "L'équipe avec a bien été modifiée",200);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param int $id
+     * @param string $slug
      * @return JsonResponse
      * @authenticated
      */
-    public function destroy(int $id): JsonResponse
+    public function destroy(string $slug): JsonResponse
     {
-        $this->commandBus->handle(new DeleteTeamCommand($id));
-        return new JsonResponse("L'équipe avec l'id ".$id." a bien été supprimée", 200);
+        $this->commandBus->handle(new DeleteTeamCommand($slug));
+        return new JsonResponse("L'équipe a bien été supprimée", 200);
     }
 }
 

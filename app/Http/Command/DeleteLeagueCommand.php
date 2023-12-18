@@ -4,22 +4,22 @@ namespace App\Http\Command;
 
 class DeleteLeagueCommand
 {
-    private int $id;
+    private string $slug;
 
     /**
-     * @param int $id
+     * @param string $slug
      */
-    public function __construct(int $id)
+    public function __construct(string $slug)
     {
-        $this->id = $id;
+        $this->slug = $slug;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getId(): int
+    public function getSlug(): string
     {
-        return $this->id;
+        return $this->slug;
     }
 
 }

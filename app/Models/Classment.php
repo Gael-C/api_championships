@@ -11,11 +11,11 @@ class Classment extends Model
 
     public function team()
     {
-        return $this->belongsTo(Team::class)->select('id', 'name');
+        return $this->belongsTo(Team::class)->select('id', 'name','slug');
     }
 
     public function league()
     {
-        return $this->belongsTo(League::class)->select('id', 'name');
+        return $this->belongsTo(League::class)->select('id', 'name','slug');
     }
 }

@@ -9,6 +9,6 @@ class GetAllClassment
 {
     public  function get():Collection
     {
-        return Classment::with('team','league')->get();
+        return Classment::query()->get()->load('team','league');
     }
 }

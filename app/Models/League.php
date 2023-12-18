@@ -11,6 +11,16 @@ class League extends Model
 
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     public function teams()
     {
         return $this->belongsToMany(Team::class)->select('team_id', 'name');
@@ -19,6 +29,11 @@ class League extends Model
     public function classment()
     {
         return $this->hasMany(Classment::class);
+    }
+
+    public function matches()
+    {
+        return $this->hasMany(Matches::class);
     }
 
     public function pictures()

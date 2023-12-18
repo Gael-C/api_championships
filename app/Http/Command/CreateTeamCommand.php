@@ -6,6 +6,7 @@ namespace App\Http\Command;
 class CreateTeamCommand
 {
     private string $name;
+    private string $slug;
     private string $nickname;
     private string $foundation;
     private string $stade;
@@ -16,11 +17,11 @@ class CreateTeamCommand
     private ?string $instagram;
     private ?string $youtube;
     private string $logo;
-    private string $stade_pic;
     private int $league;
 
     public function __construct(
         $name,
+        $slug,
         $nickname,
         $foundation,
         $stade,
@@ -31,11 +32,11 @@ class CreateTeamCommand
         $instagram,
         $youtube,
         $logo,
-        $stade_pic,
         $league
     )
     {
         $this->name = $name;
+        $this->slug = $slug;
         $this->nickname = $nickname;
         $this->foundation = $foundation;
         $this->stade = $stade;
@@ -46,7 +47,6 @@ class CreateTeamCommand
         $this->instagram = $instagram;
         $this->youtube = $youtube;
         $this->logo = $logo;
-        $this->stade_pic = $stade_pic;
         $this->league = $league;
     }
 
@@ -105,9 +105,9 @@ class CreateTeamCommand
         return $this->logo;
     }
 
-    public function getStadePic():string
+    public function getSlug():string
     {
-        return $this->stade_pic;
+        return $this->slug;
     }
 
     public function getLeague(): int

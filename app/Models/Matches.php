@@ -19,6 +19,10 @@ class Matches extends Model
         return $this->belongsTo(Team::class)->select('id', 'name');
     }
 
+    public function league(){
+        return $this->belongsTo(League::class)->select('id', 'name');
+    }
+
     public function matchWeeks() {
         return $this->belongsToMany(MatchWeek::class)->select('matches_id', 'match_week_number', 'seasons_id');
     }

@@ -9,6 +9,6 @@ class DeleteTeamHandler
 {
     public function __invoke(DeleteTeamCommand $command): void
     {
-        Team::destroy($command->getId());
+        Team::where('slug',$command->getSlug())->delete();
     }
 }

@@ -31,6 +31,6 @@ class CreateLeaguesTables extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('leagues_tables');
+        Schema::dropIfExists('leagues');
     }
 }

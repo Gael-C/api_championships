@@ -8,6 +8,6 @@ class DeleteLeagueHandler
 {
     public function __invoke(DeleteLeagueCommand $command): void
     {
-        League::destroy($command->getId());
+        League::where('slug', $command->getSlug())->delete();
     }
 }

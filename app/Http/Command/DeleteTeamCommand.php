@@ -5,21 +5,21 @@ namespace App\Http\Command;
 
 class DeleteTeamCommand
 {
-    private int $id;
+    private string $slug;
 
     /**
-     * @param $id
+     * @param $slug
      */
-    public function __construct($id)
+    public function __construct($slug)
     {
-        $this->id = $id;
+        $this->slug = $slug;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getId(): int
+    public function getSlug(): string
     {
-        return $this->id;
+        return $this->slug;
     }
 }

@@ -21,6 +21,8 @@ class CreateMatchesTable extends Migration
             $table->foreignId('away_team_id')->references('id')->on('teams')->nullable()->constrained()->cascadeOnDelete();
             $table->integer('away_team_result')->default(0);
             $table->integer('away_team_tries')->default(0);
+            $table->foreignId('league_id')->references('id')->on('leagues')->nullable()->constrained()->cascadeOnDelete();
+            $table->timestamps();
         });
     }
 

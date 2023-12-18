@@ -11,6 +11,16 @@ class Team extends Model
 
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     public function leagues()
     {
         return $this->belongsToMany(League::class);

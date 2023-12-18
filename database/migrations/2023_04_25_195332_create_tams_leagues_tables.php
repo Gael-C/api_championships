@@ -28,6 +28,6 @@ class CreateTamsLeaguesTables extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tams_leagues_tables');
+        Schema::dropIfExists('league_team');
     }
 }

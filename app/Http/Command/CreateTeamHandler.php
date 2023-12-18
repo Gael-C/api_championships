@@ -11,6 +11,7 @@ class CreateTeamHandler
     {
         $team = new Team();
         $team->name = $command->getName();
+        $team->slug = $command->getSlug();
         $team->nickname = $command->getNickname();
         $team->foundation = $command->getFoundation();
         $team->stade = $command->getStade();
@@ -22,7 +23,6 @@ class CreateTeamHandler
         $team->youtube = $command->getYoutube();
         
         $team->logo = $command->getLogo();
-        $team->stade_pic = $command->getStadePic();
        
         $team ->save();
 

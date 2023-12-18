@@ -5,7 +5,7 @@ namespace App\Http\Command;
 
 class UpdateTeamCommand
 {
-    private $id;
+    private $slug;
     private $name;
     private $nickname;
     private $foundation;
@@ -21,7 +21,7 @@ class UpdateTeamCommand
     private $league;
 
     public function __construct(
-        $id,
+        $slug,
         $name,
         $nickname,
         $foundation,
@@ -37,7 +37,7 @@ class UpdateTeamCommand
         $league
     )
     {
-        $this->id = $id;
+        $this->slug = $slug;
         $this->name = $name;
         $this->nickname = $nickname;
         $this->foundation = $foundation;
@@ -53,9 +53,9 @@ class UpdateTeamCommand
         $this->league = $league;
     }
 
-    public function getId()
+    public function getSlug()
     {
-        return $this->id;
+        return $this->slug;
     }
 
     public function getName()

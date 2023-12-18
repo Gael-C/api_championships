@@ -7,6 +7,9 @@ class CreateLeagueCommand
 {
     private string $name;
 
+    private string $slug;
+
+
     private string $creation;
 
     private int $last_champion;
@@ -17,14 +20,16 @@ class CreateLeagueCommand
 
     /**
      * @param string $name
+     * @param string $slug
      * @param string $creation
      * @param int $last_champion
      * @param int $most_successfull
      * @param string $logo
      */
-    public function __construct(string $name, string $creation, int $last_champion, int $most_successfull, string $logo)
+    public function __construct(string $name, string $slug, string $creation, int $last_champion, int $most_successfull, string $logo)
     {
         $this->name = $name;
+        $this->slug = $slug;
         $this->creation = $creation;
         $this->last_champion = $last_champion;
         $this->most_successfull = $most_successfull;
@@ -37,6 +42,14 @@ class CreateLeagueCommand
     public function getName(): string
     {
         return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSlug(): string
+    {
+        return $this->slug;
     }
 
     /**

@@ -11,6 +11,7 @@ class CreateLeagueHandler
     {
         $league = new League();
         $league->name = $command->getName();
+        $league->slug = $command->getSlug();
         $league->creation = $command->getCreation();
         $league->last_champion = $command->getLastChampion();
         $league->most_successfull = $command->getMostSuccessfull();

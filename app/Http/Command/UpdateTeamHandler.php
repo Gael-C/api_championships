@@ -9,7 +9,7 @@ class UpdateTeamHandler
 {
     public function __invoke(UpdateTeamCommand $command): void
     {
-        $team = Team::query()->select('*')->findOrFail($command->getId());
+        $team = Team::where('slug', $command->getSlug())->firstOrFail();
         
         switch ($command) {
             case !empty('nickname') && 'nickname' !== "":

@@ -9,7 +9,6 @@ use App\Http\Command\DeleteLeagueHandler;
 use App\Http\Controllers\Controller;
 use App\Http\Query\GetAllLeagues;
 use App\Http\Query\GetOneLeague;
-use App\Models\League;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -46,6 +45,7 @@ class LeaguesController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:75',
+            'slug' => 'required|string|max:20',
             'creation' => 'required|string|max:4',
             'last_champion' => 'required|integer|exists:teams,id',
             'most_successfull' => 'nullable|integer|exists:teams,id',
@@ -56,6 +56,7 @@ class LeaguesController extends Controller
 
         $league = new CreateLeagueCommand(
             $validated['name'],
+            $validated['slug'],
             $validated['creation'],
             $validated['last_champion'],
             $validated['most_successfull'],
@@ -70,12 +71,12 @@ class LeaguesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  League  $league
+     * @param  string  $slug
      * @return JsonResponse
      */
-    public function show(League $league): JsonResponse
+    public function show(string $slug): JsonResponse
     {
-        $query = new GetOneLeague($league->id);
+        $query = new GetOneLeague($slug);
         return new JsonResponse($query->get(), 200);
     }
 
@@ -83,16 +84,17 @@ class LeaguesController extends Controller
      * Update the specified resource in storage.
      *
      * @param Request  $request
-     * @param  League  $league
+     * @param  string  $slug
      * @return JsonResponse
      * @authenticated
      */
-    public function update(Request $request, League $league)
+    public function update(Request $request, string $slug)
     {
         if($request->_method === 'PUT' || $request->_method === 'PATCH'){
 
             $validated = $request->validate([
                 'name' => 'nullable|string|max:75',
+                'slug' => 'nullable|string|max:20',
                 'creation' => 'nullable|string|max:4',
                 'last_champion' => 'nullable|integer|exists:teams,id',
                 'most_successfull' => 'nullable|integer|exists:teams,id',
@@ -105,22 +107,22 @@ class LeaguesController extends Controller
                 $validated['logo'] = $logo->store('logo', 'public');
             }
 
-            $league->update($validated);
+            // $league->update($validated);
 
-            return new JsonResponse($league, 200);
+            return new JsonResponse("Le championnat a bien été modifié.", 204);
         }
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param League  $league
+     * @param string  $slug
      * @return JsonResponse
      * @authenticated
      */
-    public function destroy(League $league): JsonResponse
+    public function destroy(string $slug): JsonResponse
     {
-        $this->commandBus->handle(new DeleteLeagueCommand($league->id));
-        return new JsonResponse("La league avec l'id ".$league->id." a bien été supprimée", 200);
+        $this->commandBus->handle(new DeleteLeagueCommand($slug));
+        return new JsonResponse("La league a bien été supprimée", 200);
     }
 }
