@@ -11,7 +11,9 @@ class GetOneTeam
 
     public function get():array
     {
-        $team = Team::where('slug', $this->slug)->firstOrFail()->load('leagues', 'classment');
+        $team = new Team();
+        $team->setConnection('DB_RD');
+        $team = $team::where('slug', $this->slug)->firstOrFail()->load('leagues', 'classment');
         return $team->toArray();
     }
 }

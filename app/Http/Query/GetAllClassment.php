@@ -9,6 +9,8 @@ class GetAllClassment
 {
     public  function get():Collection
     {
-        return Classment::with('team','league')->get()->orderBy('classement');
+        $classment = new Classment();
+        $classment->setConnection('DB_RD');
+        return $classment::with('team','league')->get()->orderBy('classement');
     }
 }

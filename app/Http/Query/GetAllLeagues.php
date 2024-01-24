@@ -9,6 +9,8 @@ class GetAllLeagues
 {
     public function get():Collection
     {
-        return League::query()->get()->load('teams', 'classment');
+        $leagues = new League();
+        $leagues->setConnection('DB_RD');
+        return $leagues::query()->get()->load('teams', 'classment');
     }
 }

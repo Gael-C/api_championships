@@ -11,7 +11,9 @@ class GetOneMatch
 
     public function get(): array
     {
-        $match = Matches::query()->select('*')->findOrFail($this->id)->load('matchWeeks', 'homeTeam', 'awayTeam');
+        $match = new Matches();
+        $match->setConnection('DB_RD');
+        $match = $match::query()->select('*')->findOrFail($this->id)->load('matchWeeks', 'homeTeam', 'awayTeam');
         return $match->toArray();
     }
 }

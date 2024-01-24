@@ -13,7 +13,9 @@ class GetOneCLassment
 
     public function get():array
     {
-        $classment = Classment::query()->select('*')->findOrFail($this->id)->load('team', 'league');
+        $classment = new Classment();
+        $classment->setConnection('DB_RD');
+        $classment = $classment::query()->select('*')->findOrFail($this->id)->load('team', 'league');
         return $classment->toArray();
     }
 }
