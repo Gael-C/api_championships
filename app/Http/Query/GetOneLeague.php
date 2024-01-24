@@ -11,9 +11,10 @@ class GetOneLeague
 
     public function get():array
     {
-        $league = League::query()->select('id','name', 'slug', 'most_successfull', 'last_champion')
+        $league = new League();
+        $league->setConnection('DB_RD');
+        $league = $league::query()->select('id','name', 'slug', 'most_successfull', 'last_champion')
                 ->where('slug', $this->slug)->firstOrFail()->load('teams', 'classment');
-                    // 'slug', $this->slug)
         return $league->toArray();
     }
 }

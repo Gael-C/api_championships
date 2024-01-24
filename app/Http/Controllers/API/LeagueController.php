@@ -5,14 +5,13 @@ namespace App\Http\Controllers\API;
 use App\CommandBus;
 use App\Http\Command\CreateLeagueCommand;
 use App\Http\Command\DeleteLeagueCommand;
-use App\Http\Command\DeleteLeagueHandler;
 use App\Http\Controllers\Controller;
 use App\Http\Query\GetAllLeagues;
 use App\Http\Query\GetOneLeague;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-class LeaguesController extends Controller
+class LeagueController extends Controller
 {
 
     /**

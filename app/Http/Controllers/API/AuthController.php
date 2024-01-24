@@ -22,7 +22,8 @@ class AuthController extends Controller
        $validated = $request->validate([
         'name' => 'required|string',
         'email' => 'required|email|unique:users',
-        'password' => 'required'
+        'password' => 'required',
+        'confirmed_password' => 'required'
        ]);
 
        $user = User::create([
@@ -39,8 +40,8 @@ class AuthController extends Controller
        ], 201);
     }
 
-    public function login(Request $request) {
-        
+    public function login(Request $request)
+    {
         if(!Auth::attempt($request->only('email', 'password'))) {
             return new JsonResponse(['message' => 'Login invalide'], 401);
         }

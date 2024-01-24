@@ -28,7 +28,6 @@ class CreateTeamsTable extends Migration
             $table->string('instagram')->nullable();
             $table->string('youtube')->nullable();
             $table->string('logo')->nullable();
-            $table->string('stade_pic')->nullable();
         });
     }
 

@@ -9,6 +9,8 @@ class GetAllMatchWeeks
 {
     public function get():Collection
     {
-        return MatchWeek::query()->get()->load('matches');
+        $matchWeeks = new MatchWeek();
+        $matchWeeks->setConnection('DB_RD');
+        return $matchWeeks::query()->get()->load('matches');
     }
 }

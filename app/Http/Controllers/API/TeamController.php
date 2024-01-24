@@ -13,11 +13,12 @@ use App\Http\Query\GetAllTeams;
 use App\Http\Query\GetOneTeam;
 use Illuminate\Http\Response;
 
-class TeamsController extends Controller
+class TeamController extends Controller
 {
 
     public function __construct(private CommandBus $commandBus)
     {
+        $this->commandBus = $commandBus;
     }
 
     /**
@@ -56,15 +57,9 @@ class TeamsController extends Controller
             'logo' => 'required|image',
             'league' =>'required|integer|exists:leagues,id'
         ]);
-        $logo = $request->logo;
-
-        $validated['logo'] = $logo->store('logo', 'public');
-
-        if (!isset($request->league)) {
-            return new JsonResponse("Merci de renseigner un championnat", 403);
-         }
 
         $validated['logo'] = $validated['logo']->store('logo', 'public');
+
         $team = new CreateTeamCommand(
             $validated['name'],
             $validated['slug'],

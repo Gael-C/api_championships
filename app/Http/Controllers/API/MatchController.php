@@ -13,7 +13,7 @@ use App\Models\Matches;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-class MatchesController extends Controller
+class MatchController extends Controller
 {
 
     public function __construct(private CommandBus $commandBus)

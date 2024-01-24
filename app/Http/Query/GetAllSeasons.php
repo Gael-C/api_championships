@@ -10,6 +10,8 @@ class GetAllSeasons
 {
     public function get():Collection
     {
-        return Seasons::query()->get()->load('matchWeeks');
+        $seasons = new Seasons();
+        $seasons->setConnection('DB_RD');
+        return $seasons::query()->get()->load('matchWeeks');
     }
 }

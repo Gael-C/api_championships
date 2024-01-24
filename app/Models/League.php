@@ -28,7 +28,7 @@ class League extends Model
 
     public function classment()
     {
-        return $this->hasMany(Classment::class)->orderBy('classement:q');
+        return $this->hasMany(Classment::class)->orderBy('classement');
     }
 
     public function matches()

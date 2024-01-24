@@ -13,7 +13,9 @@ class GetOneSeason
 
     public function get(): array
     {
-        $season = Seasons::query()->select('*')->findOrFail($this->id)->load('matchWeeks');
+        $season = new Seasons();
+        $season->setConnection('DB_RD');
+        $season = $season::query()->select('*')->findOrFail($this->id)->load('matchWeeks');
         return $season->toArray();
     }
 }

@@ -12,7 +12,9 @@ class GetOneMatchweek
 
     public  function get():array
     {
-        $matchWeek = MatchWeek::query()->select('*')->findOrFail($this->id)->load('matches');
+        $matchWeek = new MatchWeek();
+        $matchWeek->setConnection('DB_RD');
+        $matchWeek = $matchWeek::query()->select('*')->findOrFail($this->id)->load('matches');
         return $matchWeek->toArray();
     }
 }
